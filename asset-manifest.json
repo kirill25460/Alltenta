@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Alltenta/static/css/main.7acaea2f.css",
-    "main.js": "/Alltenta/static/js/main.07d3183d.js",
+    "main.js": "/Alltenta/static/js/main.571d4eab.js",
     "index.html": "/Alltenta/index.html",
     "main.7acaea2f.css.map": "/Alltenta/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/Alltenta/static/js/main.07d3183d.js.map"
+    "main.571d4eab.js.map": "/Alltenta/static/js/main.571d4eab.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.571d4eab.js"
   ]
 }
