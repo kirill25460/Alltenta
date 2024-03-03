@@ -1,23 +1,38 @@
 import ContactUsPhoto from '../../Images/Rectangle 26.png';
-import {Container} from './ContactUs.styled';
-
+import {
+  Container,
+  StyledInput,
+  ContainerForm,
+  StyledMessage,
+  ButtonForm,
+  Text,
+  ContactUsImg,
+} from './ContactUs.styled';
 
 export const ContactUs = () => {
   return (
     <Container>
       <div>
-        <h3>Готові до замовлення або залишились запитання?</h3>
-        <img src={ContactUsPhoto} alt="p" />
+        <Text>Готові до замовлення або залишились запитання?</Text>
+        <ContactUsImg src={ContactUsPhoto} alt="p" />
       </div>
-      <div>
+      <ContainerForm>
         <form>
-          <input type="text" name="name" placeholder="ІМ’Я" />
-          <input type="text" name="contact" placeholder="ТЕЛЕФОН/ЕМЕЙЛ" />
-          <input type="text" name="interestedIn" placeholder="ЗАЦІКАВЛЕНИЙ В" />
-          <input type="text" name="message" />
+          <StyledInput type="text" name="name" placeholder="ІМ’Я" />
+          <StyledInput type="text" name="contact" placeholder="ТЕЛЕФОН/ЕМЕЙЛ" />
+          <StyledInput
+            type="text"
+            name="interestedIn"
+            placeholder="ЗАЦІКАВЛЕНИЙ В"
+          />
+          <StyledMessage
+            type="text"
+            name="message"
+            placeholder="Повідомлення"
+          />
+          <ButtonForm>ВІДПРАВИТИ</ButtonForm>
         </form>
-        <button>ВІДПРАВИТИ</button>
-      </div>
+      </ContainerForm>
     </Container>
   );
 };
