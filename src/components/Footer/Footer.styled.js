@@ -16,7 +16,7 @@ display: flex;
 justify-content: space-around;
 height:265px;
 background-color: #001D3D;
-align-items: center;
+padding-top: 60px;
 `;
 
 export const FooterText = styled.h3`
