@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Alltenta/static/css/main.7acaea2f.css",
-    "main.js": "/Alltenta/static/js/main.f26d2aec.js",
+    "main.css": "/Alltenta/static/css/main.5aa5fb83.css",
+    "main.js": "/Alltenta/static/js/main.07673c31.js",
+    "static/media/Rectangle 26.png": "/Alltenta/static/media/Rectangle 26.07c7ce070429a3c98fa1.png",
     "static/media/experience.svg": "/Alltenta/static/media/experience.851419502bed7895e813dc23665b4fbc.svg",
     "index.html": "/Alltenta/index.html",
     "static/media/Loyalty.svg": "/Alltenta/static/media/Loyalty.56a821ede7140c52b019cb2d251e2bd5.svg",
     "static/media/Loyalty1.svg": "/Alltenta/static/media/Loyalty1.5b496f70febf63eae03ba27d509fb571.svg",
     "static/media/Reliability2.svg": "/Alltenta/static/media/Reliability2.c8bd64df650046b2f603fbfe872371d4.svg",
     "static/media/Reliability.svg": "/Alltenta/static/media/Reliability.1f6b641632ca64cefa50cd76efce6baa.svg",
-    "main.7acaea2f.css.map": "/Alltenta/static/css/main.7acaea2f.css.map",
-    "main.f26d2aec.js.map": "/Alltenta/static/js/main.f26d2aec.js.map"
+    "main.5aa5fb83.css.map": "/Alltenta/static/css/main.5aa5fb83.css.map",
+    "main.07673c31.js.map": "/Alltenta/static/js/main.07673c31.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.f26d2aec.js"
+    "static/css/main.5aa5fb83.css",
+    "static/js/main.07673c31.js"
   ]
 }
