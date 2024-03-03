@@ -1,8 +1,10 @@
 import ContactUsPhoto from '../../Images/Rectangle 26.png';
+import {Container} from './ContactUs.styled';
+
 
 export const ContactUs = () => {
   return (
-    <>
+    <Container>
       <div>
         <h3>Готові до замовлення або залишились запитання?</h3>
         <img src={ContactUsPhoto} alt="p" />
@@ -16,6 +18,6 @@ export const ContactUs = () => {
         </form>
         <button>ВІДПРАВИТИ</button>
       </div>
-    </>
+    </Container>
   );
 };
