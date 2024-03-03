@@ -1,13 +1,18 @@
 {
   "files": {
     "main.css": "/Alltenta/static/css/main.7acaea2f.css",
-    "main.js": "/Alltenta/static/js/main.571d4eab.js",
+    "main.js": "/Alltenta/static/js/main.4fc778a6.js",
+    "static/media/experience.svg": "/Alltenta/static/media/experience.851419502bed7895e813dc23665b4fbc.svg",
     "index.html": "/Alltenta/index.html",
+    "static/media/Loyalty.svg": "/Alltenta/static/media/Loyalty.56a821ede7140c52b019cb2d251e2bd5.svg",
+    "static/media/Loyalty1.svg": "/Alltenta/static/media/Loyalty1.5b496f70febf63eae03ba27d509fb571.svg",
+    "static/media/Reliability2.svg": "/Alltenta/static/media/Reliability2.c8bd64df650046b2f603fbfe872371d4.svg",
+    "static/media/Reliability.svg": "/Alltenta/static/media/Reliability.1f6b641632ca64cefa50cd76efce6baa.svg",
     "main.7acaea2f.css.map": "/Alltenta/static/css/main.7acaea2f.css.map",
-    "main.571d4eab.js.map": "/Alltenta/static/js/main.571d4eab.js.map"
+    "main.4fc778a6.js.map": "/Alltenta/static/js/main.4fc778a6.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.571d4eab.js"
+    "static/js/main.4fc778a6.js"
   ]
 }
