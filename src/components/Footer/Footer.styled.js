@@ -34,11 +34,11 @@ export const FooterLink = styled.h4`
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
-font-size: 10px;
+font-size: 15px;
 line-height: 12px;
 color: #FFFFFF;
 margin:0;
-margin-bottom: 30px;
+margin-top: 30px;
 `;
 
 export const InstIcon = styled(RxInstagramLogo)`

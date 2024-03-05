@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { FiPhone } from "react-icons/fi";
+import { CiMail } from "react-icons/ci";
+
 
 export const Container = styled.div`
 display: flex;
@@ -49,7 +52,7 @@ resize: none;
 export const ButtonForm = styled.button`
 position: absolute;
 left: 335px;
-bottom:25px;
+bottom:125px;
 width: 90px;
 height: 30px;
 font-family: 'Montserrat';
@@ -84,4 +87,30 @@ margin:0 0 40px 0px;
 export const ContactUsImg = styled.img`
 width: 500px;
 height: 373px;
+`;
+
+export const StyledLink = styled.a`
+text-decoration: none;
+color: #767676;;
+display: flex;
+align-items: center;
+margin-right:50px;
+`;
+
+export const MailIcon = styled(CiMail)`
+width: 20px;
+height: 20px;
+margin-right: 10px;
+`;
+
+
+export const PhonIcon = styled(FiPhone)`
+width: 20px;
+height: 20px;
+margin-right: 10px;
+`;
+
+export const ContactWrap = styled.div`
+display:flex;
+margin-top:30px;
 `;
