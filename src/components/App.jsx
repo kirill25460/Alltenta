@@ -1,3 +1,4 @@
+import { AboutUs } from './AboutUs/AboutUs';
 import { CompanyPerformance } from './CompanyPerformance/CompanyPerformance';
 import { ContactUs } from './ContactUs/ContactUs';
 import { Footer } from './Footer/Footer';
@@ -10,6 +11,7 @@ export const App = () => {
     <>
       <Header />
       <Hero />
+      <AboutUs/>
       <CompanyPerformance />
       <Gallery />
       <ContactUs />
