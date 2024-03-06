@@ -1,9 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   ArrowLeft,
   ArrowRight,
+  ArrowRightButton,
   ButtonBlockItem,
   ButtonConteiner,
+  ButtonSlider,
   GalleryBlockConteiner,
   GalleryConteiner,
   GalleryItemImage,
@@ -20,6 +22,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export const Gallery = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const images = [image2, image3, image4, image5];
 
   const sliderRef = useRef(null);
@@ -32,14 +35,22 @@ export const Gallery = () => {
     sliderRef.current.slickPrev();
   };
 
+  const mouseEnter = index => {
+    setHoveredIndex(index);
+  };
+
+  const mouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
   const settings = {
     className: 'center',
     centerMode: true,
     infinite: true,
-    centerPadding: '30px',
+    centerPadding: '10px',
     slidesToShow: 4,
     speed: 500,
-    draggable: false, 
+    draggable: false,
     arrows: false,
   };
 
@@ -51,17 +62,19 @@ export const Gallery = () => {
         матеріалів або різних типів і шо все воно є в нас.
       </GalleryText>
       <GalleryBlockConteiner>
-        <SliderConteiner>
-          <Slider ref={sliderRef} {...settings}>
-            {images.map((image, index) => (
+        <Slider ref={sliderRef} {...settings}>
+          {images.map((image, index) => (
+            <SliderConteiner key={index}>
               <GalleryItemImage
-                key={index}
                 src={image}
                 alt={`image${index + 2}`}
+                onMouseEnter={() => mouseEnter(index)}
+                onMouseLeave={mouseLeave}
               />
-            ))}
-          </Slider>
-        </SliderConteiner>
+              {hoveredIndex === index && <ButtonSlider>Замовити <ArrowRightButton /></ButtonSlider>}
+            </SliderConteiner>
+          ))}
+        </Slider>
         <ButtonConteiner>
           <ButtonBlockItem onClick={previous}>
             <ArrowLeft />
