@@ -44,6 +44,7 @@ export const GalleryText = styled.p`
 export const GalleryBlockConteiner = styled.div``;
 
 export const GalleryItemImage = styled.img`
+  width: 510px;
   transition: filter 0.3s ease;
   cursor: pointer;
 
@@ -53,9 +54,8 @@ export const GalleryItemImage = styled.img`
 `;
 
 export const SliderConteiner = styled.div`
-
+  position: relative;
 `;
-
 
 export const ArrowLeft = styled(IoIosArrowRoundBack)`
   width: 45px;
@@ -66,4 +66,33 @@ export const ArrowRight = styled(IoIosArrowRoundForward)`
   width: 45px;
   height: 40px;
   cursor: pointer;
+`;
+
+export const ArrowRightButton = styled(IoIosArrowRoundForward)`
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+`;
+
+export const ButtonSlider = styled.button`
+  cursor: pointer;
+  background: #ffffff;
+  width: 119px;
+  height: 50px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+
+  color: #232629;
+
+  position: absolute;
+  top: 460px;
+  left: 165px;
+
+  border: 0;
 `;
