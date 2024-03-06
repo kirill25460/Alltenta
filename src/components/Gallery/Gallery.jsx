@@ -9,6 +9,7 @@ import {
   GalleryItemImage,
   GalleryText,
   MainGalleryText,
+  SliderConteiner,
 } from './Gallery.styled';
 import image2 from '../../Images/image2.png';
 import image3 from '../../Images/image3.png';
@@ -35,9 +36,11 @@ export const Gallery = () => {
     className: 'center',
     centerMode: true,
     infinite: true,
-    centerPadding: '190px',
-    slidesToShow: 3,
+    centerPadding: '30px',
+    slidesToShow: 4,
     speed: 500,
+    draggable: false, 
+    arrows: false,
   };
 
   return (
@@ -48,15 +51,17 @@ export const Gallery = () => {
         матеріалів або різних типів і шо все воно є в нас.
       </GalleryText>
       <GalleryBlockConteiner>
-        <Slider ref={sliderRef} {...settings}>
-          {images.map((image, index) => (
-            <GalleryItemImage
-              key={index}
-              src={image}
-              alt={`image${index + 2}`}
-            />
-          ))}
-        </Slider>
+        <SliderConteiner>
+          <Slider ref={sliderRef} {...settings}>
+            {images.map((image, index) => (
+              <GalleryItemImage
+                key={index}
+                src={image}
+                alt={`image${index + 2}`}
+              />
+            ))}
+          </Slider>
+        </SliderConteiner>
         <ButtonConteiner>
           <ButtonBlockItem onClick={previous}>
             <ArrowLeft />

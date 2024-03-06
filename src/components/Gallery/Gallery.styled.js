@@ -44,8 +44,6 @@ export const GalleryText = styled.p`
 export const GalleryBlockConteiner = styled.div``;
 
 export const GalleryItemImage = styled.img`
-  width: 360px;
-  height: 360px;
   transition: filter 0.3s ease;
   cursor: pointer;
 
@@ -54,11 +52,18 @@ export const GalleryItemImage = styled.img`
   }
 `;
 
+export const SliderConteiner = styled.div`
+
+`;
+
+
 export const ArrowLeft = styled(IoIosArrowRoundBack)`
   width: 45px;
   height: 40px;
+  cursor: pointer;
 `;
 export const ArrowRight = styled(IoIosArrowRoundForward)`
   width: 45px;
   height: 40px;
+  cursor: pointer;
 `;
