@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alltenta/static/css/main.5e369f00.css",
-    "main.js": "/Alltenta/static/js/main.d649d02e.js",
+    "main.js": "/Alltenta/static/js/main.c47ded21.js",
     "static/media/hero_img.png": "/Alltenta/static/media/hero_img.d07af5917ce96877d436.png",
     "static/media/Rectangle 26.png": "/Alltenta/static/media/Rectangle 26.07c7ce070429a3c98fa1.png",
     "static/media/aboutUsImage.png": "/Alltenta/static/media/aboutUsImage.8b683c45748fcbfb689d.png",
@@ -21,10 +21,10 @@
     "static/media/Reliability2.svg": "/Alltenta/static/media/Reliability2.c8bd64df650046b2f603fbfe872371d4.svg",
     "static/media/Reliability.svg": "/Alltenta/static/media/Reliability.1f6b641632ca64cefa50cd76efce6baa.svg",
     "main.5e369f00.css.map": "/Alltenta/static/css/main.5e369f00.css.map",
-    "main.d649d02e.js.map": "/Alltenta/static/js/main.d649d02e.js.map"
+    "main.c47ded21.js.map": "/Alltenta/static/js/main.c47ded21.js.map"
   },
   "entrypoints": [
     "static/css/main.5e369f00.css",
-    "static/js/main.d649d02e.js"
+    "static/js/main.c47ded21.js"
   ]
 }
