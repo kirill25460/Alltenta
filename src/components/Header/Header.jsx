@@ -7,7 +7,7 @@ import {
   Navigation,
   RightContainer,
 } from './Header.styled';
-import logo from '../../Images/alltentaLogo.png';
+import logo from '../../Images/headerLogo.png';
 
 const Header = () => {
   return (
