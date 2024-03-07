@@ -4,19 +4,24 @@ import { CiMail } from "react-icons/ci";
 
 
 export const Container = styled.div`
-display: flex;
+
+margin-top: 100px;
+margin-bottom: 100px;
+@media screen and (min-width: 768px) {
+    display: flex;
 justify-content: center;
-margin-top: 150px;
-margin-bottom: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
 `;
 
 export const StyledInput = styled.input`
-height:50px;
-width:421px;
+box-sizing: border-box;
+width: 300px;
+height: 50px;
 border: 1px solid #232529;
 margin-bottom: 30px;
 padding-left: 15px;
-
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
@@ -25,21 +30,30 @@ line-height: 30px;
 display: flex;
 align-items: center;
 color: #767676;
+@media screen and (min-width: 768px) {
+    width:421px;
+
+}
 `;
 
 export const ContainerForm = styled.div`
 display:flex;
-margin-left: 100px;
-width:450px;
+margin-top:60px;
+
 position: relative;
+@media screen and (min-width: 768px) {
+    margin-left: 100px;
+    margin-top:0px;
+    width:450px;
+}
 `;
 
 export const StyledMessage = styled.textarea`
-height:245px;
-width:440px;
+box-sizing: border-box;
+width: 300px;
+height: 245px;
 border: 1px solid #232529;
 padding: 15px;
-box-sizing: border-box;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
@@ -47,12 +61,16 @@ font-size: 16px;
 line-height: 30px;
 color: #767676;
 resize: none;
+
+@media screen and (min-width: 768px) {
+    width:440px;
+
+}
+
 `;
 
 export const ButtonForm = styled.button`
-position: absolute;
-left: 335px;
-bottom:125px;
+margin-top:10px;
 width: 90px;
 height: 30px;
 font-family: 'Montserrat';
@@ -68,33 +86,62 @@ color: #232529;
 background: #FFFFFF;
 border: 1px solid #232529;
 cursor: pointer;
+@media screen and (min-width: 768px) {
+    position: absolute;
+    left: 335px;
+    bottom:125px;
 
+}
 `;
 
 export const Text = styled.h3`
-width: 500px;
+width: 300px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 36px;
-line-height: 44px;
+font-size: 22px;
+line-height: 27px;
 display: flex;
 align-items: center;
+text-align: center;
+margin:0 0 15px 0px;
 color: #232529;
-margin:0 0 40px 0px;
+
+@media screen and (min-width: 768px) {
+    width: 500px;
+    font-size: 36px;
+    line-height: 44px;
+    margin:0 0 40px 0px;
+}
+
 `;
 
 export const ContactUsImg = styled.img`
-width: 500px;
+width: 300px;
 height: 373px;
+
+@media screen and (min-width: 768px) {
+    width: 500px;
+}
+
 `;
 
 export const StyledLink = styled.a`
-text-decoration: none;
-color: #767676;;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 300%;
 display: flex;
 align-items: center;
-margin-right:50px;
+text-decoration: none;
+color: #767676;
+
+@media screen and (min-width: 768px) {
+    margin-right:50px;
+}
+
+
 `;
 
 export const MailIcon = styled(CiMail)`

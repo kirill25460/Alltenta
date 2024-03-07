@@ -13,10 +13,18 @@ export const ImgLogo = styled.img`
 
 export const Container = styled.div`
 display: flex;
-justify-content: space-around;
-height:265px;
+
+flex-direction: column;
+align-items: center;
+
+@media screen and (min-width: 768px) {
+  justify-content: space-around;
+}
+
+
 background-color: #001D3D;
 padding-top: 60px;
+padding-bottom: 60px;
 `;
 
 export const FooterText = styled.h3`
