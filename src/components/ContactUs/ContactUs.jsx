@@ -1,4 +1,5 @@
 import ContactUsPhoto from '../../Images/Rectangle 26.png';
+import ContactUs360 from '../../Images/ContactUs360.png';
 import {
   Container,
   StyledInput,
@@ -18,13 +19,33 @@ export const ContactUs = () => {
     <Container>
       <div>
         <Text>Готові до замовлення або залишились запитання?</Text>
-        <ContactUsImg src={ContactUsPhoto} alt="p" />
+        <picture>
+          <source media="(max-width: 360px)" srcSet={ContactUs360} />
+          <ContactUsImg src={ContactUsPhoto} alt="p" />
+        </picture>  
         <div>
-        <ContactWrap>        <StyledLink href="tel:+380 648 044 44"><PhonIcon/>+380 648 044 44</StyledLink>
-        <StyledLink href="mailto:alltenta@gmail.com"><MailIcon/>alltenta@gmail.com</StyledLink></ContactWrap>
-        <ContactWrap>        <StyledLink href="tel:+380 648 044 44"><PhonIcon/>+380 648 044 44</StyledLink>
-        <StyledLink href="mailto:alltenta@gmail.com"><MailIcon/>alltenta@gmail.com</StyledLink></ContactWrap>
-
+          <ContactWrap>
+            {' '}
+            <StyledLink href="tel:+380 648 044 44">
+              <PhonIcon />
+              +380 648 044 44
+            </StyledLink>
+            <StyledLink href="mailto:alltenta@gmail.com">
+              <MailIcon />
+              alltenta@gmail.com
+            </StyledLink>
+          </ContactWrap>
+          <ContactWrap>
+            {' '}
+            <StyledLink href="tel:+380 648 044 44">
+              <PhonIcon />
+              +380 648 044 44
+            </StyledLink>
+            <StyledLink href="mailto:alltenta@gmail.com">
+              <MailIcon />
+              alltenta@gmail.com
+            </StyledLink>
+          </ContactWrap>
         </div>
       </div>
       <ContainerForm>

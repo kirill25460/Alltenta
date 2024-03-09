@@ -27,6 +27,12 @@ export const AboutUsImageFirst = styled.img`
   z-index: 2;
   right: 0;
   top: 0;
+
+  @media (max-width: 360px) {
+    width: 100px;
+    height: 150px;
+
+  }
 `;
 
 export const AboutUsImageSecond = styled.img`
@@ -36,6 +42,14 @@ export const AboutUsImageSecond = styled.img`
   z-index: 1;
   top: 290px;
   right: 300px;
+
+  @media (max-width: 360px) {
+    width: 100px;
+    height: 170px;
+    top: 90px;
+    right: 55px;
+  }
+
 `;
 
 export const MainTextAboutUs = styled.h1`
@@ -49,6 +63,14 @@ export const MainTextAboutUs = styled.h1`
   text-align: center;
 
   color: #001d3d;
+
+  @media (max-width: 360px) {
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 `;
 
 export const AboutUsText = styled.p`
@@ -64,6 +86,13 @@ export const AboutUsText = styled.p`
   color: #767676;
 
   margin-bottom: 50px;
+
+  @media (max-width: 360px) {
+    font-size: 10px;
+    line-height: 12px;
+    width: 149px;
+    height: 251px;
+  }
 `;
 
 export const AboutUsButton = styled.button`
@@ -77,7 +106,7 @@ export const AboutUsButton = styled.button`
   /* or 167% */
   display: flex;
   align-items: center;
-  cursor: pointer;  
+  cursor: pointer;
 
   color: #232529;
 
@@ -85,6 +114,10 @@ export const AboutUsButton = styled.button`
   height: 50px;
 
   background-color: #fff;
+
+  @media (max-width: 360px) {
+    display: none;  
+  }
 `;
 
 export const AboutUsArrow = styled(IoIosArrowRoundForward)`
