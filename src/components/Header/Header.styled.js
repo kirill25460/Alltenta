@@ -10,6 +10,10 @@ export const LeftConatiner = styled.div`
   align-items: center;
   width: 490px;
   height: 100px;
+
+  @media (max-width: 360px) {
+    justify-content: center; 
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -24,6 +28,10 @@ export const Navigation = styled.ul`
   justify-content: space-between;
   width: 650px;
   padding: 0;
+
+  @media (max-width: 360px) {
+    display: none; 
+  }
 `;
 
 export const NavItem = styled.li`

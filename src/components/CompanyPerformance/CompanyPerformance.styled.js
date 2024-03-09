@@ -5,6 +5,11 @@ export const CompanyPerformanceConteiner = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 150px;
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
 `;
 
 export const CompanyPerformanceBlock = styled.div`
@@ -14,6 +19,10 @@ export const CompanyPerformanceBlock = styled.div`
 
   &:not(:last-child) {
     margin-right: 150px;
+    @media (max-width: 360px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 `;
 
@@ -25,6 +34,13 @@ export const CompanyPerformanceMainText = styled.h1`
   line-height: 37px;
 
   color: #232529;
+
+  @media (max-width: 360px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const CompanyPerformanceText = styled.p`
@@ -36,7 +52,12 @@ export const CompanyPerformanceText = styled.p`
   text-align: center;
 
   color: #767676;
+
+  @media (max-width: 360px) {
+    margin-top: 25px;
+    font-size: 10px;
+    line-height: 12px;
+  }
 `;
 
-export const CompanyPerformanceImage = styled.img`
-  `;
+export const CompanyPerformanceImage = styled.img``;

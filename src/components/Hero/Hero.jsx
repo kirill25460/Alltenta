@@ -1,6 +1,7 @@
 import {
   ArrowBox,
   ArrowHeroContainer,
+  ArrowHeroModileContainer,
   ArrowLeft,
   ArrowRight,
   BlackSpan,
@@ -8,11 +9,13 @@ import {
   HeroButton,
   HeroContainer,
   HeroImg,
+  HeroSource,
   LeftHeroConatiner,
   RightHeroContainer,
   SmallArrow,
 } from './Hero.styled';
 import hero_img from '../../Images/hero_img.png';
+import hero_img360 from '../../Images/hero_img360.png';
 import { useState } from 'react';
 
 export const Hero = () => {
@@ -29,6 +32,7 @@ export const Hero = () => {
   const ttry = () => {
     console.log('fdsf');
   };
+
   return (
     <HeroContainer>
       <LeftHeroConatiner>
@@ -44,11 +48,14 @@ export const Hero = () => {
         </ArrowHeroContainer>
       </LeftHeroConatiner>
       <RightHeroContainer>
-        <HeroImg
-          src={hero_img}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
+        <picture>
+          <source media="(max-width: 360px)" srcSet={hero_img360} />
+          <HeroImg
+            src={hero_img}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+        </picture>
         {isHovered && (
           <HeroButton
             onMouseEnter={handleMouseEnter}

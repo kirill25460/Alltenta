@@ -52,6 +52,14 @@ export const Gallery = () => {
     speed: 500,
     draggable: false,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 361,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -71,7 +79,11 @@ export const Gallery = () => {
                 onMouseEnter={() => mouseEnter(index)}
                 onMouseLeave={mouseLeave}
               />
-              {hoveredIndex === index && <ButtonSlider>Замовити <ArrowRightButton /></ButtonSlider>}
+              {hoveredIndex === index && (
+                <ButtonSlider>
+                  Замовити <ArrowRightButton />
+                </ButtonSlider>
+              )}
             </SliderConteiner>
           ))}
         </Slider>

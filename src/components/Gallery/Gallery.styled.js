@@ -27,6 +27,11 @@ export const MainGalleryText = styled.h1`
   margin-bottom: 20px;
 
   color: #001d3d;
+
+  @media (max-width: 360px) {
+    font-size: 48px;
+    line-height: 44px;
+  }
 `;
 
 export const GalleryText = styled.p`
@@ -39,6 +44,10 @@ export const GalleryText = styled.p`
   width: 613px;
   display: inline-block;
   color: #767676;
+
+  @media (max-width: 360px) {
+    display: none;
+  }
 `;
 
 export const GalleryBlockConteiner = styled.div``;

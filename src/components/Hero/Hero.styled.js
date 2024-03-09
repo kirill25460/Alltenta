@@ -6,6 +6,11 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 150px;
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LeftHeroConatiner = styled.div`
@@ -14,6 +19,11 @@ export const LeftHeroConatiner = styled.div`
   justify-content: center;
   width: 490px;
   height: 700px;
+
+  @media (max-width: 360px) {
+    height: 254px;
+    margin-top: 30px;
+  }
 `;
 
 export const RightHeroContainer = styled.div`
@@ -28,6 +38,16 @@ export const GreySpan = styled.span`
   line-height: 66px;
   margin-top: 40px;
   color: #767676;
+
+  @media (max-width: 360px) {
+    font-size: 59px;
+    line-height: 42px;
+    margin-top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const BlackSpan = styled.span`
@@ -38,6 +58,15 @@ export const BlackSpan = styled.span`
   line-height: 66px;
   margin-bottom: 50px;
   color: #001d3d;
+
+  @media (max-width: 360px) {
+    font-size: 47px;
+    line-height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const HeroImg = styled.img`
@@ -68,7 +97,13 @@ export const ArrowHeroContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 130px;
+
+  @media (max-width: 360px) {
+    display: none;
+  }
 `;
+
+export const HeroSource = styled.source``;
 
 export const ArrowBox = styled.div`
   box-sizing: border-box;
