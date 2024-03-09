@@ -12,16 +12,18 @@ export const ImgLogo = styled.img`
 `;
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-around;
-  height: 265px;
+display: flex;
   background-color: #001d3d;
   padding-top: 60px;
-
-  @media (max-width: 360px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding-bottom:60px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom:90px;
   }
 `;
 
@@ -34,6 +36,28 @@ export const FooterText = styled.h3`
   color: #ffffff;
   margin: 0;
   margin-bottom: 10px;
+  margin-top:50px;
+  @media(min-width:768px){
+    margin-top:0px;
+  }
+`;
+
+
+export const FooterSocText = styled.h3`
+display:none;
+@media(min-width:768px){
+
+  display:block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 `;
 
 export const FooterLink = styled.h4`
@@ -52,39 +76,62 @@ export const FooterLink = styled.h4`
 `;
 
 export const InstIcon = styled(RxInstagramLogo)`
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   color: #fff;
-  margin-right: 30px;
+  margin-right: 15px;
+  @media (min-width: 768px) {
+    margin-right: 30px;
+
+  } 
 `;
 
 export const FaceBIcon = styled(RiFacebookLine)`
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   color: #fff;
   border-radius: 10%;
+  margin-right: 15px;
   border: 1px solid #fff;
+  @media (min-width: 768px) {
+    margin-right: 0px;
+
+  } 
 `;
 
 export const TelegramIcon = styled(LiaTelegramPlane)`
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   color: #fff;
-  margin-right: 30px;
+  margin-right: 15px;
+  @media (min-width: 768px) {
+    margin-right: 30px;
+
+  } 
+
 `;
 
 export const PhoneIcon = styled(LiaPhoneVolumeSolid)`
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   color: #fff;
   border-radius: 10%;
   border: 1px solid #fff;
+  @media (min-width: 768px) {
+    margin-right: 0px;
+
+  } 
 `;
 
 export const WrapIcons = styled.div`
   display: flex;
-  width: 90px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin-top:30px;
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    width: 90px;
+    margin-top:0px;
+  } 
 `;
 
 export const StyledLink = styled.a`
@@ -92,22 +139,43 @@ export const StyledLink = styled.a`
   color: #fff;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 300%;
+  text-align: center;
+  
 `;
 
 export const PhonIcon = styled(FiPhone)`
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+margin-right: 10px;
+width: 12px;
+height: 12px;
+
 `;
 
 export const ContactWrap = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  @media(min-width:768px){
+    align-items: flex-start;
+  }
 `;
 
 export const MailIcon = styled(CiMail)`
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+margin-right: 10px;
+width: 12px;
+height: 12px;
+
+`;
+
+export const InfoWrap = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+@media(min-width:768px){
+  align-items: flex-start;
+}
 `;
