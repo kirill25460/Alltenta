@@ -4,52 +4,56 @@ import { CiMail } from 'react-icons/ci';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
 
-  @media (max-width: 360px) {
-    flex-direction: column;
-    align-items: center;
+  @media (min-width:768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 `;
 
 export const StyledInput = styled.input`
   height: 50px;
-  width: 421px;
+  width: 300px;
   border: 1px solid #232529;
   margin-bottom: 30px;
   padding-left: 15px;
-
+  box-sizing: border-box;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
   color: #767676;
 
-  @media (max-width: 360px) {
-    width: 300px;
+  @media (min-width: 768px) {
+    width: 440px;
   }
 `;
 
-export const ContainerForm = styled.div`
+export const ContainerForm = styled.form`
   display: flex;
-  margin-left: 100px;
-  width: 450px;
-  position: relative;
-  @media (max-width: 360px) {
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
+  flex-direction: column;
+  margin-top:60px;
+ 
+  justify-content: center;
+  align-items: flex-end;
+  @media (min-width:768px) {
+    position: relative;
+    margin-top:0;
+    margin-left: 100px;
   }
 `;
 
 export const StyledMessage = styled.textarea`
   height: 245px;
-  width: 440px;
+  width: 300px;
   border: 1px solid #232529;
   padding: 15px;
   box-sizing: border-box;
@@ -61,15 +65,13 @@ export const StyledMessage = styled.textarea`
   color: #767676;
   resize: none;
 
-  @media (max-width: 360px) {
-    width: 318px;
+  @media (min-width: 768px) {
+    width: 440px;
   }
 `;
 
 export const ButtonForm = styled.button`
-  position: absolute;
-  left: 335px;
-  bottom: 125px;
+  margin-top:10px;
   width: 90px;
   height: 30px;
   font-family: 'Montserrat';
@@ -86,42 +88,47 @@ export const ButtonForm = styled.button`
   border: 1px solid #232529;
   cursor: pointer;
 
-  @media (max-width: 360px) {
-    position: static;
-    left: auto;
-    bottom: auto;
+  @media (min-width: 768px) {
+    margin-top:0px;
+    position: absolute;
+    left: 335px;
+    bottom: 15px;
   }
 `;
 
 export const Text = styled.h3`
-  width: 500px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
+width:300px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #232529;
+
+
+  @media (min-width: 768px) {
+    width: 500px;
+    font-weight: 500;
   font-size: 36px;
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #232529;
-  margin: 0 0 40px 0px;
+  margin: 0 0 25px 0px;
 
-  @media (max-width: 360px) {
-    width: 300px;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-    margin-left: 30px;
   }
 `;
 
 export const ContactUsImg = styled.img`
-  width: 500px;
+  
   height: 373px;
+  width: 300px;
 
-  @media (max-width: 360px) {
-    margin-left: 30px;
-    width: 300px;
-    height: 373px;
+  @media (min-width: 768px) {
+    width: 500px;
   }
 `;
 
@@ -145,25 +152,18 @@ export const StyledLink = styled.a`
 `;
 
 export const MailIcon = styled(CiMail)`
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   margin-right: 10px;
 
-  @media (max-width: 360px) {
-    width: 12px;
-    height: 12px;
-  }
+
 `;
 
 export const PhonIcon = styled(FiPhone)`
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   margin-right: 10px;
 
-  @media (max-width: 360px) {
-    width: 12px;
-    height: 12px;
-  }
 `;
 
 export const ContactWrap = styled.div`
@@ -171,7 +171,14 @@ export const ContactWrap = styled.div`
   margin-top: 30px;
 
   @media (max-width: 360px) {
-    margin-left: 30px;
     margin-bottom: 30px;
   }
+`;
+export const InfoWrap = styled.div`
+display:flex;
+flex-direction: column;
+align-items: center;
+@media(min-width:768px){
+  align-items: normal;
+}
 `;
