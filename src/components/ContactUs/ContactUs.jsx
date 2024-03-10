@@ -12,15 +12,16 @@ import {
   MailIcon,
   PhonIcon,
   ContactWrap,
+  InfoWrap,
 } from './ContactUs.styled';
 
 export const ContactUs = () => {
   return (
     <Container>
-      <div>
+      <InfoWrap>
         <Text>Готові до замовлення або залишились запитання?</Text>
         <picture>
-          <source media="(max-width: 360px)" srcSet={ContactUs360} />
+          <source media="(max-width:768px)" srcSet={ContactUs360} />
           <ContactUsImg src={ContactUsPhoto} alt="p" />
         </picture>  
         <div>
@@ -47,9 +48,9 @@ export const ContactUs = () => {
             </StyledLink>
           </ContactWrap>
         </div>
-      </div>
-      <ContainerForm>
-        <form>
+      </InfoWrap>
+   
+        <ContainerForm>
           <StyledInput type="text" name="name" placeholder="ІМ’Я" />
           <StyledInput type="text" name="contact" placeholder="ТЕЛЕФОН/ЕМЕЙЛ" />
           <StyledInput
@@ -63,8 +64,8 @@ export const ContactUs = () => {
             placeholder="Повідомлення"
           />
           <ButtonForm>ВІДПРАВИТИ</ButtonForm>
-        </form>
-      </ContainerForm>
+        </ContainerForm>
+      
     </Container>
   );
 };

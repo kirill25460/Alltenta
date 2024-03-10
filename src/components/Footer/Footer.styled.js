@@ -55,7 +55,7 @@ display:none;
   line-height: 21px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
 }
 
 `;
@@ -64,15 +64,11 @@ export const FooterLink = styled.h4`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 12px;
   color: #ffffff;
-  margin: 0;
-  margin-top: 30px;
 
-  @media (max-width: 360px) {
-    font-size: 10px;
-  } 
+
 `;
 
 export const InstIcon = styled(RxInstagramLogo)`
@@ -106,7 +102,7 @@ export const TelegramIcon = styled(LiaTelegramPlane)`
   margin-right: 15px;
   @media (min-width: 768px) {
     margin-right: 30px;
-
+margin-top:20px;
   } 
 
 `;
@@ -119,6 +115,7 @@ export const PhoneIcon = styled(LiaPhoneVolumeSolid)`
   border: 1px solid #fff;
   @media (min-width: 768px) {
     margin-right: 0px;
+    margin-top:20px;
 
   } 
 `;
