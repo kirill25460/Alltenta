@@ -99,10 +99,9 @@ export const ButtonSlider = styled.button`
   margin: 0 auto;
 
   position: absolute;
-  bottom: 0; /* настройте отступ снизу по вашему выбору */
-  left: 50%; /* по центру горизонтально */
+  bottom: 0;
+  left: 50%;
   transform: translateX(-50%);
-  /* добавьте любые другие стили, такие как цвет фона, шрифт и т. д. */
 
   color: #232629;
 

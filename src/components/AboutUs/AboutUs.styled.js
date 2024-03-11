@@ -61,7 +61,8 @@ export const MainTextAboutUs = styled.h1`
   display: flex;
   align-items: center;
   text-align: center;
-
+  margin-top: 10px;
+  margin-bottom: 0%;
   color: #001d3d;
 
   @media (max-width: 360px) {
@@ -114,6 +115,10 @@ export const AboutUsButton = styled.button`
   height: 50px;
 
   background-color: #fff;
+  &:hover {
+    color: #a2b9d0;
+    border: 1px solid #a2b9d0;
+  }
 
   @media (max-width: 360px) {
     display: none;  
