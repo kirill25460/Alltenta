@@ -1,15 +1,19 @@
 {
   "files": {
     "main.css": "/Alltenta/static/css/main.5e369f00.css",
-    "main.js": "/Alltenta/static/js/main.b5c76941.js",
+    "main.js": "/Alltenta/static/js/main.a42e9e70.js",
     "static/media/hero_img.png": "/Alltenta/static/media/hero_img.d07af5917ce96877d436.png",
     "static/media/Rectangle 26.png": "/Alltenta/static/media/Rectangle 26.07c7ce070429a3c98fa1.png",
+    "static/media/hero_img360.png": "/Alltenta/static/media/hero_img360.80285d0a794b84c9ae02.png",
     "static/media/aboutUsImage.png": "/Alltenta/static/media/aboutUsImage.8b683c45748fcbfb689d.png",
     "static/media/image4.png": "/Alltenta/static/media/image4.028077c0890536959379.png",
     "static/media/image5.png": "/Alltenta/static/media/image5.86a77b9fa3716d99ba9e.png",
     "static/media/image2.png": "/Alltenta/static/media/image2.3737669fb9172d943e37.png",
     "static/media/image3.png": "/Alltenta/static/media/image3.f33bd7caa67d416cd67f.png",
+    "static/media/ContactUs360.png": "/Alltenta/static/media/ContactUs360.3f790ad0c32fefd11f8d.png",
     "static/media/secondAboutUsImage.png": "/Alltenta/static/media/secondAboutUsImage.083c6c527f9df05e49be.png",
+    "static/media/secondAboutUsImage360.png": "/Alltenta/static/media/secondAboutUsImage360.66a5320d3043778c8889.png",
+    "static/media/aboutUsImage360.png": "/Alltenta/static/media/aboutUsImage360.269a25c23bfdfb9ac7b3.png",
     "static/media/experience.svg": "/Alltenta/static/media/experience.851419502bed7895e813dc23665b4fbc.svg",
     "static/media/slick.svg": "/Alltenta/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Alltenta/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -21,10 +25,10 @@
     "static/media/Reliability2.svg": "/Alltenta/static/media/Reliability2.c8bd64df650046b2f603fbfe872371d4.svg",
     "static/media/Reliability.svg": "/Alltenta/static/media/Reliability.1f6b641632ca64cefa50cd76efce6baa.svg",
     "main.5e369f00.css.map": "/Alltenta/static/css/main.5e369f00.css.map",
-    "main.b5c76941.js.map": "/Alltenta/static/js/main.b5c76941.js.map"
+    "main.a42e9e70.js.map": "/Alltenta/static/js/main.a42e9e70.js.map"
   },
   "entrypoints": [
     "static/css/main.5e369f00.css",
-    "static/js/main.b5c76941.js"
+    "static/js/main.a42e9e70.js"
   ]
 }
