@@ -44,17 +44,14 @@ export const Gallery = () => {
   };
 
   const settings = {
-    className: 'center',
     centerMode: true,
     infinite: true,
-    centerPadding: '10px',
     slidesToShow: 4,
     speed: 500,
-    draggable: false,
     arrows: false,
     responsive: [
       {
-        breakpoint: 361,
+        breakpoint: 360,
         settings: {
           slidesToShow: 1,
         },
@@ -80,7 +77,10 @@ export const Gallery = () => {
                 onMouseLeave={mouseLeave}
               />
               {hoveredIndex === index && (
-                <ButtonSlider>
+                <ButtonSlider
+                  onMouseEnter={() => mouseEnter(index)}
+                  onMouseLeave={mouseLeave}
+                >
                   Замовити <ArrowRightButton />
                 </ButtonSlider>
               )}

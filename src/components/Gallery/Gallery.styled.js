@@ -8,15 +8,13 @@ export const GalleryConteiner = styled.div`
 
 export const ButtonConteiner = styled.div`
   display: flex;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+  width: 180px;
+  justify-content: space-between;
+  margin: 30px auto 0px;
 `;
 
-export const ButtonBlockItem = styled.div`
-  margin-right: 110px;
-`;
+export const ButtonBlockItem = styled.div``;
 
 export const MainGalleryText = styled.h1`
   font-family: 'Montserrat';
@@ -53,7 +51,7 @@ export const GalleryText = styled.p`
 export const GalleryBlockConteiner = styled.div``;
 
 export const GalleryItemImage = styled.img`
-  width: 510px;
+  width: 100%;
   transition: filter 0.3s ease;
   cursor: pointer;
 
@@ -78,8 +76,9 @@ export const ArrowRight = styled(IoIosArrowRoundForward)`
 `;
 
 export const ArrowRightButton = styled(IoIosArrowRoundForward)`
-  width: 40px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
+  margin-left: 7px;
   cursor: pointer;
 `;
 
@@ -96,12 +95,16 @@ export const ButtonSlider = styled.button`
   line-height: 66px;
   display: flex;
   align-items: center;
-
-  color: #232629;
+  justify-content: center;
+  margin: 0 auto;
 
   position: absolute;
-  top: 460px;
-  left: 165px;
+  bottom: 0; /* настройте отступ снизу по вашему выбору */
+  left: 50%; /* по центру горизонтально */
+  transform: translateX(-50%);
+  /* добавьте любые другие стили, такие как цвет фона, шрифт и т. д. */
+
+  color: #232629;
 
   border: 0;
 `;
