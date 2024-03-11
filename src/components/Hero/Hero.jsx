@@ -1,7 +1,6 @@
 import {
   ArrowBox,
   ArrowHeroContainer,
-  ArrowHeroModileContainer,
   ArrowLeft,
   ArrowRight,
   BlackSpan,
@@ -9,7 +8,6 @@ import {
   HeroButton,
   HeroContainer,
   HeroImg,
-  HeroSource,
   LeftHeroConatiner,
   RightHeroContainer,
   SmallArrow,
