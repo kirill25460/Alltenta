@@ -11,16 +11,32 @@ export const LeftConatiner = styled.div`
   width: 490px;
   height: 100px;
 
-  @media (max-width: 360px) {
+  @media (width <= 360px) {
     justify-content: center;
   }
 `;
 
 export const RightContainer = styled.div`
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (width > 768px) {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+  }
+  @media (width <= 768px) {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  @media (width <= 360px) {
+    display: none;
+    margin-right: 0;
+  }
 `;
 
 export const Navigation = styled.ul`
@@ -28,10 +44,6 @@ export const Navigation = styled.ul`
   justify-content: space-between;
   width: 650px;
   padding: 0;
-
-  @media (max-width: 360px) {
-    display: none;
-  }
 `;
 
 export const NavItem = styled.li`
