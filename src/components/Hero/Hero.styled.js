@@ -89,6 +89,7 @@ export const HeroButton = styled.button`
 
   &:hover {
     color: #a2b9d0;
+    fill: #a2b9d0;
   }
 `;
 
@@ -143,5 +144,4 @@ export const ArrowRight = styled(IoIosArrowRoundForward)`
 export const SmallArrow = styled(IoIosArrowRoundForward)`
   width: 32px;
   height: 24px;
-  color: #232629;
 `;

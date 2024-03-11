@@ -31,7 +31,6 @@ export const AboutUsImageFirst = styled.img`
   @media (max-width: 360px) {
     width: 100px;
     height: 150px;
-
   }
 `;
 
@@ -49,7 +48,30 @@ export const AboutUsImageSecond = styled.img`
     top: 90px;
     right: 55px;
   }
+`;
 
+export const MainTextAboutUsSpan = styled.span`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 97px;
+  line-height: 118px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  color: #001d3d;
+  margin: 0 20px 0 0;
+  
+
+  @media (max-width: 360px) {
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 `;
 
 export const MainTextAboutUs = styled.h1`
@@ -121,7 +143,7 @@ export const AboutUsButton = styled.button`
   }
 
   @media (max-width: 360px) {
-    display: none;  
+    display: none;
   }
 `;
 

@@ -8,6 +8,7 @@ import {
   AboutUsImageSecond,
   AboutUsText,
   MainTextAboutUs,
+  MainTextAboutUsSpan,
 } from './AboutUs.styled';
 import aboutUsImage from '../../Images/aboutUsImage.png';
 import aboutUsImageSecond from '../../Images/secondAboutUsImage.png';
@@ -16,7 +17,7 @@ import aboutUsImageSecond360 from '../../Images/secondAboutUsImage360.png';
 
 export const AboutUs = () => {
   return (
-    <AboutUsConteiner>
+    <AboutUsConteiner id="about">
       <AboutUsImageBlock>
         <picture>
           <source media="(max-width: 360px)" srcSet={aboutUsImageSecond360} />
@@ -28,7 +29,7 @@ export const AboutUs = () => {
         </picture>
       </AboutUsImageBlock>
       <AboutUsBlock>
-        <MainTextAboutUs>ПРО НАС</MainTextAboutUs>
+        <MainTextAboutUs><MainTextAboutUsSpan>ПРО</MainTextAboutUsSpan> НАС</MainTextAboutUs>
         <AboutUsText>
           Робимо тенти, тенти тентові. Робимо тенти, тенти тентові. Робимо
           тенти, тенти тентові. Робимо тенти, тенти тентові. Робимо тенти, тенти

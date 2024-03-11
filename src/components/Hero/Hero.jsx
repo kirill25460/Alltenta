@@ -17,6 +17,7 @@ import {
 import hero_img from '../../Images/hero_img.png';
 import hero_img360 from '../../Images/hero_img360.png';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 export const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -34,7 +35,7 @@ export const Hero = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <LeftHeroConatiner>
         <GreySpan>ПРОЕКТ</GreySpan>
         <BlackSpan>ВЕРАНДА</BlackSpan>
@@ -57,13 +58,15 @@ export const Hero = () => {
           />
         </picture>
         {isHovered && (
-          <HeroButton
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => ttry()}
-          >
-            Замовити <SmallArrow />
-          </HeroButton>
+          <Link to="order" smooth={true} duration={500} offset={-70}>
+            <HeroButton
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => ttry()}
+            >
+              Замовити <SmallArrow />
+            </HeroButton>
+          </Link>
         )}
       </RightHeroContainer>
     </HeroContainer>

@@ -20,6 +20,7 @@ import image5 from '../../Images/image5.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-scroll';
 
 export const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -60,7 +61,7 @@ export const Gallery = () => {
   };
 
   return (
-    <GalleryConteiner>
+    <GalleryConteiner id="gallery">
       <MainGalleryText>ГАЛЕРЕЯ / КАТАЛОГ</MainGalleryText>
       <GalleryText>
         Ше трошки тексту про тенти, про всілякі різні кольорові там, з різних
@@ -77,12 +78,14 @@ export const Gallery = () => {
                 onMouseLeave={mouseLeave}
               />
               {hoveredIndex === index && (
-                <ButtonSlider
-                  onMouseEnter={() => mouseEnter(index)}
-                  onMouseLeave={mouseLeave}
-                >
-                  Замовити <ArrowRightButton />
-                </ButtonSlider>
+                <Link to="order" smooth={true} duration={500} offset={-70}>
+                  <ButtonSlider
+                    onMouseEnter={() => mouseEnter(index)}
+                    onMouseLeave={mouseLeave}
+                  >
+                    Замовити <ArrowRightButton />
+                  </ButtonSlider>
+                </Link>
               )}
             </SliderConteiner>
           ))}

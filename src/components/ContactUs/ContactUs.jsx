@@ -17,7 +17,7 @@ import {
 
 export const ContactUs = () => {
   return (
-    <Container>
+    <Container id="order">
       <InfoWrap>
         <Text>Готові до замовлення або залишились запитання?</Text>
         <picture>

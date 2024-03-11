@@ -12,7 +12,7 @@ export const LeftConatiner = styled.div`
   height: 100px;
 
   @media (max-width: 360px) {
-    justify-content: center; 
+    justify-content: center;
   }
 `;
 
@@ -30,12 +30,13 @@ export const Navigation = styled.ul`
   padding: 0;
 
   @media (max-width: 360px) {
-    display: none; 
+    display: none;
   }
 `;
 
 export const NavItem = styled.li`
   list-style-type: none;
+  cursor: pointer;
 `;
 
 export const NavSpan = styled.span`
@@ -54,11 +55,17 @@ export const NavSpan = styled.span`
   }
 
   &:hover::after {
-    background-color: #FFC300; /* Желтый цвет подчеркивания при наведении */
+    background-color: #ffc300; /* Желтый цвет подчеркивания при наведении */
   }
 `;
 
 export const ImgLogo = styled.img`
+  width: 82px;
+  height: 30px;
+  cursor: pointer;
+`;
+
+export const LogoLink = styled.a`
   width: 82px;
   height: 30px;
 `;
