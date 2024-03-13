@@ -20,28 +20,62 @@ export const CompanyPerformance = () => {
         <CompanyPerformanceImage src={reliability} alt="reliability" />
         <CompanyPerformanceImage src={reliability2} alt="reliability2" />
         <CompanyPerformanceList>
-          <li><CompanyPerformanceText>Гарантія 24 міс.</CompanyPerformanceText></li>
-          <li><CompanyPerformanceText>Термін експлуатації – 7 років</CompanyPerformanceText></li>
-          <li><CompanyPerformanceText>Використання безпечних матеріалів затверджених СЕС</CompanyPerformanceText></li>
+          <li>
+            <CompanyPerformanceText>Гарантія 24 міс.</CompanyPerformanceText>
+          </li>
+          <li>
+            <CompanyPerformanceText>
+            Термін експлуатації – 7 років
+            </CompanyPerformanceText>
+          </li>
+          <li>
+            <CompanyPerformanceText>
+              Використання безпечних матеріалів затверджених СЕС
+            </CompanyPerformanceText>
+          </li>
         </CompanyPerformanceList>
-        
       </CompanyPerformanceBlock>
       <CompanyPerformanceBlock>
         <CompanyPerformanceMainText>Досвід</CompanyPerformanceMainText>
         <CompanyPerformanceImage src={experience} alt="experience" />
-        <CompanyPerformanceText>
-          Працюємо понад 12 років 12000 + виконаних замовлень 3000 +
-          змонтованих/встановлених виробів
-        </CompanyPerformanceText>
+        <CompanyPerformanceList>
+          <li>
+            <CompanyPerformanceText>
+            Працюємо понад 12 років
+            </CompanyPerformanceText>
+          </li>
+          <li>
+            <CompanyPerformanceText>
+            12000 + виконаних замовлень
+            </CompanyPerformanceText>
+          </li>
+          <li>
+            <CompanyPerformanceText>
+            3000 + змонтованих/встановлених виробів
+            </CompanyPerformanceText>
+          </li>
+        </CompanyPerformanceList>
       </CompanyPerformanceBlock>
       <CompanyPerformanceBlock>
         <CompanyPerformanceMainText>Лояльність</CompanyPerformanceMainText>
         <CompanyPerformanceImage src={loyalty} alt="loyalty" />
         <CompanyPerformanceImage src={loyalt1} alt="loyalt1" />
-        <CompanyPerformanceText>
-          Лояльні ціни без посередників Прозоре ціноутворення та система знижок
-          Індивідуальний підхід до клієнта
-        </CompanyPerformanceText>
+        <CompanyPerformanceList>
+          <li>
+            <CompanyPerformanceText>Лояльні ціни без посередників
+</CompanyPerformanceText>
+          </li>
+          <li>
+            <CompanyPerformanceText>
+            Прозоре ціноутворення та система знижок
+            </CompanyPerformanceText>
+          </li>
+          <li>
+            <CompanyPerformanceText>
+            Індивідуальний підхід до клієнта
+            </CompanyPerformanceText>
+          </li>
+        </CompanyPerformanceList>
       </CompanyPerformanceBlock>
     </CompanyPerformanceConteiner>
   );
