@@ -104,7 +104,6 @@ export const AboutUsText = styled.p`
   line-height: 18px;
 
   width: 480px;
-  height: 338px;
 
   color: #767676;
 

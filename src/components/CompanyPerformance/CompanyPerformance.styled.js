@@ -65,6 +65,5 @@ export const CompanyPerformanceImage = styled.img``;
 
 export const CompanyPerformanceList = styled.ul`
  list-style: none;
- text-align: center;
  padding:0;
 `;
