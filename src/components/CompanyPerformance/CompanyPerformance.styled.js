@@ -50,7 +50,7 @@ export const CompanyPerformanceText = styled.p`
   font-size: 15px;
   line-height: 18px;
   text-align: center;
-
+margin:0;
   color: #767676;
 
   @media (max-width: 360px) {
@@ -61,3 +61,10 @@ export const CompanyPerformanceText = styled.p`
 `;
 
 export const CompanyPerformanceImage = styled.img``;
+
+
+export const CompanyPerformanceList = styled.ul`
+ list-style: none;
+ text-align: center;
+ padding:0;
+`;

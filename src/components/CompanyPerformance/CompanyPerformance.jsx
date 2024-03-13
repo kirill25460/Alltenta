@@ -4,6 +4,7 @@ import {
   CompanyPerformanceImage,
   CompanyPerformanceMainText,
   CompanyPerformanceText,
+  CompanyPerformanceList,
 } from './CompanyPerformance.styled';
 import experience from '../../Images/experience.svg';
 import reliability from '../../Images/Reliability.svg';
@@ -18,15 +19,19 @@ export const CompanyPerformance = () => {
         <CompanyPerformanceMainText>Надійність</CompanyPerformanceMainText>
         <CompanyPerformanceImage src={reliability} alt="reliability" />
         <CompanyPerformanceImage src={reliability2} alt="reliability2" />
-        <CompanyPerformanceText>
-          Надійній ми Надійній ми Надійній ми Надійній ми Надійній ми
-        </CompanyPerformanceText>
+        <CompanyPerformanceList>
+          <li><CompanyPerformanceText>Гарантія 24 міс.</CompanyPerformanceText></li>
+          <li><CompanyPerformanceText>Термін експлуатації – 7 років</CompanyPerformanceText></li>
+          <li><CompanyPerformanceText>Використання безпечних матеріалів затверджених СЕС</CompanyPerformanceText></li>
+        </CompanyPerformanceList>
+        
       </CompanyPerformanceBlock>
       <CompanyPerformanceBlock>
         <CompanyPerformanceMainText>Досвід</CompanyPerformanceMainText>
         <CompanyPerformanceImage src={experience} alt="experience" />
         <CompanyPerformanceText>
-          Надійній ми Надійній ми Надійній ми Надійній ми Надійній ми
+          Працюємо понад 12 років 12000 + виконаних замовлень 3000 +
+          змонтованих/встановлених виробів
         </CompanyPerformanceText>
       </CompanyPerformanceBlock>
       <CompanyPerformanceBlock>
@@ -34,7 +39,8 @@ export const CompanyPerformance = () => {
         <CompanyPerformanceImage src={loyalty} alt="loyalty" />
         <CompanyPerformanceImage src={loyalt1} alt="loyalt1" />
         <CompanyPerformanceText>
-          Надійній ми Надійній ми Надійній ми Надійній ми Надійній ми
+          Лояльні ціни без посередників Прозоре ціноутворення та система знижок
+          Індивідуальний підхід до клієнта
         </CompanyPerformanceText>
       </CompanyPerformanceBlock>
     </CompanyPerformanceConteiner>
