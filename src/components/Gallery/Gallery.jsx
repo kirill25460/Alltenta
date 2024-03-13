@@ -63,10 +63,6 @@ export const Gallery = () => {
   return (
     <GalleryConteiner id="gallery">
       <MainGalleryText>ГАЛЕРЕЯ / КАТАЛОГ</MainGalleryText>
-      <GalleryText>
-        Ше трошки тексту про тенти, про всілякі різні кольорові там, з різних
-        матеріалів або різних типів і шо все воно є в нас.
-      </GalleryText>
       <GalleryBlockConteiner>
         <Slider ref={sliderRef} {...settings}>
           {images.map((image, index) => (
