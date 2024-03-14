@@ -9,7 +9,6 @@ import {
   GalleryBlockConteiner,
   GalleryConteiner,
   GalleryItemImage,
-  GalleryText,
   MainGalleryText,
   SliderConteiner,
 } from './Gallery.styled';
