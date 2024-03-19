@@ -28,7 +28,7 @@ export const AboutUsImageFirst = styled.img`
   right: 0;
   top: 0;
 
-  @media (max-width: 360px) {
+  @media (width <= 768px) {
     width: 100px;
     height: 150px;
   }
@@ -42,7 +42,7 @@ export const AboutUsImageSecond = styled.img`
   top: 290px;
   right: 300px;
 
-  @media (max-width: 360px) {
+  @media (width <= 768px) {
     width: 100px;
     height: 170px;
     top: 90px;
@@ -64,7 +64,7 @@ export const MainTextAboutUsSpan = styled.span`
   color: #001d3d;
   margin: 0 20px 0 0;
 
-  @media (max-width: 360px) {
+  @media (width <= 768px) {
     font-size: 48px;
     line-height: 59px;
     display: flex;
@@ -86,7 +86,7 @@ export const MainTextAboutUs = styled.h1`
   margin-bottom: 0%;
   color: #001d3d;
 
-  @media (max-width: 360px) {
+  @media (width <= 768px) {
     font-size: 48px;
     line-height: 59px;
     display: flex;
@@ -110,7 +110,7 @@ export const AboutUsText = styled.p`
 
   margin-bottom: 50px;
 
-  @media (max-width: 360px) {
+  @media (width <= 768px) {
     font-size: 10px;
     line-height: 12px;
     width: 149px;
@@ -142,7 +142,7 @@ export const AboutUsButton = styled.button`
     border: 1px solid #a2b9d0;
   }
 
-  @media (max-width: 360px) {
+  @media (width <= 768px) {
     display: none;
   }
 `;

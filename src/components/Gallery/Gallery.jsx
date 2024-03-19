@@ -44,14 +44,14 @@ export const Gallery = () => {
   };
 
   const settings = {
-    centerMode: true,
+    centerMode: false,
     infinite: true,
     slidesToShow: 4,
     speed: 500,
     arrows: false,
     responsive: [
       {
-        breakpoint: 360,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },

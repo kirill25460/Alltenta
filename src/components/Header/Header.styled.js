@@ -11,7 +11,7 @@ export const LeftConatiner = styled.div`
   width: 490px;
   height: 100px;
 
-  @media (width <= 360px) {
+  @media (width <= 768px) {
     justify-content: center;
   }
 `;
@@ -33,7 +33,7 @@ export const RightContainer = styled.div`
     margin-right: 10px;
   }
 
-  @media (width <= 360px) {
+  @media (width <= 768px) {
     display: none;
     margin-right: 0;
   }

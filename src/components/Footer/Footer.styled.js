@@ -12,10 +12,10 @@ export const ImgLogo = styled.img`
 `;
 
 export const Container = styled.div`
-display: flex;
+  display: flex;
   background-color: #001d3d;
   padding-top: 60px;
-  padding-bottom:60px;
+  padding-bottom: 60px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom:90px;
+    padding-bottom: 90px;
   }
 `;
 
@@ -36,28 +36,25 @@ export const FooterText = styled.h3`
   color: #ffffff;
   margin: 0;
   margin-bottom: 10px;
-  margin-top:50px;
-  @media(min-width:768px){
-    margin-top:0px;
+  margin-top: 50px;
+  @media (min-width: 768px) {
+    margin-top: 0px;
   }
 `;
 
-
 export const FooterSocText = styled.h3`
-display:none;
-@media(min-width:768px){
-
-  display:block;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 21px;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 28px;
-}
-
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 28px;
+  }
 `;
 
 export const FooterLink = styled.h4`
@@ -67,8 +64,6 @@ export const FooterLink = styled.h4`
   font-size: 10px;
   line-height: 12px;
   color: #ffffff;
-
-
 `;
 
 export const InstIcon = styled(RxInstagramLogo)`
@@ -78,8 +73,7 @@ export const InstIcon = styled(RxInstagramLogo)`
   margin-right: 15px;
   @media (min-width: 768px) {
     margin-right: 30px;
-
-  } 
+  }
 `;
 
 export const FaceBIcon = styled(RiFacebookLine)`
@@ -91,8 +85,7 @@ export const FaceBIcon = styled(RiFacebookLine)`
   border: 1px solid #fff;
   @media (min-width: 768px) {
     margin-right: 0px;
-
-  } 
+  }
 `;
 
 export const TelegramIcon = styled(LiaTelegramPlane)`
@@ -102,9 +95,8 @@ export const TelegramIcon = styled(LiaTelegramPlane)`
   margin-right: 15px;
   @media (min-width: 768px) {
     margin-right: 30px;
-margin-top:20px;
-  } 
-
+    margin-top: 20px;
+  }
 `;
 
 export const PhoneIcon = styled(LiaPhoneVolumeSolid)`
@@ -115,20 +107,19 @@ export const PhoneIcon = styled(LiaPhoneVolumeSolid)`
   border: 1px solid #fff;
   @media (min-width: 768px) {
     margin-right: 0px;
-    margin-top:20px;
-
-  } 
+    margin-top: 20px;
+  }
 `;
 
 export const WrapIcons = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  margin-top:30px;
+  margin-top: 30px;
   @media (min-width: 768px) {
     flex-wrap: wrap;
     width: 90px;
-    margin-top:0px;
-  } 
+    margin-top: 0px;
+  }
 `;
 
 export const StyledLink = styled.a`
@@ -142,37 +133,34 @@ export const StyledLink = styled.a`
   font-size: 10px;
   line-height: 300%;
   text-align: center;
-  
 `;
 
 export const PhonIcon = styled(FiPhone)`
-margin-right: 10px;
-width: 12px;
-height: 12px;
-
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
 `;
 
 export const ContactWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media(min-width:768px){
+  @media (min-width: 768px) {
     align-items: flex-start;
   }
 `;
 
 export const MailIcon = styled(CiMail)`
-margin-right: 10px;
-width: 12px;
-height: 12px;
-
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
 `;
 
 export const InfoWrap = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-@media(min-width:768px){
-  align-items: flex-start;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
 `;

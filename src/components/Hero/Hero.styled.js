@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   margin-bottom: 150px;
 
-  @media (max-width: 360px) {
+  @media (width < 768px) {
     flex-direction: column;
     align-items: center;
   }
@@ -20,8 +20,10 @@ export const LeftHeroConatiner = styled.div`
   width: 490px;
   height: 700px;
 
-  @media (max-width: 360px) {
+  @media (width < 768px) {
     height: 254px;
+
+    width: 0;
     margin-top: 30px;
   }
 `;
@@ -39,7 +41,7 @@ export const GreySpan = styled.span`
   margin-top: 40px;
   color: #767676;
 
-  @media (max-width: 360px) {
+  @media (width < 768px) {
     font-size: 59px;
     line-height: 42px;
     margin-top: 0;
@@ -59,7 +61,7 @@ export const BlackSpan = styled.span`
   margin-bottom: 50px;
   color: #001d3d;
 
-  @media (max-width: 360px) {
+  @media (width < 768px) {
     font-size: 47px;
     line-height: 42px;
 
@@ -99,7 +101,7 @@ export const ArrowHeroContainer = styled.div`
   justify-content: space-between;
   width: 130px;
 
-  @media (max-width: 360px) {
+  @media (width < 768px) {
     display: none;
   }
 `;
