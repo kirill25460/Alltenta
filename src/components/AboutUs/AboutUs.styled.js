@@ -63,7 +63,6 @@ export const MainTextAboutUsSpan = styled.span`
   margin-bottom: 0%;
   color: #001d3d;
   margin: 0 20px 0 0;
-  
 
   @media (max-width: 360px) {
     font-size: 48px;
@@ -102,6 +101,8 @@ export const AboutUsText = styled.p`
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
+  width: 100%;
+  text-align: justify;
 
   width: 480px;
 
