@@ -5,6 +5,8 @@ import {
   CompanyPerformanceMainText,
   CompanyPerformanceText,
   CompanyPerformanceList,
+  CompanyPerformanceImageConteiner,
+  CompanyPerformanceReliabilityImage,
 } from './CompanyPerformance.styled';
 import experience from '../../Images/experience.svg';
 import reliability from '../../Images/Reliability.svg';
@@ -17,15 +19,18 @@ export const CompanyPerformance = () => {
     <CompanyPerformanceConteiner>
       <CompanyPerformanceBlock>
         <CompanyPerformanceMainText>Надійність</CompanyPerformanceMainText>
-        <CompanyPerformanceImage src={reliability} alt="reliability" />
-        <CompanyPerformanceImage src={reliability2} alt="reliability2" />
+        <CompanyPerformanceImageConteiner>
+          <CompanyPerformanceReliabilityImage src={reliability} alt="reliability" />
+          <CompanyPerformanceReliabilityImage src={reliability2} alt="reliability2" />
+        </CompanyPerformanceImageConteiner>
+
         <CompanyPerformanceList>
           <li>
             <CompanyPerformanceText>Гарантія 24 міс.</CompanyPerformanceText>
           </li>
           <li>
             <CompanyPerformanceText>
-            Термін експлуатації – 7 років
+              Термін експлуатації – 7 років
             </CompanyPerformanceText>
           </li>
           <li>
@@ -41,17 +46,17 @@ export const CompanyPerformance = () => {
         <CompanyPerformanceList>
           <li>
             <CompanyPerformanceText>
-            Працюємо понад 12 років
+              Працюємо понад 12 років
             </CompanyPerformanceText>
           </li>
           <li>
             <CompanyPerformanceText>
-            12000 + виконаних замовлень
+              12000 + виконаних замовлень
             </CompanyPerformanceText>
           </li>
           <li>
             <CompanyPerformanceText>
-            3000 + змонтованих/встановлених виробів
+              3000 + змонтованих/встановлених виробів
             </CompanyPerformanceText>
           </li>
         </CompanyPerformanceList>
@@ -62,17 +67,18 @@ export const CompanyPerformance = () => {
         <CompanyPerformanceImage src={loyalt1} alt="loyalt1" />
         <CompanyPerformanceList>
           <li>
-            <CompanyPerformanceText>Лояльні ціни без посередників
-</CompanyPerformanceText>
-          </li>
-          <li>
             <CompanyPerformanceText>
-            Прозоре ціноутворення та система знижок
+              Лояльні ціни без посередників
             </CompanyPerformanceText>
           </li>
           <li>
             <CompanyPerformanceText>
-            Індивідуальний підхід до клієнта
+              Прозоре ціноутворення та система знижок
+            </CompanyPerformanceText>
+          </li>
+          <li>
+            <CompanyPerformanceText>
+              Індивідуальний підхід до клієнта
             </CompanyPerformanceText>
           </li>
         </CompanyPerformanceList>

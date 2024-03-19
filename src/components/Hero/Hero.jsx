@@ -48,7 +48,7 @@ export const Hero = () => {
       </LeftHeroConatiner>
       <RightHeroContainer>
         <picture>
-          <source media="(max-width: 360px)" srcSet={hero_img360} />
+          <source media="(max-width: 768px)" srcSet={hero_img360} />
           <HeroImg
             src={hero_img}
             onMouseEnter={handleMouseEnter}

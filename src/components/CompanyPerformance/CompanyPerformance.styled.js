@@ -6,7 +6,8 @@ export const CompanyPerformanceConteiner = styled.div`
   justify-content: center;
   margin-bottom: 150px;
 
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
+    margin-top: 50px;
     flex-direction: column;
     margin-bottom: 100px;
   }
@@ -19,7 +20,7 @@ export const CompanyPerformanceBlock = styled.div`
 
   &:not(:last-child) {
     margin-right: 150px;
-    @media (max-width: 360px) {
+    @media (max-width: 768px) {
       margin-right: 0;
       margin-bottom: 30px;
     }
@@ -35,7 +36,7 @@ export const CompanyPerformanceMainText = styled.h1`
 
   color: #232529;
 
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -50,10 +51,10 @@ export const CompanyPerformanceText = styled.p`
   font-size: 15px;
   line-height: 18px;
   text-align: center;
-margin:0;
+  margin: 0;
   color: #767676;
 
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     margin-top: 25px;
     font-size: 10px;
     line-height: 12px;
@@ -61,9 +62,25 @@ margin:0;
 `;
 
 export const CompanyPerformanceImage = styled.img``;
+export const CompanyPerformanceReliabilityImage = styled.img`
+  position: absolute;
 
+
+  &:not(:last-child) {
+    margin-left: -53px;
+    margin-top: 8px;
+    z-index: 1;
+  }
+`;
+
+export const CompanyPerformanceImageConteiner = styled.div`
+  position: relative;
+  width: 180px;
+  height: 71px;
+  margin-bottom: 44px;
+`;
 
 export const CompanyPerformanceList = styled.ul`
- list-style: none;
- padding:0;
+  list-style: none;
+  padding: 0;
 `;

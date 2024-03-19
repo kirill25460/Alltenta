@@ -4,6 +4,7 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const GalleryConteiner = styled.div`
   text-align: center;
+  overflow: hidden;
 `;
 
 export const ButtonConteiner = styled.div`
@@ -26,7 +27,7 @@ export const MainGalleryText = styled.h1`
 
   color: #001d3d;
 
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     font-size: 48px;
     line-height: 44px;
   }
@@ -43,7 +44,7 @@ export const GalleryText = styled.p`
   display: inline-block;
   color: #767676;
 
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -62,6 +63,7 @@ export const GalleryItemImage = styled.img`
 
 export const SliderConteiner = styled.div`
   position: relative;
+  width: fit-content;
 `;
 
 export const ArrowLeft = styled(IoIosArrowRoundBack)`
@@ -104,6 +106,7 @@ export const ButtonSlider = styled.button`
   transform: translateX(-50%);
 
   color: #232629;
+  box-shadow: none;
 
   border: 0;
 `;
