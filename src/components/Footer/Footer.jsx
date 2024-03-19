@@ -29,23 +29,24 @@ export const Footer = () => {
       </InfoWrap>
       <ContactWrap>
         <FooterText>Контакти</FooterText>
-        <StyledLink href="tel:+380 648 044 44"><PhonIcon/>+380 648 044 44</StyledLink>
-        <StyledLink href="mailto:alltenta@gmail.com"><MailIcon/>alltenta@gmail.com</StyledLink>
+        <StyledLink href="tel:+097 033-29-29"><PhonIcon/>+097 033-29-29</StyledLink>
+        <StyledLink href="tel:+093 033-29-29"><PhonIcon/>+093 033-29-29</StyledLink>
+        <StyledLink href="mailto:manager@alltenta.com"><MailIcon/>manager@alltenta.com</StyledLink>
       </ContactWrap>
       <div>
         <FooterSocText>Соціальні мережі</FooterSocText>
         <WrapIcons>
           {' '}
-          <StyledLink href="mailto:alltenta@gmail.com">
+          <StyledLink href="https://www.instagram.com/">
             <InstIcon />
           </StyledLink>
-          <StyledLink href="mailto:alltenta@gmail.com">
+          <StyledLink href="https://www.facebook.com">
             <FaceBIcon />
           </StyledLink>
-          <StyledLink href="mailto:alltenta@gmail.com">
+          <StyledLink href="https://web.telegram.org/">
             <TelegramIcon />
           </StyledLink>
-          <StyledLink href="mailto:alltenta@gmail.com">
+          <StyledLink href="https://www.viber.com/">
             <PhoneIcon />
           </StyledLink>
         </WrapIcons>
