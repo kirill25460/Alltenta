@@ -64,6 +64,23 @@ export const FooterLink = styled.h4`
   font-size: 10px;
   line-height: 12px;
   color: #ffffff;
+  cursor:pointer;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Расположение подчеркивания ниже текста */
+    width: 100%;
+    height: 2px; /* Высота подчеркивания */
+    background-color: transparent; /* Прозрачный цвет подчеркивания */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+  }
+
+  &:hover::after {
+    background-color: #ffc300; /* Желтый цвет подчеркивания при наведении */
+  }
 `;
 
 export const InstIcon = styled(RxInstagramLogo)`
@@ -71,6 +88,10 @@ export const InstIcon = styled(RxInstagramLogo)`
   height: 20px;
   color: #fff;
   margin-right: 15px;
+  transition: color 0.3s;
+  &:hover {
+    color: #ffc300; 
+  }
   @media (min-width: 768px) {
     margin-right: 30px;
   }
@@ -83,6 +104,11 @@ export const FaceBIcon = styled(RiFacebookLine)`
   border-radius: 10%;
   margin-right: 15px;
   border: 1px solid #fff;
+  transition: color 0.3s;
+  &:hover {
+    color: #ffc300; 
+    border: 1px solid #ffc300;
+  }
   @media (min-width: 768px) {
     margin-right: 0px;
   }
@@ -93,6 +119,10 @@ export const TelegramIcon = styled(LiaTelegramPlane)`
   height: 20px;
   color: #fff;
   margin-right: 15px;
+  transition: color 0.3s;
+  &:hover {
+    color: #ffc300; 
+  }
   @media (min-width: 768px) {
     margin-right: 30px;
     margin-top: 20px;
@@ -105,6 +135,11 @@ export const PhoneIcon = styled(LiaPhoneVolumeSolid)`
   color: #fff;
   border-radius: 10%;
   border: 1px solid #fff;
+  transition: color 0.3s;
+  &:hover {
+    color: #ffc300; 
+    border: 1px solid #ffc300;
+  }
   @media (min-width: 768px) {
     margin-right: 0px;
     margin-top: 20px;
@@ -133,6 +168,7 @@ export const StyledLink = styled.a`
   font-size: 10px;
   line-height: 300%;
   text-align: center;
+  
 `;
 
 export const PhonIcon = styled(FiPhone)`

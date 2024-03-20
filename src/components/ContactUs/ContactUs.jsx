@@ -27,24 +27,24 @@ export const ContactUs = () => {
         <div>
           <ContactWrap>
             {' '}
-            <StyledLink href="tel:+380 648 044 44">
+            <StyledLink href="tel:+38097 033 29 29">
               <PhonIcon />
-              +380 648 044 44
+              +097 033-29-29
             </StyledLink>
-            <StyledLink href="mailto:alltenta@gmail.com">
+            <StyledLink href="mailto:manager@alltenta.com">
               <MailIcon />
-              alltenta@gmail.com
+              manager@alltenta.com
             </StyledLink>
           </ContactWrap>
           <ContactWrap>
             {' '}
-            <StyledLink href="tel:+380 648 044 44">
+            <StyledLink href="tel:+38093 033 29 29">
               <PhonIcon />
-              +380 648 044 44
+              +093 033-29-29
             </StyledLink>
-            <StyledLink href="mailto:alltenta@gmail.com">
+            <StyledLink href="mailto:manager@alltenta.com">
               <MailIcon />
-              alltenta@gmail.com
+              manager@alltenta.com
             </StyledLink>
           </ContactWrap>
         </div>
