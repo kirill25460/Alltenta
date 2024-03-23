@@ -25,6 +25,16 @@ export const CompanyPerformanceBlock = styled.div`
       margin-bottom: 30px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+`;
+
+export const CompanyPerformanceImageBlock = styled.div`
+  width: 213px;
 `;
 
 export const CompanyPerformanceMainText = styled.h1`
@@ -64,7 +74,6 @@ export const CompanyPerformanceText = styled.p`
 export const CompanyPerformanceImage = styled.img``;
 export const CompanyPerformanceReliabilityImage = styled.img`
   position: absolute;
-
 
   &:not(:last-child) {
     margin-left: -53px;
