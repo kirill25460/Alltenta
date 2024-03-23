@@ -8,11 +8,18 @@ export const HeaderContainer = styled.header`
 export const LeftConatiner = styled.div`
   display: flex;
   align-items: center;
-  width: 490px;
-  height: 100px;
+  justify-content: center;
+  margin-right: 290px; 
+  margin-top: 38px;
+  margin-top: 0;
 
-  @media (width <= 768px) {
-    justify-content: center;
+  @media (max-width: 768px) {
+    margin-right: 0; 
+    margin-top: 38px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+    margin-right: 107px; 
   }
 `;
 
@@ -42,13 +49,17 @@ export const RightContainer = styled.div`
 export const Navigation = styled.ul`
   display: flex;
   justify-content: space-between;
-  width: 650px;
   padding: 0;
 `;
 
 export const NavItem = styled.li`
   list-style-type: none;
   cursor: pointer;
+  margin-right: 130px;
+
+  @media (width <= 1200px) {
+    margin-right: 50px;
+  }
 `;
 
 export const NavSpan = styled.span`

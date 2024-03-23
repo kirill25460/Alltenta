@@ -14,6 +14,7 @@ import {
 } from './Hero.styled';
 import hero_img from '../../Images/hero_img.png';
 import hero_img360 from '../../Images/hero_img360.png';
+import hero_img768 from '../../Images/hero_img768.png';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 
@@ -49,6 +50,7 @@ export const Hero = () => {
       <RightHeroContainer>
         <picture>
           <source media="(max-width: 768px)" srcSet={hero_img360} />
+          <source media="(max-width: 1200px)" srcSet={hero_img768} />
           <HeroImg
             src={hero_img}
             onMouseEnter={handleMouseEnter}

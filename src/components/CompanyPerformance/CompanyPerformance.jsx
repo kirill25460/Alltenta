@@ -7,6 +7,7 @@ import {
   CompanyPerformanceList,
   CompanyPerformanceImageConteiner,
   CompanyPerformanceReliabilityImage,
+  CompanyPerformanceImageBlock,
 } from './CompanyPerformance.styled';
 import experience from '../../Images/experience.svg';
 import reliability from '../../Images/Reliability.svg';
@@ -20,8 +21,14 @@ export const CompanyPerformance = () => {
       <CompanyPerformanceBlock>
         <CompanyPerformanceMainText>Надійність</CompanyPerformanceMainText>
         <CompanyPerformanceImageConteiner>
-          <CompanyPerformanceReliabilityImage src={reliability} alt="reliability" />
-          <CompanyPerformanceReliabilityImage src={reliability2} alt="reliability2" />
+          <CompanyPerformanceReliabilityImage
+            src={reliability}
+            alt="reliability"
+          />
+          <CompanyPerformanceReliabilityImage
+            src={reliability2}
+            alt="reliability2"
+          />
         </CompanyPerformanceImageConteiner>
 
         <CompanyPerformanceList>
@@ -42,7 +49,9 @@ export const CompanyPerformance = () => {
       </CompanyPerformanceBlock>
       <CompanyPerformanceBlock>
         <CompanyPerformanceMainText>Досвід</CompanyPerformanceMainText>
-        <CompanyPerformanceImage src={experience} alt="experience" />
+        <CompanyPerformanceImageBlock>
+          <CompanyPerformanceImage src={experience} alt="experience" />
+        </CompanyPerformanceImageBlock>
         <CompanyPerformanceList>
           <li>
             <CompanyPerformanceText>
@@ -63,8 +72,10 @@ export const CompanyPerformance = () => {
       </CompanyPerformanceBlock>
       <CompanyPerformanceBlock>
         <CompanyPerformanceMainText>Лояльність</CompanyPerformanceMainText>
-        <CompanyPerformanceImage src={loyalty} alt="loyalty" />
-        <CompanyPerformanceImage src={loyalt1} alt="loyalt1" />
+        <CompanyPerformanceImageBlock>
+          <CompanyPerformanceImage src={loyalty} alt="loyalty" />
+          <CompanyPerformanceImage src={loyalt1} alt="loyalt1" />
+        </CompanyPerformanceImageBlock>
         <CompanyPerformanceList>
           <li>
             <CompanyPerformanceText>
