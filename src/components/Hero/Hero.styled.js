@@ -100,6 +100,21 @@ export const HeroImg = styled.img`
   height: 700px;
   position: relative;
   display: inline-block;
+
+  @media (width <= 768px) {
+    width: 389px;
+    height: 460px;  
+  }
+
+  @media (width >= 768px) and (width <= 1200px) {
+    width: 389px;
+    height: 460px;  
+  }
+
+  @media (width <= 768px) {
+    width: 300px;
+    height: 324px;  
+  }
 `;
 
 export const HeroButton = styled.button`

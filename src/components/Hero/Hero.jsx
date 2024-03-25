@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import {
   ArrowBox,
   ArrowHeroContainer,
@@ -16,11 +17,37 @@ import {
 import hero_img from '../../Images/hero_img.png';
 import hero_img360 from '../../Images/hero_img360.png';
 import hero_img768 from '../../Images/hero_img768.png';
-import { useState } from 'react';
+import hero_img2 from '../../Images/image2.png';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [hero_img, hero_img360, hero_img768, hero_img2];
+  const [imageSrc, setImageSrc] = useState(images[currentImage]);
+
+  useEffect(() => {
+    setImageSrc(images[currentImage]);
+  }, [currentImage, images]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Определение ширины окна просмотра
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 768) {
+        setCurrentImage(1); // Мобильные устройства
+      } else if (screenWidth <= 1200) {
+        setCurrentImage(2); // Планшеты
+      } else {
+        setCurrentImage(0); // Десктопы
+      }
+    };
+
+    handleResize(); // Установка начальных значений
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -30,8 +57,20 @@ export const Hero = () => {
     setIsHovered(false);
   };
 
-  const ttry = () => {
-    console.log('fdsf');
+  const handleLeftArrowClick = () => {
+    setCurrentImage(prevIndex =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleRightArrowClick = () => {
+    setCurrentImage(prevIndex =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handleButtonClick = () => {
+    // Логика для кнопки "Замовити"
   };
 
   return (
@@ -40,20 +79,20 @@ export const Hero = () => {
         <GreySpan>ПРОЕКТ</GreySpan>
         <BlackSpan>ВЕРАНДА</BlackSpan>
         <ArrowHeroContainer>
-          <ArrowBox>
+          <ArrowBox onClick={handleLeftArrowClick}>
             <ArrowLeft />
           </ArrowBox>
-          <ArrowBox>
+          <ArrowBox onClick={handleRightArrowClick}>
             <ArrowRight />
           </ArrowBox>
         </ArrowHeroContainer>
       </LeftHeroConatiner>
       <RightHeroContainer>
         <picture>
-          <source media="(max-width: 768px)" srcSet={hero_img360} />
-          <source media="(max-width: 1200px)" srcSet={hero_img768} />
+          <source media="(max-width: 768px)" srcSet={hero_img} />
+          <source media="(max-width: 1200px)" srcSet={hero_img360} />
           <HeroImg
-            src={hero_img}
+            src={imageSrc}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
@@ -63,7 +102,7 @@ export const Hero = () => {
             <HeroButton
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              onClick={() => ttry()}
+              onClick={handleButtonClick}
             >
               Замовити <SmallArrow />
             </HeroButton>
@@ -71,10 +110,10 @@ export const Hero = () => {
         )}
       </RightHeroContainer>
       <ArrowHeroContainerMobile>
-        <ArrowBox>
+        <ArrowBox onClick={handleLeftArrowClick}>
           <ArrowLeft />
         </ArrowBox>
-        <ArrowBox>
+        <ArrowBox onClick={handleRightArrowClick}>
           <ArrowRight />
         </ArrowBox>
       </ArrowHeroContainerMobile>
