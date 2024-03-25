@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
@@ -35,19 +35,28 @@ export const StyledInput = styled.input`
   @media (min-width: 768px) {
     width: 440px;
   }
+
+  @media (width >= 768px) and (width <= 1200px) {
+    width: 293px;
+  }
 `;
 
 export const ContainerForm = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top:60px;
- 
+  margin-top: 60px;
+
   justify-content: center;
   align-items: flex-end;
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     position: relative;
-    margin-top:0;
+    margin-top: 0;
     margin-left: 100px;
+  }
+
+  @media (width >= 768px) and (width <= 1200px) {
+    margin-left: 18px;
+    margin-top: 85px;
   }
 `;
 
@@ -68,10 +77,14 @@ export const StyledMessage = styled.textarea`
   @media (min-width: 768px) {
     width: 440px;
   }
+
+  @media (width >= 768px) and (width <= 1200px) {
+    width: 293px;
+  }
 `;
 
 export const ButtonForm = styled.button`
-  margin-top:10px;
+  margin-top: 10px;
   width: 90px;
   height: 30px;
   font-family: 'Montserrat';
@@ -89,46 +102,52 @@ export const ButtonForm = styled.button`
   cursor: pointer;
 
   @media (min-width: 768px) {
-    margin-top:0px;
+    margin-top: 0px;
     position: absolute;
-    left: 335px;
-    bottom: 15px;
+    left: 0px;
+    bottom: -40px;
+
+    padding: 15px 146px;
   }
 `;
 
 export const Text = styled.h3`
-width:300px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 27px;
-display: flex;
-align-items: center;
-text-align: center;
+  width: 300px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
 
-color: #232529;
-
+  color: #232529;
 
   @media (min-width: 768px) {
     width: 500px;
     font-weight: 500;
-  font-size: 36px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  margin: 0 0 25px 0px;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 0 25px 0px;
+  }
 
+  @media (width >= 768px) and (width <= 1200px) {
+    line-height: 30px;
+    font-size: 25px;
+    text-align: left;
   }
 `;
 
 export const ContactUsImg = styled.img`
-  
   height: 373px;
   width: 300px;
 
   @media (min-width: 768px) {
     width: 500px;
+  }
+
+  @media (width >= 768px) and (width <= 1200px) {
+    width: 343px;
+    height: 339px;
   }
 `;
 
@@ -142,7 +161,7 @@ export const StyledLink = styled.a`
     margin-right: 50px;
   }
 
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -151,34 +170,35 @@ export const StyledLink = styled.a`
   }
 `;
 
+
 export const MailIcon = styled(CiMail)`
   width: 12px;
   height: 12px;
   margin-right: 10px;
-
-
 `;
 
 export const PhonIcon = styled(FiPhone)`
   width: 12px;
   height: 12px;
   margin-right: 10px;
-
 `;
 
 export const ContactWrap = styled.div`
   display: flex;
   margin-top: 30px;
 
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     margin-bottom: 30px;
   }
 `;
+
 export const InfoWrap = styled.div`
-display:flex;
-flex-direction: column;
-align-items: center;
-@media(min-width:768px){
-  align-items: normal;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (width >= 768px) and (width <= 1200px) {
+    align-items: baseline;
+    width: 373px;
+  }
 `;

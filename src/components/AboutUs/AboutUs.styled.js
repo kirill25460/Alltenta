@@ -9,6 +9,10 @@ export const AboutUsConteiner = styled.div`
     margin-top: 150px;
     margin-bottom: 200px;
   }
+
+  @media (width >= 769px) and (width <= 1200px) {
+    margin-bottom: 80px;
+  }
 `;
 
 export const AboutUsConteinerItem = styled.div`
@@ -27,9 +31,15 @@ export const AboutUsImageBlock = styled.div`
     width: 153px;
     height: 385px;
   }
+  @media (width >= 769px) and (width <= 1200px) {
+    width: 340px;
+    height: 660px;
+  }
 `;
 
-export const AboutUsBlock = styled.div``;
+export const AboutUsBlock = styled.div`
+  padding-right: 40px;
+`;
 
 export const AboutUsImageFirst = styled.img`
   width: 372px;
@@ -43,6 +53,13 @@ export const AboutUsImageFirst = styled.img`
     width: 120px;
     height: 206px;
     top: -20px;
+  }
+
+  @media (width >= 769px) and (width <= 1200px) {
+    width: 300px;
+    height: 150px;
+    top: -30px;
+    right: -138px;
   }
 `;
 
@@ -59,6 +76,13 @@ export const AboutUsImageSecond = styled.img`
     height: 205px;
     top: 150px;
     right: 29px;
+  }
+
+  @media (width >= 769px) and (width <= 1200px) {
+    width: 200px;
+    height: 570px;
+    top: 34px;
+    right: 30px;
   }
 `;
 
@@ -78,6 +102,13 @@ export const MainTextAboutUsSpan = styled.span`
 
   @media (width <= 768px) {
     display: none;
+  }
+
+  @media (width >= 769px) and (width <= 1200px) {
+    font-size: 80px;
+    line-height: 85.89%;
+    width: 260px;
+    display: flex;
   }
 `;
 
@@ -109,6 +140,16 @@ export const MainTextAboutUs = styled.h1`
 
   @media (width <= 768px) {
     display: none;
+  }
+
+  @media (width >= 769px) and (width <= 1200px) {
+    font-size: 110px;
+    line-height: 85.89%;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 160px;
   }
 `;
 
@@ -150,6 +191,13 @@ export const AboutUsText = styled.p`
     width: 196px;
     height: 368px;
   }
+
+  @media (width >= 769px) and (width <= 1200px) {
+    font-size: 14px;
+    line-height: 17px;
+    width: 424px;
+    height: 490px;
+  }
 `;
 
 export const AboutUsButton = styled.button`
@@ -177,6 +225,10 @@ export const AboutUsButton = styled.button`
   }
 
   @media (width <= 768px) {
+    display: none;
+  }
+
+  @media (width >= 769px) and (width <= 1200px) {
     display: none;
   }
 `;

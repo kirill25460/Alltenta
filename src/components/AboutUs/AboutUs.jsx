@@ -16,10 +16,10 @@ import {
 import aboutUsImage from '../../Images/aboutUsImage.png';
 import aboutUsImageSecond from '../../Images/secondAboutUsImage.png';
 import aboutUsImage360 from '../../Images/aboutUsImage360.png';
-// import aboutUsImage768 from '../../Images/aboutUsImage768.png';
+import aboutUsImage768 from '../../Images/aboutUsImage768.png';
 import aboutUsImageSecond360 from '../../Images/secondAboutUsImage360.png';
 import { Link } from 'react-scroll';
-// import aboutUsImageSecond768 from '../../Images/secondAboutUsImage768.png';
+import aboutUsImageSecond768 from '../../Images/secondAboutUsImage768.png';
 
 export const AboutUs = () => {
   return (
@@ -31,10 +31,12 @@ export const AboutUs = () => {
         <AboutUsImageBlock>
           <picture>
             <source media="(max-width: 768px)" srcSet={aboutUsImageSecond360} />
+            <source media="(min-width: 769px) and (max-width: 1200px)" srcSet={aboutUsImageSecond768} />
             <AboutUsImageSecond src={aboutUsImageSecond} alt="house" />
           </picture>
           <picture>
             <source media="(max-width: 768px)" srcSet={aboutUsImage360} />
+            <source media="(min-width: 769px) and (max-width: 1200px)" srcSet={aboutUsImage768} />
             <AboutUsImageFirst src={aboutUsImage} alt="house" />
           </picture>
         </AboutUsImageBlock>

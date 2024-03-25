@@ -1,5 +1,6 @@
 import ContactUsPhoto from '../../Images/Rectangle 26.png';
 import ContactUs360 from '../../Images/ContactUs360.png';
+import ContactUs768 from '../../Images/ContactUs768.png';
 import {
   Container,
   StyledInput,
@@ -22,6 +23,7 @@ export const ContactUs = () => {
         <Text>Готові до замовлення або залишились запитання?</Text>
         <picture>
           <source media="(max-width:768px)" srcSet={ContactUs360} />
+          <source media="(min-width: 769px) and (max-width: 1200px)" srcSet={ContactUs768} />
           <ContactUsImg src={ContactUsPhoto} alt="p" />
         </picture>  
         <div>
