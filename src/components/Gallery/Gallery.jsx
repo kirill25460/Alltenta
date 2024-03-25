@@ -11,7 +11,7 @@ import {
   GalleryItemImage,
   MainGalleryText,
   SliderConteiner,
-  TextActiveButton,
+  // TextActiveButton,
 } from './Gallery.styled';
 import image2 from '../../Images/image2.png';
 import image3 from '../../Images/image3.png';
