@@ -1,6 +1,7 @@
 import {
   ArrowBox,
   ArrowHeroContainer,
+  ArrowHeroContainerMobile,
   ArrowLeft,
   ArrowRight,
   BlackSpan,
@@ -69,6 +70,14 @@ export const Hero = () => {
           </Link>
         )}
       </RightHeroContainer>
+      <ArrowHeroContainerMobile>
+        <ArrowBox>
+          <ArrowLeft />
+        </ArrowBox>
+        <ArrowBox>
+          <ArrowRight />
+        </ArrowBox>
+      </ArrowHeroContainerMobile>
     </HeroContainer>
   );
 };

@@ -49,6 +49,26 @@ export const GalleryText = styled.p`
   }
 `;
 
+export const TextActiveButton = styled.p`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 66px;
+
+  position: absolute;
+
+  color: #ffffff;
+
+  top: 86px;
+  left: 50px;
+
+  @media (max-width: 768px) {
+    top: 86px;
+    left: 50px;
+  }
+`;
+
 export const GalleryBlockConteiner = styled.div``;
 
 export const GalleryItemImage = styled.img`

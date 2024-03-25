@@ -11,6 +11,7 @@ import {
   GalleryItemImage,
   MainGalleryText,
   SliderConteiner,
+  TextActiveButton,
 } from './Gallery.styled';
 import image2 from '../../Images/image2.png';
 import image3 from '../../Images/image3.png';
@@ -86,6 +87,7 @@ export const Gallery = () => {
               />
               {hoveredIndex === index && (
                 <Link to="order" smooth={true} duration={500} offset={-70}>
+                  {/* <TextActiveButton>Автотент</TextActiveButton> */}
                   <ButtonSlider
                     onMouseEnter={() => mouseEnter(index)}
                     onMouseLeave={mouseLeave}
