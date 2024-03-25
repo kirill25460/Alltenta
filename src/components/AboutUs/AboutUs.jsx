@@ -16,9 +16,9 @@ import {
 import aboutUsImage from '../../Images/aboutUsImage.png';
 import aboutUsImageSecond from '../../Images/secondAboutUsImage.png';
 import aboutUsImage360 from '../../Images/aboutUsImage360.png';
-import aboutUsImage768 from '../../Images/aboutUsImage768.png';
+// import aboutUsImage768 from '../../Images/aboutUsImage768.png';
 import aboutUsImageSecond360 from '../../Images/secondAboutUsImage360.png';
-import aboutUsImageSecond768 from '../../Images/secondAboutUsImage768.png';
+// import aboutUsImageSecond768 from '../../Images/secondAboutUsImage768.png';
 
 export const AboutUs = () => {
   return (
