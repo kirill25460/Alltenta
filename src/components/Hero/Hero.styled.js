@@ -124,6 +124,20 @@ export const ArrowHeroContainer = styled.div`
   }
 `;
 
+export const ArrowHeroContainerMobile = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 130px;
+
+  margin-top: 30px;
+  padding-right: 165px;
+
+  @media (width >= 768px) {
+    display: none;
+  }
+`;
+
 export const HeroSource = styled.source``;
 
 export const ArrowBox = styled.div`

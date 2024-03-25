@@ -2,20 +2,31 @@ import styled from 'styled-components';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const AboutUsConteiner = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
   margin-top: 150px;
   margin-bottom: 130px;
-`;
-export const AboutUsImageBlock = styled.div`
-  margin-right: 60px;
 
+  @media (width <= 768px) {
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+`;
+
+export const AboutUsConteinerItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const AboutUsImageBlock = styled.div`
   width: 611px;
   height: 600px;
 
   position: relative;
+  @media (width <= 768px) {
+    margin-right: 0;
+    width: 153px;
+    height: 385px;
+  }
 `;
 
 export const AboutUsBlock = styled.div``;
@@ -29,8 +40,9 @@ export const AboutUsImageFirst = styled.img`
   top: 0;
 
   @media (width <= 768px) {
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 206px;
+    top: -20px;
   }
 `;
 
@@ -43,10 +55,10 @@ export const AboutUsImageSecond = styled.img`
   right: 300px;
 
   @media (width <= 768px) {
-    width: 100px;
-    height: 170px;
-    top: 90px;
-    right: 55px;
+    width: 123px;
+    height: 205px;
+    top: 150px;
+    right: 29px;
   }
 `;
 
@@ -65,11 +77,20 @@ export const MainTextAboutUsSpan = styled.span`
   margin: 0 20px 0 0;
 
   @media (width <= 768px) {
-    font-size: 48px;
-    line-height: 59px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: none;
+  }
+`;
+
+export const MainTextAboutUsSpanMobile = styled.span`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  color: #001d3d;
+  font-size: 48px;
+  line-height: 59px;
+
+  @media (width >= 768px) {
+    display: none;
   }
 `;
 
@@ -87,11 +108,24 @@ export const MainTextAboutUs = styled.h1`
   color: #001d3d;
 
   @media (width <= 768px) {
-    font-size: 48px;
-    line-height: 59px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: none;
+  }
+`;
+
+export const MainTextAboutUsMobile = styled.h1`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  color: #001d3d;
+  font-size: 48px;
+  line-height: 59px;
+  padding-left: 110px;
+
+  @media (width >= 768px) {
+    display: none;
   }
 `;
 
@@ -113,8 +147,8 @@ export const AboutUsText = styled.p`
   @media (width <= 768px) {
     font-size: 10px;
     line-height: 12px;
-    width: 149px;
-    height: 251px;
+    width: 196px;
+    height: 368px;
   }
 `;
 
