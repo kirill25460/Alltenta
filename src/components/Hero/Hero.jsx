@@ -88,15 +88,11 @@ export const Hero = () => {
         </ArrowHeroContainer>
       </LeftHeroConatiner>
       <RightHeroContainer>
-        <picture>
-          <source media="(max-width: 768px)" srcSet={hero_img} />
-          <source media="(max-width: 1200px)" srcSet={hero_img360} />
           <HeroImg
             src={imageSrc}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
-        </picture>
         {isHovered && (
           <Link to="order" smooth={true} duration={500} offset={-70}>
             <HeroButton
