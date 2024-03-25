@@ -96,6 +96,8 @@ export const BlackSpan = styled.span`
 `;
 
 export const HeroImg = styled.img`
+  width: 650px;
+  height: 700px;
   position: relative;
   display: inline-block;
 `;
