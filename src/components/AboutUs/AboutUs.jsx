@@ -18,6 +18,7 @@ import aboutUsImageSecond from '../../Images/secondAboutUsImage.png';
 import aboutUsImage360 from '../../Images/aboutUsImage360.png';
 // import aboutUsImage768 from '../../Images/aboutUsImage768.png';
 import aboutUsImageSecond360 from '../../Images/secondAboutUsImage360.png';
+import { Link } from 'react-scroll';
 // import aboutUsImageSecond768 from '../../Images/secondAboutUsImage768.png';
 
 export const AboutUs = () => {
@@ -65,7 +66,9 @@ export const AboutUs = () => {
             умовах.
           </AboutUsText>
           <AboutUsButton>
-            Наші роботи
+            <Link to="gallery" smooth={true} duration={500} offset={-70}>
+              Наші роботи
+            </Link>
             <AboutUsArrow />
           </AboutUsButton>
         </AboutUsBlock>

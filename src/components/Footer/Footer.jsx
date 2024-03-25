@@ -16,7 +16,7 @@ import {
   InfoWrap,
 } from './Footer.styled';
 
-import logo from '../../Images/alltentaLogo.png';
+import logo from '../../Images/LogoWhite.png';
 import { Link } from 'react-scroll';
 
 export const Footer = () => {

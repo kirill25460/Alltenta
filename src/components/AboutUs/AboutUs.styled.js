@@ -145,7 +145,7 @@ export const AboutUsText = styled.p`
   margin-bottom: 50px;
 
   @media (width <= 768px) {
-    font-size: 10px;
+    font-size: 7px;
     line-height: 12px;
     width: 196px;
     height: 368px;
