@@ -85,7 +85,7 @@ export const StyledMessage = styled.textarea`
 
 export const ButtonForm = styled.button`
   margin-top: 10px;
-  width: 90px;
+  width: 300px;
   height: 30px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -106,9 +106,22 @@ export const ButtonForm = styled.button`
     position: absolute;
     left: 0px;
     bottom: -40px;
-
-    padding: 15px 146px;
+    width: 294px;
   }
+  @media (min-width: 1024px) {
+    width: 90px;
+  margin-top: 0px;
+  position: absolute;
+  left:185px;
+  bottom: 15px;
+}
+@media (min-width: 1440px) {
+    width: 90px;
+  margin-top: 0px;
+  position: absolute;
+  left:335px;
+  bottom: 15px;
+}
 `;
 
 export const Text = styled.h3`
@@ -123,18 +136,21 @@ export const Text = styled.h3`
   color: #232529;
 
   @media (min-width: 768px) {
+font-size: 25px;
+line-height: 30px;
+  }
+
+  @media (min-width: 1024px) {
     width: 500px;
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
     margin: 0 0 25px 0px;
-  }
+}
+@media (min-width: 1440px) {
 
-  @media (width >= 768px) and (width <= 1200px) {
-    line-height: 30px;
-    font-size: 25px;
-    text-align: left;
-  }
+}
+
 `;
 
 export const ContactUsImg = styled.img`
@@ -196,9 +212,8 @@ export const InfoWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (width >= 768px) and (width <= 1200px) {
-    align-items: baseline;
-    width: 373px;
+  @media (min-width: 768px) {
+    align-items: normal;
   }
+
 `;

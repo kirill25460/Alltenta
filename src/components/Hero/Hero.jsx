@@ -32,7 +32,7 @@ export const Hero = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      // Определение ширины окна просмотра
+  
       const screenWidth = window.innerWidth;
       if (screenWidth <= 768) {
         setCurrentImage(1); // Мобильные устройства
