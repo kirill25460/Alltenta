@@ -28,7 +28,7 @@ export const Hero = () => {
 
   useEffect(() => {
     setImageSrc(images[currentImage]);
-  }, [currentImage, images]);
+  }, [currentImage]);
 
   useEffect(() => {
     const handleResize = () => {

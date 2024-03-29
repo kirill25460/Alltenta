@@ -7,7 +7,7 @@ export const AboutUsConteiner = styled.div`
 
   @media (width <= 768px) {
     margin-top: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
 
   @media (width >= 769px) and (width <= 1200px) {
