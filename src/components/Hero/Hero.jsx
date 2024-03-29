@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   ArrowBox,
   ArrowHeroContainer,
@@ -23,12 +23,12 @@ import { Link } from 'react-scroll';
 export const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [hero_img, hero_img360, hero_img768, hero_img2];
+  const images = useMemo(() => [hero_img, hero_img360, hero_img768, hero_img2], []);
   const [imageSrc, setImageSrc] = useState(images[currentImage]);
 
   useEffect(() => {
     setImageSrc(images[currentImage]);
-  }, [currentImage]);
+  }, [currentImage, images]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,7 +47,7 @@ export const Hero = () => {
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, []); // Удаление пустого массива зависимостей
 
   const handleMouseEnter = () => {
     setIsHovered(true);
