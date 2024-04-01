@@ -75,24 +75,22 @@ line-height: 77%;
 `;
 
 export const HeroImg = styled.img`
-  width: 650px;
-  height: 700px;
+  width: 300px;
+  height: 324px;  
+ 
   position: relative;
   display: inline-block;
-
-  @media (width <= 768px) {
-    width: 389px;
+  @media (min-width: 767px){
+    width: 390px;
     height: 460px;  
   }
-
-  @media (width >= 768px) and (width <= 1200px) {
-    width: 389px;
-    height: 460px;  
+  @media (min-width: 1024px) {
+    width: 530px;
+    height: 575px; 
   }
-
-  @media (width <= 768px) {
-    width: 300px;
-    height: 324px;  
+  @media (min-width: 1440px) {
+    width: 650px;
+  height: 700px;
   }
 `;
 
@@ -116,13 +114,14 @@ export const HeroButton = styled.button`
 `;
 
 export const ArrowHeroContainer = styled.div`
+ display: none;
+
+  @media (min-width: 768px) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 130px;
 margin-top: 30px;
-  @media (width <= 767px) {
-    display: none;
   }
 `;
 
@@ -135,7 +134,7 @@ export const ArrowHeroContainerMobile = styled.div`
   margin-top: 30px;
   padding-right: 165px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
