@@ -17,65 +17,87 @@ export const AboutUsConteinerItem = styled.div`
 `;
 
 export const AboutUsImageBlock = styled.div`
-  width: 611px;
-  height: 600px;
-
-  position: relative;
-  @media (width < 768px) {
-    margin-right: 0;
-    width: 153px;
+  
+  width: 153px;
     height: 385px;
+  position: relative;
+  @media (min-width: 768px) {
+    width: 255px;
+    height: 660px;
+ 
   }
-  @media (width >= 768px) and (width <= 1200px) {
+  @media (min-width: 1024px) {
     width: 340px;
     height: 660px;
+ 
   }
+  @media (min-width: 1440px) {
+    width: 611px;
+  height: 600px;
+ 
+  }
+
 `;
 
 export const AboutUsBlock = styled.div``;
 
 export const AboutUsImageFirst = styled.img`
-  width: 372px;
-  height: 372px;
+width: 120px;
+    height: 206px;
+    top: -20px;
+  
   position: absolute;
   z-index: 2;
   right: 0;
-  top: 0;
-
-  @media (width < 768px) {
-    width: 120px;
-    height: 206px;
-    top: -20px;
-  }
-
-  @media (width >= 768px) and (width <= 1200px) {
+  
+  @media (min-width: 768px){
     width: 300px;
     height: 150px;
     top: -30px;
     right: -138px;
   }
+
+  @media (min-width: 1024px) {
+    width: 294px;
+  height: 296px;
+  top: 0;
+  right: 0;
+  }
+  @media (min-width: 1440px) {
+    width: 372px;
+  height: 372px;
+  top: 0;
+  right: 0;
+  }
 `;
 
 export const AboutUsImageSecond = styled.img`
-  width: 289px;
-  height: 289px;
+  width: 123px;
+  height: 205px;
+  top: 173px;
+  right: 29px;
   position: absolute;
   z-index: 1;
-  top: 290px;
-  right: 300px;
 
-  @media (width < 768px) {
-    width: 123px;
-    height: 205px;
-    top: 150px;
-    right: 29px;
-  }
 
-  @media (width >= 768px) and (width <= 1200px) {
+  @media (min-width: 768px) {
     width: 200px;
     height: 570px;
     top: 34px;
     right: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 236px;
+  height: 236px;
+  top: 290px;
+  right: 175px;
+  }
+  @media (min-width: 1440px) {
+    width: 289px;
+  height: 289px;
+  top: 290px;
+  right: 300px;
   }
 `;
 
@@ -91,6 +113,12 @@ display: block;
   margin: 0;
   color: #001d3d;
 
+}
+ @media (min-width: 1024px) {
+line-height: 98px;
+display: flex;
+align-items: center;
+text-align: center;
 }
 @media (min-width: 1440px) {
 font-size: 96px;
@@ -115,6 +143,14 @@ display:none;
   color: #001d3d;
 padding-left: 170px;
   }
+  @media (min-width: 1024px) {
+font-size: 97px;
+line-height: 118px;
+display: flex;
+align-items: center;
+text-align: center;
+padding-left: 0px;
+}
 @media (min-width: 1440px) {
 font-size: 97px;
 line-height: 118px;
@@ -180,8 +216,9 @@ padding-bottom: 0px;
 
   }
   @media (min-width:1024px) {
-   
-    font-size: 15px;
+
+font-size: 14px;
+line-height: 17px;
     padding-top: 20px;
     margin-bottom: 25px;
   }

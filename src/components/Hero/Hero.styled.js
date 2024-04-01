@@ -51,6 +51,10 @@ export const GreySpan = styled.h2`
     line-height: 54px;
   }
   @media (min-width: 1024px) {
+font-size: 75px;
+line-height: 77%;
+  }
+  @media (min-width: 1440px) {
 font-size: 86px;
 line-height: 77%;
   }
@@ -69,6 +73,10 @@ line-height: 42px;
     line-height: 54px;
   }
   @media (min-width: 1024px) {
+font-size: 75px;
+line-height: 77%;
+  }
+  @media (min-width: 1440px) {
 font-size: 86px;
 line-height: 77%;
   }
