@@ -30,13 +30,13 @@ export const AboutUs = () => {
       <AboutUsConteinerItem>
         <AboutUsImageBlock>
           <picture>
-            <source media="(max-width: 768px)" srcSet={aboutUsImageSecond360} />
-            <source media="(min-width: 769px) and (max-width: 1200px)" srcSet={aboutUsImageSecond768} />
+            <source media="(max-width: 767px)" srcSet={aboutUsImageSecond360} />
+            <source media="(min-width: 768px) and (max-width: 1200px)" srcSet={aboutUsImageSecond768} />
             <AboutUsImageSecond src={aboutUsImageSecond} alt="house" />
           </picture>
           <picture>
-            <source media="(max-width: 768px)" srcSet={aboutUsImage360} />
-            <source media="(min-width: 769px) and (max-width: 1200px)" srcSet={aboutUsImage768} />
+            <source media="(max-width: 767px)" srcSet={aboutUsImage360} />
+            <source media="(min-width: 768px) and (max-width: 1200px)" srcSet={aboutUsImage768} />
             <AboutUsImageFirst src={aboutUsImage} alt="house" />
           </picture>
         </AboutUsImageBlock>

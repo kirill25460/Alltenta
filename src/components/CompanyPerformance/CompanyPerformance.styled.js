@@ -4,12 +4,12 @@ export const CompanyPerformanceConteiner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 150px;
-
-  @media (max-width: 768px) {
-    margin-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  @media (max-width: 767px) {
+  
     flex-direction: column;
-    margin-bottom: 100px;
+    
   }
 `;
 
@@ -20,13 +20,13 @@ export const CompanyPerformanceBlock = styled.div`
 
   &:not(:last-child) {
     margin-right: 150px;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       margin-right: 0;
       margin-bottom: 30px;
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1200px) {
+  @media (min-width: 767px) and (max-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -46,7 +46,7 @@ export const CompanyPerformanceMainText = styled.h1`
 
   color: #232529;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -64,7 +64,7 @@ export const CompanyPerformanceText = styled.p`
   margin: 0;
   color: #767676;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-top: 25px;
     font-size: 10px;
     line-height: 12px;
