@@ -4,94 +4,73 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const HeroContainer = styled.div`
   display: flex;
+  flex-direction: column;
+align-items: center;
   justify-content: center;
-  margin-bottom: 150px;
-
-  @media (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
+  margin-bottom: 100px;
+margin-top:30px;
+@media (min-width: 768px) {
+    flex-direction: row; 
+    margin-top:80px;
+    margin-bottom: 90px;
   }
-
-  @media (min-width: 768px) and (max-width: 1200px) {
-    align-items: center;
-    margin-top: 100px;
-  }
-
-  @media (min-width: 1200px) {
-    margin-top: 0;
+@media (min-width: 1024px) {
+  margin-top:0px;
     margin-bottom: 150px;
-  }
+}
 `;
 
 export const LeftHeroConatiner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 110px;
-
-  @media (width <= 768px) {
-    height: 254px;
-
-    width: 0;
-    margin-top: 30px;
-  }
-
-  @media (width <= 1200px) {
-    margin-right: 13px;
-  }
+  align-items: center;
+  margin-bottom: 30px;
+@media (min-width: 767px) {
+  align-items: normal;
+  margin:0;
+  padding-right: 25px;;
+}
 `;
 
 export const RightHeroContainer = styled.div`
   position: relative;
 `;
 
-export const GreySpan = styled.span`
+export const GreySpan = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 86px;
-  line-height: 66px;
-  margin-top: 40px;
+  font-size: 59px;
+  line-height: 42px; 
   color: #767676;
-
-  @media (width <= 768px) {
-    font-size: 59px;
-    line-height: 42px;
-    margin-top: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (width <= 1200px) {
+  margin:0;
+  padding-bottom: 10px;
+  @media (min-width: 767px){
     font-size: 54px;
     line-height: 54px;
+  }
+  @media (min-width: 1024px) {
+font-size: 86px;
+line-height: 77%;
   }
 `;
 
-export const BlackSpan = styled.span`
+export const BlackSpan = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 71px;
-  line-height: 66px;
-  margin-bottom: 50px;
+   font-weight: 700; 
+  margin:0;
   color: #001d3d;
-
-  @media (width <= 768px) {
-    font-size: 47px;
-    line-height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (width <= 1200px) {
+font-size: 58px;
+line-height: 42px;
+@media (min-width: 767px){
     font-size: 54px;
     line-height: 54px;
+  }
+  @media (min-width: 1024px) {
+font-size: 86px;
+line-height: 77%;
   }
 `;
 
@@ -141,8 +120,8 @@ export const ArrowHeroContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 130px;
-
-  @media (width <= 768px) {
+margin-top: 30px;
+  @media (width <= 767px) {
     display: none;
   }
 `;

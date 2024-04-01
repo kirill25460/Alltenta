@@ -13,9 +13,13 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  @media (min-width: 1024px) {
     margin-top: 150px;
     margin-bottom: 150px;
-  }
+}
 `;
 
 export const StyledInput = styled.input`
@@ -33,12 +37,18 @@ export const StyledInput = styled.input`
   color: #767676;
 
   @media (min-width: 768px) {
-    width: 440px;
-  }
-
-  @media (width >= 768px) and (width <= 1200px) {
     width: 293px;
+    height: 45px;
+    margin-bottom: 15px;
   }
+  @media (min-width: 1024px) {
+    width: 440px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+  /* @media (width >= 768px) and (width <= 1200px) {
+    width: 293px;
+  } */
 `;
 
 export const ContainerForm = styled.form`
@@ -50,14 +60,15 @@ export const ContainerForm = styled.form`
   align-items: flex-end;
   @media (min-width: 768px) {
     position: relative;
-    margin-top: 0;
-    margin-left: 100px;
+    margin-top: 75px;
+    margin-left: 30px;
   }
-
-  @media (width >= 768px) and (width <= 1200px) {
-    margin-left: 18px;
-    margin-top: 85px;
-  }
+  @media (min-width: 1024px) {
+    margin-top: 0px;
+}
+@media (min-width: 1440px) {
+  margin-left: 100px;
+}
 `;
 
 export const StyledMessage = styled.textarea`
@@ -75,12 +86,16 @@ export const StyledMessage = styled.textarea`
   resize: none;
 
   @media (min-width: 768px) {
-    width: 440px;
-  }
-
-  @media (width >= 768px) and (width <= 1200px) {
     width: 293px;
+    height: 215px;
   }
+  @media (min-width: 1024px) {
+    width: 440px;
+    height: 245px;
+}
+  /* @media (width >= 768px) and (width <= 1200px) {
+    width: 293px;
+  } */
 `;
 
 export const ButtonForm = styled.button`
@@ -112,7 +127,7 @@ export const ButtonForm = styled.button`
     width: 90px;
   margin-top: 0px;
   position: absolute;
-  left:185px;
+  left:335px;
   bottom: 15px;
 }
 @media (min-width: 1440px) {
@@ -132,12 +147,13 @@ export const Text = styled.h3`
   font-size: 22px;
   line-height: 27px;
   text-align: center;
-
+  margin: 0 0 15px 0px;
   color: #232529;
 
   @media (min-width: 768px) {
 font-size: 25px;
 line-height: 30px;
+width: 345px;
   }
 
   @media (min-width: 1024px) {
@@ -158,32 +174,43 @@ export const ContactUsImg = styled.img`
   width: 300px;
 
   @media (min-width: 768px) {
-    width: 500px;
-  }
-
-  @media (width >= 768px) and (width <= 1200px) {
     width: 343px;
     height: 339px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 373px;
+    width: 500px;
   }
 `;
 
 export const StyledLink = styled.a`
+ font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 30px;
   text-decoration: none;
   color: #767676;
   display: flex;
   align-items: center;
 
-  &:not(:last-child) {
+ &:not(:last-child) {
     margin-right: 50px;
-  }
+  } 
 
-  @media (min-width: 360px) {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 30px;
-  }
+  @media (min-width: 768px) {
+    font-size: 13px;
+    &:not(:last-child) {
+    margin-right: 40px;
+  } 
+  } 
+  @media (min-width: 1024px) {
+    font-size: 15px;
+    &:not(:last-child) {
+    margin-right: 50px;
+  } 
+ }
 `;
 
 
@@ -203,8 +230,8 @@ export const ContactWrap = styled.div`
   display: flex;
   margin-top: 30px;
 
-  @media (min-width: 360px) {
-    margin-bottom: 30px;
+  @media (min-width: 768px) {
+    margin-top: 20px;
   }
 `;
 
