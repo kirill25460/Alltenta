@@ -13,10 +13,12 @@ import {
   SliderConteiner,
   // TextActiveButton,
 } from './Gallery.styled';
-import image2 from '../../Images/image2.png';
-import image3 from '../../Images/image3.png';
-import image4 from '../../Images/image4.png';
-import image5 from '../../Images/image5.png';
+import image2 from '../../Images/img8.png';
+import image3 from '../../Images/img9.png';
+import image4 from '../../Images/img10.png';
+import image5 from '../../Images/img11.png';
+import image6 from '../../Images/img12.png';
+import image7 from '../../Images/img13.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -24,7 +26,7 @@ import { Link } from 'react-scroll';
 
 export const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const images = [image2, image3, image4, image5];
+  const images = [image2, image3, image4, image5,image6,image7];
 
   const sliderRef = useRef(null);
 

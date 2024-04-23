@@ -44,11 +44,11 @@ export const AboutUsBlock = styled.div``;
 export const AboutUsImageFirst = styled.img`
 width: 120px;
     height: 206px;
-    top: -20px;
+    top: -8px;
   
   position: absolute;
   z-index: 2;
-  right: 0;
+  right: 7px;
   
   @media (min-width: 768px){
     width: 300px;
@@ -60,14 +60,14 @@ width: 120px;
   @media (min-width: 1024px) {
     width: 294px;
   height: 296px;
-  top: 0;
-  right: 0;
+  top: 7px;
+  right: 10px;
   }
   @media (min-width: 1440px) {
     width: 372px;
   height: 372px;
-  top: 0;
-  right: 0;
+  top: 7px;
+  right: 10px;
   }
 `;
 
@@ -88,8 +88,8 @@ export const AboutUsImageSecond = styled.img`
   }
 
   @media (min-width: 1024px) {
-    width: 236px;
-  height: 236px;
+    width: 280px;
+  height: 270px;
   top: 290px;
   right: 175px;
   }

@@ -14,16 +14,18 @@ import {
   RightHeroContainer,
   SmallArrow,
 } from './Hero.styled';
-import hero_img from '../../Images/hero_img.png';
-import hero_img360 from '../../Images/hero_img360.png';
-import hero_img768 from '../../Images/hero_img768.png';
-import hero_img2 from '../../Images/image2.png';
+import hero_img from '../../Images/img2.png';
+import hero_img2 from '../../Images/img3.png';
+import hero_img3 from '../../Images/img1.png';
+// import hero_img360 from '../../Images/hero_img360.png';
+// import hero_img768 from '../../Images/hero_img768.png';
+// import hero_img2 from '../../Images/image2.png';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-  const images = useMemo(() => [hero_img, hero_img360, hero_img768, hero_img2], []);
+  const images = useMemo(() => [hero_img, hero_img2,hero_img3], []);
   const [imageSrc, setImageSrc] = useState(images[currentImage]);
 
   useEffect(() => {
