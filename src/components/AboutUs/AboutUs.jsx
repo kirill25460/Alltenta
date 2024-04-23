@@ -13,13 +13,11 @@ import {
   MainTextAboutUsSpan,
   MainTextAboutUsSpanMobile,
 } from './AboutUs.styled';
-import aboutUsImage from '../../Images/aboutUsImage.png';
-import aboutUsImageSecond from '../../Images/secondAboutUsImage.png';
-import aboutUsImage360 from '../../Images/aboutUsImage360.png';
-import aboutUsImage768 from '../../Images/aboutUsImage768.png';
-import aboutUsImageSecond360 from '../../Images/secondAboutUsImage360.png';
+import aboutUsImage from '../../Images/img6.png';
+import aboutUsImageSecond from '../../Images/img7.png';
+
 import { Link } from 'react-scroll';
-import aboutUsImageSecond768 from '../../Images/secondAboutUsImage768.png';
+
 
 export const AboutUs = () => {
   return (
@@ -30,13 +28,13 @@ export const AboutUs = () => {
       <AboutUsConteinerItem>
         <AboutUsImageBlock>
           <picture>
-            <source media="(max-width: 767px)" srcSet={aboutUsImageSecond360} />
-            <source media="(min-width: 768px) and (max-width: 1200px)" srcSet={aboutUsImageSecond768} />
+            {/* <source media="(max-width: 767px)" srcSet={aboutUsImageSecond360} />
+            <source media="(min-width: 768px) and (max-width: 1200px)" srcSet={aboutUsImageSecond768} /> */}
             <AboutUsImageSecond src={aboutUsImageSecond} alt="house" />
           </picture>
           <picture>
-            <source media="(max-width: 767px)" srcSet={aboutUsImage360} />
-            <source media="(min-width: 768px) and (max-width: 1200px)" srcSet={aboutUsImage768} />
+            {/* <source media="(max-width: 767px)" srcSet={aboutUsImage360} />
+            <source media="(min-width: 768px) and (max-width: 1200px)" srcSet={aboutUsImage768} /> */}
             <AboutUsImageFirst src={aboutUsImage} alt="house" />
           </picture>
         </AboutUsImageBlock>
