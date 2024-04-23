@@ -15,20 +15,20 @@ import {
   ContactWrap,
   InfoWrap,
 } from './ContactUs.styled';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    contact: '',
-    interestedIn: '',
-    message: '',
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   contact: '',
+  //   interestedIn: '',
+  //   message: '',
+  // });
 
-  const handleChange = e => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  // const handleChange = e => {
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  // };
 
   return (
     <Container id="order">
@@ -73,29 +73,29 @@ export const ContactUs = () => {
           type="text"
           name="name"
           placeholder="ІМ’Я"
-          value={formData.name}
-          onChange={handleChange}
+          // value={formData.name}
+          // onChange={handleChange}
         />
         <StyledInput
           type="text"
           name="contact"
           placeholder="ТЕЛЕФОН/ЕМЕЙЛ"
-          value={formData.contact}
-          onChange={handleChange}
+          // value={formData.contact}
+          // onChange={handleChange}
         />
         <StyledInput
           type="text"
           name="interestedIn"
           placeholder="ЗАЦІКАВЛЕНИЙ В"
-          value={formData.interestedIn}
-          onChange={handleChange}
+          // value={formData.interestedIn}
+          // onChange={handleChange}
         />
         <StyledMessage
           type="text"
           name="message"
           placeholder="Повідомлення"
-          value={formData.message}
-          onChange={handleChange}
+          // value={formData.message}
+          // onChange={handleChange}
         />
         <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
       </ContainerForm>
