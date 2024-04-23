@@ -1,4 +1,4 @@
-import ContactUsPhoto from '../../Images/Rectangle 26.png';
+import ContactUsPhoto from '../../Images/img5.png';
 import ContactUs360 from '../../Images/ContactUs360.png';
 import ContactUs768 from '../../Images/ContactUs768.png';
 import {
