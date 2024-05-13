@@ -1,6 +1,8 @@
 import ContactUsPhoto from '../../Images/img5.png';
-// import ContactUs360 from '../../Images/ContactUs360.png';
-// import ContactUs768 from '../../Images/ContactUs768.png';
+import ContactUs360 from '../../Images/img5_mob(1).jpeg';
+// import ContactUs360 from '../../Images/img5_mob.png';
+import ContactUs768 from '../../Images/img5_tab(1).jpeg';
+// import ContactUs768 from '../../Images/img5_tab.png';
 import {
   Container,
   StyledInput,
@@ -35,12 +37,12 @@ export const ContactUs = () => {
       <InfoWrap>
         <Text>Готові до замовлення або залишились запитання?</Text>
         <picture>
-          {/* <source media="(max-width:768px)" srcSet={ContactUs360} />
+          <source media="(max-width:768px)" srcSet={ContactUs360} />
           <source
-            media="(min-width: 769px) and (max-width: 1200px)"
+            media="(min-width: 769px) and (max-width: 1024px)"
             srcSet={ContactUs768}
-          /> */}
-          <ContactUsImg src={ContactUsPhoto} alt="p" />
+          />
+          <ContactUsImg src={ContactUsPhoto} alt="Altenta" />
         </picture>
         <div>
           <ContactWrap>
