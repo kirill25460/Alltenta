@@ -8,6 +8,7 @@ import {
   BlackSpan,
   GreySpan,
   HeroButton,
+  HeroButtonMobile,
   HeroContainer,
   HeroImg,
   LeftHeroConatiner,
@@ -23,9 +24,9 @@ import hero_img3 from '../../Images/img1.png';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-  const images = useMemo(() => [hero_img, hero_img2,hero_img3], []);
+  const images = useMemo(() => [hero_img, hero_img2, hero_img3], []);
   const [imageSrc, setImageSrc] = useState(images[currentImage]);
 
   useEffect(() => {
@@ -34,7 +35,6 @@ export const Hero = () => {
 
   useEffect(() => {
     const handleResize = () => {
-  
       const screenWidth = window.innerWidth;
       if (screenWidth <= 768) {
         setCurrentImage(1); // Мобильные устройства
@@ -51,13 +51,13 @@ export const Hero = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []); // Удаление пустого массива зависимостей
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovered(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovered(false);
+  // };
 
   const handleLeftArrowClick = () => {
     setCurrentImage(prevIndex =>
@@ -78,7 +78,7 @@ export const Hero = () => {
   return (
     <HeroContainer id="home">
       <LeftHeroConatiner>
-        <GreySpan>ПРОЕКТ</GreySpan>
+        <GreySpan>ПРОЄКТ</GreySpan>
         <BlackSpan>ВЕРАНДА</BlackSpan>
         <ArrowHeroContainer>
           <ArrowBox onClick={handleLeftArrowClick}>
@@ -88,24 +88,22 @@ export const Hero = () => {
             <ArrowRight />
           </ArrowBox>
         </ArrowHeroContainer>
+        <Link to="order" smooth={true} duration={500} offset={-70}>
+          <HeroButton
+            // onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
+            onClick={handleButtonClick}
+          >
+            Замовити <SmallArrow />
+          </HeroButton>
+        </Link>
       </LeftHeroConatiner>
       <RightHeroContainer>
-          <HeroImg
-            src={imageSrc}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          />
-        {isHovered && (
-          <Link to="order" smooth={true} duration={500} offset={-70}>
-            <HeroButton
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onClick={handleButtonClick}
-            >
-              Замовити <SmallArrow />
-            </HeroButton>
-          </Link>
-        )}
+        <HeroImg
+          src={imageSrc}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
+        />
       </RightHeroContainer>
       <ArrowHeroContainerMobile>
         <ArrowBox onClick={handleLeftArrowClick}>
@@ -115,6 +113,15 @@ export const Hero = () => {
           <ArrowRight />
         </ArrowBox>
       </ArrowHeroContainerMobile>
+      <Link to="order" smooth={true} duration={500} offset={-70}>
+        <HeroButtonMobile
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
+          onClick={handleButtonClick}
+        >
+          Замовити <SmallArrow />
+        </HeroButtonMobile>
+      </Link>
     </HeroContainer>
   );
 };

@@ -106,9 +106,9 @@ export const ArrowRightButton = styled(IoIosArrowRoundForward)`
 
 export const ButtonSlider = styled.button`
   cursor: pointer;
-  background: #ffffff;
+  background: transparent;
   width: 119px;
-  height: 50px;
+  height: 40px;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -121,12 +121,14 @@ export const ButtonSlider = styled.button`
   margin: 0 auto;
 
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
 
-  color: #232629;
+  color: #ffffff;
   box-shadow: none;
 
-  border: 0;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
 `;
+
