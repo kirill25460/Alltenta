@@ -11,6 +11,7 @@ import {
   GalleryItemImage,
   MainGalleryText,
   SliderConteiner,
+  TextHover,
   // TextActiveButton,
 } from './Gallery.styled';
 import image2 from '../../Images/img8.png';
@@ -26,7 +27,7 @@ import { Link } from 'react-scroll';
 
 export const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const images = [image2, image3, image4, image5,image6,image7];
+  const images = [image2, image3, image4, image5, image6, image7];
 
   const sliderRef = useRef(null);
 
@@ -88,15 +89,22 @@ export const Gallery = () => {
                 onMouseLeave={mouseLeave}
               />
               {hoveredIndex === index && (
-                <Link to="order" smooth={true} duration={500} offset={-70}>
-                  {/* <TextActiveButton>Автотент</TextActiveButton> */}
-                  <ButtonSlider
+                <>
+                  {/* <TextHover
                     onMouseEnter={() => mouseEnter(index)}
                     onMouseLeave={mouseLeave}
                   >
-                    Замовити <ArrowRightButton />
-                  </ButtonSlider>
-                </Link>
+                    Автотент
+                  </TextHover> */}
+                  <Link to="order" smooth={true} duration={500} offset={-70}>
+                    <ButtonSlider
+                      onMouseEnter={() => mouseEnter(index)}
+                      onMouseLeave={mouseLeave}
+                    >
+                      Замовити <ArrowRightButton />
+                    </ButtonSlider>
+                  </Link>
+                </>
               )}
             </SliderConteiner>
           ))}

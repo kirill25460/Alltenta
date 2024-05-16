@@ -6,8 +6,7 @@ import ContactUs768 from '../../Images/img5_tab(1).jpeg';
 import {
   Container,
   StyledInput,
-  ContainerForm,
-  StyledMessage,
+  ContainerForm,  
   ButtonForm,
   Text,
   ContactUsImg,
@@ -23,8 +22,6 @@ export const ContactUs = () => {
   // const [formData, setFormData] = useState({
   //   name: '',
   //   contact: '',
-  //   interestedIn: '',
-  //   message: '',
   // });
 
   // const handleChange = e => {
@@ -83,20 +80,6 @@ export const ContactUs = () => {
           name="contact"
           placeholder="ТЕЛЕФОН/ЕМЕЙЛ"
           // value={formData.contact}
-          // onChange={handleChange}
-        />
-        <StyledInput
-          type="text"
-          name="interestedIn"
-          placeholder="ЗАЦІКАВЛЕНИЙ В"
-          // value={formData.interestedIn}
-          // onChange={handleChange}
-        />
-        <StyledMessage
-          type="text"
-          name="message"
-          placeholder="Повідомлення"
-          // value={formData.message}
           // onChange={handleChange}
         />
         <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>

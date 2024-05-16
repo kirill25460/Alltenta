@@ -19,7 +19,7 @@ export const Container = styled.div`
   @media (min-width: 1024px) {
     margin-top: 150px;
     margin-bottom: 150px;
-}
+  }
 `;
 
 export const StyledInput = styled.input`
@@ -45,7 +45,7 @@ export const StyledInput = styled.input`
     width: 440px;
     height: 50px;
     margin-bottom: 30px;
-}
+  }
   /* @media (width >= 768px) and (width <= 1200px) {
     width: 293px;
   } */
@@ -64,11 +64,11 @@ export const ContainerForm = styled.form`
     margin-left: 30px;
   }
   @media (min-width: 1024px) {
-    margin-top: 0px;
-}
-@media (min-width: 1440px) {
-  margin-left: 100px;
-}
+    margin-top: 115px;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 100px;
+  }
 `;
 
 export const StyledMessage = styled.textarea`
@@ -92,7 +92,7 @@ export const StyledMessage = styled.textarea`
   @media (min-width: 1024px) {
     width: 440px;
     height: 245px;
-}
+  }
   /* @media (width >= 768px) and (width <= 1200px) {
     width: 293px;
   } */
@@ -125,18 +125,24 @@ export const ButtonForm = styled.button`
   }
   @media (min-width: 1024px) {
     width: 90px;
-  margin-top: 0px;
-  position: absolute;
-  left:335px;
-  bottom: 15px;
-}
-@media (min-width: 1440px) {
+    margin-top: 0px;
+    position: absolute;
+    left: 350px;
+    bottom: -10px;
+  }
+  @media (min-width: 1440px) {
     width: 90px;
-  margin-top: 0px;
-  position: absolute;
-  left:335px;
-  bottom: 15px;
-}
+    margin-top: 0px;
+    position: absolute;
+    left: 335px;
+    bottom: 15px;
+  }
+
+  &:hover {
+    color: #a2b9d0;
+    fill: #a2b9d0;
+    border: 1px solid #a2b9d0;
+  }
 `;
 
 export const Text = styled.h3`
@@ -151,9 +157,9 @@ export const Text = styled.h3`
   color: #232529;
 
   @media (min-width: 768px) {
-font-size: 25px;
-line-height: 30px;
-width: 345px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 345px;
   }
 
   @media (min-width: 1024px) {
@@ -162,11 +168,9 @@ width: 345px;
     font-size: 36px;
     line-height: 44px;
     margin: 0 0 25px 0px;
-}
-@media (min-width: 1440px) {
-
-}
-
+  }
+  @media (min-width: 1440px) {
+  }
 `;
 
 export const ContactUsImg = styled.img`
@@ -185,34 +189,33 @@ export const ContactUsImg = styled.img`
 `;
 
 export const StyledLink = styled.a`
- font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 30px;
   text-decoration: none;
   color: #767676;
   display: flex;
   align-items: center;
 
- &:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 50px;
-  } 
+  }
 
   @media (min-width: 768px) {
     font-size: 13px;
     &:not(:last-child) {
-    margin-right: 40px;
-  } 
-  } 
+      margin-right: 40px;
+    }
+  }
   @media (min-width: 1024px) {
     font-size: 15px;
     &:not(:last-child) {
-    margin-right: 50px;
-  } 
- }
+      margin-right: 50px;
+    }
+  }
 `;
-
 
 export const MailIcon = styled(CiMail)`
   width: 12px;
@@ -242,5 +245,4 @@ export const InfoWrap = styled.div`
   @media (min-width: 768px) {
     align-items: normal;
   }
-
 `;
