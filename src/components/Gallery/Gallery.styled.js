@@ -121,7 +121,7 @@ export const ButtonSlider = styled.button`
   margin: 0 auto;
 
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -130,5 +130,43 @@ export const ButtonSlider = styled.button`
 
   border: 1px solid #ffffff;
   border-radius: 5px;
+  @media (min-width: 1440px) {
+       bottom: 30px;
+        }
+  @media (min-width: 1800px) {
+         bottom: 40px;
+          }
 `;
 
+export const TextHover = styled.h4`
+font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #ffffff;
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 768px) {
+    bottom: 100px;
+  }
+
+  @media (min-width: 1024px) {
+ bottom: 100px;
+  }
+  @media (min-width: 1440px) {
+    bottom: 140px;
+     }
+  @media (min-width: 1800px) {
+    font-weight: 600;
+    font-size: 18px;
+      bottom: 240px;
+       }
+`;
