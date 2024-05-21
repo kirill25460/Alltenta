@@ -90,12 +90,12 @@ export const Gallery = () => {
               />
               {hoveredIndex === index && (
                 <>
-                  {/* <TextHover
+                  <TextHover
                     onMouseEnter={() => mouseEnter(index)}
                     onMouseLeave={mouseLeave}
                   >
-                    Автотент
-                  </TextHover> */}
+                    ALLTENTA
+                  </TextHover> 
                   <Link to="order" smooth={true} duration={500} offset={-70}>
                     <ButtonSlider
                       onMouseEnter={() => mouseEnter(index)}
