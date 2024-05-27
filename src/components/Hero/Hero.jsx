@@ -6,6 +6,7 @@ import {
   ArrowLeft,
   ArrowRight,
   BlackSpan,
+  ButtonBlock,
   GreySpan,
   HeroButton,
   HeroButtonMobile,
@@ -24,7 +25,7 @@ import hero_img3 from '../../Images/img1.png';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
-  // const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const images = useMemo(() => [hero_img, hero_img2, hero_img3], []);
   const [imageSrc, setImageSrc] = useState(images[currentImage]);
@@ -51,75 +52,83 @@ export const Hero = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []); // Удаление пустого массива зависимостей
 
-  // const handleMouseEnter = () => {
-  //   setIsHovered(true);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  // const handleLeftArrowClick = () => {
+  //   setCurrentImage(prevIndex =>
+  //     prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  //   );
   // };
 
-  // const handleMouseLeave = () => {
-  //   setIsHovered(false);
+  // const handleRightArrowClick = () => {
+  //   setCurrentImage(prevIndex =>
+  //     prevIndex === images.length - 1 ? 0 : prevIndex + 1
+  //   );
   // };
 
-  const handleLeftArrowClick = () => {
-    setCurrentImage(prevIndex =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleRightArrowClick = () => {
-    setCurrentImage(prevIndex =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const handleButtonClick = () => {
-    // Логика для кнопки "Замовити"
-  };
+  // const handleButtonClick = () => {
+  //   // Логика для кнопки "Замовити"
+  // };
 
   return (
     <HeroContainer id="home">
       <LeftHeroConatiner>
         <GreySpan>ПРОЄКТ</GreySpan>
         <BlackSpan>ВЕРАНДА</BlackSpan>
-        <ArrowHeroContainer>
+        {/* <ArrowHeroContainer>
           <ArrowBox onClick={handleLeftArrowClick}>
             <ArrowLeft />
           </ArrowBox>
           <ArrowBox onClick={handleRightArrowClick}>
             <ArrowRight />
           </ArrowBox>
-        </ArrowHeroContainer>
+        </ArrowHeroContainer> */}
         <Link to="order" smooth={true} duration={500} offset={-70}>
           <HeroButton
-            // onMouseEnter={handleMouseEnter}
-            // onMouseLeave={handleMouseLeave}
-            onClick={handleButtonClick}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
           >
-            Замовити <SmallArrow />
+            Замовити
           </HeroButton>
         </Link>
       </LeftHeroConatiner>
       <RightHeroContainer>
         <HeroImg
           src={imageSrc}
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         />
+        {isHovered ? (
+          <ButtonBlock>
+            <SmallArrow
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
+          </ButtonBlock>
+        ) : (
+          <></>
+        )}
       </RightHeroContainer>
-      <ArrowHeroContainerMobile>
+      {/* <ArrowHeroContainerMobile>
         <ArrowBox onClick={handleLeftArrowClick}>
           <ArrowLeft />
         </ArrowBox>
         <ArrowBox onClick={handleRightArrowClick}>
           <ArrowRight />
         </ArrowBox>
-      </ArrowHeroContainerMobile>
+      </ArrowHeroContainerMobile> */}
       <Link to="order" smooth={true} duration={500} offset={-70}>
         <HeroButtonMobile
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
-          onClick={handleButtonClick}
+        // onMouseEnter={handleMouseEnter}
+        // onMouseLeave={handleMouseLeave}
         >
-          Замовити <SmallArrow />
+          Замовити
         </HeroButtonMobile>
       </Link>
     </HeroContainer>

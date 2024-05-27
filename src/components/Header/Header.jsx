@@ -1,8 +1,12 @@
 import {
   HeaderContainer,
+  HeaderItem,
+  HeaderList,
   ImgLogo,
   LeftConatiner,
   LogoLink,
+  Menu,
+  MenuConteiner,
   NavItem,
   NavSpan,
   Navigation,
@@ -10,8 +14,19 @@ import {
 } from './Header.styled';
 import logo from '../../Images/headerLogo.png';
 import { Link } from 'react-scroll';
+import { useState } from 'react';
 
 const Header = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsMenuVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsMenuVisible(false);
+  };
+
   return (
     <HeaderContainer>
       <LeftConatiner>
@@ -22,23 +37,42 @@ const Header = () => {
       <RightContainer>
         <Navigation>
           <NavItem>
-            <Link to="about" smooth={true} duration={500} offset={-70}>
-              <NavSpan>Про нас</NavSpan>
+            <Link smooth={true} duration={500} offset={-70}>
+              <NavSpan>Про Altenta</NavSpan>
+            </Link>
+          </NavItem>
+
+          <NavItem>
+            <MenuConteiner
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Link smooth={true} duration={500} offset={-70}>
+                Каталог товарів
+              </Link>
+              {isMenuVisible ? (
+                <Menu>
+                  <HeaderList>
+                    <HeaderItem>Штори для альтанок</HeaderItem>
+                    <HeaderItem>Штори для альтанок</HeaderItem>
+                    <HeaderItem>Штори для альтанок</HeaderItem>
+                    <HeaderItem>Штори для альтанок</HeaderItem>
+                    <HeaderItem>Штори для альтанок</HeaderItem>
+                  </HeaderList>
+                </Menu>
+              ) : (
+                <></>
+              )}
+            </MenuConteiner>
+          </NavItem>
+          <NavItem>
+            <Link smooth={true} duration={500} offset={-70}>
+              <NavSpan>Контакти</NavSpan>
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="home" smooth={true} duration={500} offset={-70}>
-              <NavSpan>Головна</NavSpan>
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="gallery" smooth={true} duration={500} offset={-70}>
-              <NavSpan>Галерея</NavSpan>
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="order" smooth={true} duration={500} offset={-70}>
-              <NavSpan>Замовити</NavSpan>
+            <Link smooth={true} duration={500} offset={-70}>
+              <NavSpan>Блог</NavSpan>
             </Link>
           </NavItem>
         </Navigation>
@@ -48,4 +82,3 @@ const Header = () => {
 };
 
 export default Header;
-<></>;
