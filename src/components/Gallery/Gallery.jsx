@@ -94,7 +94,7 @@ export const Gallery = () => {
                     onMouseEnter={() => mouseEnter(index)}
                     onMouseLeave={mouseLeave}
                   >
-                    ALLTENTA
+                    Лоджія 23м <br/>ПВХ/Шось там
                   </TextHover> 
                   <Link to="order" smooth={true} duration={500} offset={-70}>
                     <ButtonSlider

@@ -121,52 +121,52 @@ export const ButtonSlider = styled.button`
   margin: 0 auto;
 
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
 
   color: #ffffff;
   box-shadow: none;
 
-  border: 1px solid #ffffff;
-  border-radius: 5px;
+  border: 2px solid #ffffff;
   @media (min-width: 1440px) {
-       bottom: 30px;
-        }
+    bottom: 50px;
+  }
   @media (min-width: 1800px) {
-         bottom: 40px;
-          }
+    bottom: 40px;
+  }
 `;
 
 export const TextHover = styled.h4`
-font-family: 'Montserrat';
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 66px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
   margin: 0 auto;
   color: #ffffff;
   position: absolute;
-  bottom: 130px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
+  text-shadow: 0px 4px 6.4px rgba(0, 0, 0, 0.28);
 
   @media (min-width: 768px) {
-    bottom: 100px;
+    bottom: 80px;
+    font-size: 12px;
   }
 
   @media (min-width: 1024px) {
- bottom: 100px;
+    bottom: 80px;
+    font-size: 18px;
   }
   @media (min-width: 1440px) {
-    bottom: 140px;
-     }
+    bottom: 100px;    
+    font-size: 20px;
+  }
   @media (min-width: 1800px) {
     font-weight: 600;
     font-size: 18px;
-      bottom: 240px;
-       }
+    bottom: 240px;
+  }
 `;
