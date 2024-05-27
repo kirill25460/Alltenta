@@ -114,7 +114,7 @@ export const HeroButton = styled.button`
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 50px;
     border: 1px solid #000000;
   }
 
@@ -189,6 +189,22 @@ export const ArrowBox = styled.div`
   &:hover {
     border: 1px solid #a2b9d0;
   }
+`;
+
+export const ButtonBlock = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  cursor: pointer;
+
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
 `;
 
 export const ArrowLeft = styled(IoIosArrowRoundBack)`

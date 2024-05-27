@@ -51,23 +51,56 @@ export const StyledInput = styled.input`
   } */
 `;
 
+export const StyledInputEmail = styled.input`
+  height: 50px;
+  width: 300px;
+  border: 1px solid #232529;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #767676;
+
+  @media (min-width: 768px) {
+    width: 293px;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 1024px) {
+    width: 308px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  /* @media (width >= 768px) and (width <= 1200px) {
+    width: 293px;
+  } */
+`;
+
 export const ContainerForm = styled.form`
   display: flex;
   flex-direction: column;
   margin-top: 60px;
 
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   @media (min-width: 768px) {
     position: relative;
     margin-top: 75px;
-    margin-left: 30px;
   }
   @media (min-width: 1024px) {
-    margin-top: 115px;
+    margin-top: 30px;
+    margin-left: 50px;
+    justify-content: normal;
+    align-items: baseline;
   }
   @media (min-width: 1440px) {
-    margin-left: 100px;
+    margin-left: 50px;
+    justify-content: normal;
+    align-items: baseline;
   }
 `;
 
@@ -127,15 +160,18 @@ export const ButtonForm = styled.button`
     width: 90px;
     margin-top: 0px;
     position: absolute;
-    left: 350px;
-    bottom: -10px;
+    left: 341px;
+    bottom: 31px;
+    width: 100px;
+    height: 50px;
   }
   @media (min-width: 1440px) {
-    width: 90px;
     margin-top: 0px;
     position: absolute;
-    left: 335px;
-    bottom: 15px;
+    left: 341px;
+    bottom: 31px;
+    width: 100px;
+    height: 50px;
   }
 
   &:hover {
@@ -146,14 +182,9 @@ export const ButtonForm = styled.button`
 `;
 
 export const Text = styled.h3`
-  width: 300px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 27px;
-  text-align: center;
-  margin: 0 0 15px 0px;
+
   color: #232529;
 
   @media (min-width: 768px) {
@@ -165,13 +196,15 @@ export const Text = styled.h3`
   @media (min-width: 1024px) {
     width: 500px;
     font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-    margin: 0 0 25px 0px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 50px;
   }
   @media (min-width: 1440px) {
   }
 `;
+
+/* Ми розрахуємо вартість вашого замовлення безкоштовно! */
 
 export const ContactUsImg = styled.img`
   height: 373px;
@@ -235,6 +268,7 @@ export const ContactWrap = styled.div`
 
   @media (min-width: 768px) {
     margin-top: 20px;
+    margin-left: 50px;
   }
 `;
 
@@ -246,3 +280,5 @@ export const InfoWrap = styled.div`
     align-items: normal;
   }
 `;
+
+export const ContactFormConteiner = styled.div``;

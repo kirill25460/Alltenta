@@ -6,7 +6,7 @@ import ContactUs768 from '../../Images/img5_tab(1).jpeg';
 import {
   Container,
   StyledInput,
-  ContainerForm,  
+  ContainerForm,
   ButtonForm,
   Text,
   ContactUsImg,
@@ -15,6 +15,8 @@ import {
   PhonIcon,
   ContactWrap,
   InfoWrap,
+  ContactFormConteiner,
+  StyledInputEmail,
 } from './ContactUs.styled';
 // import { useState } from 'react';
 
@@ -32,7 +34,6 @@ export const ContactUs = () => {
   return (
     <Container id="order">
       <InfoWrap>
-        <Text>Готові до замовлення або залишились запитання?</Text>
         <picture>
           <source media="(max-width:768px)" srcSet={ContactUs360} />
           <source
@@ -41,6 +42,26 @@ export const ContactUs = () => {
           />
           <ContactUsImg src={ContactUsPhoto} alt="Altenta" />
         </picture>
+      </InfoWrap>
+      <ContactFormConteiner>
+        <Text>Ми розрахуємо вартість вашого замовлення безкоштовно!</Text>
+        <ContainerForm>
+          <StyledInput
+            type="text"
+            name="name"
+            placeholder="ІМ’Я"
+            // value={formData.name}
+            // onChange={handleChange}
+          />
+          <StyledInputEmail
+            type="text"
+            name="contact"
+            placeholder="ТЕЛЕФОН/ЕМЕЙЛ"
+            // value={formData.contact}
+            // onChange={handleChange}
+          />
+          <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
+        </ContainerForm>
         <div>
           <ContactWrap>
             {' '}
@@ -65,25 +86,7 @@ export const ContactUs = () => {
             </StyledLink>
           </ContactWrap>
         </div>
-      </InfoWrap>
-
-      <ContainerForm>
-        <StyledInput
-          type="text"
-          name="name"
-          placeholder="ІМ’Я"
-          // value={formData.name}
-          // onChange={handleChange}
-        />
-        <StyledInput
-          type="text"
-          name="contact"
-          placeholder="ТЕЛЕФОН/ЕМЕЙЛ"
-          // value={formData.contact}
-          // onChange={handleChange}
-        />
-        <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
-      </ContainerForm>
+      </ContactFormConteiner>
     </Container>
   );
 };
