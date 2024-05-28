@@ -4,6 +4,7 @@ import {
   HeaderList,
   ImgLogo,
   LeftConatiner,
+  Link,
   LogoLink,
   Menu,
   MenuConteiner,
@@ -13,7 +14,6 @@ import {
   RightContainer,
 } from './Header.styled';
 import logo from '../../Images/headerLogo.png';
-import { Link } from 'react-scroll';
 import { useState } from 'react';
 
 const Header = () => {
@@ -30,14 +30,14 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LeftConatiner>
-        <LogoLink href="#">
+        <LogoLink to='/'>
           <ImgLogo src={logo} />
         </LogoLink>
       </LeftConatiner>
       <RightContainer>
         <Navigation>
           <NavItem>
-            <Link smooth={true} duration={500} offset={-70}>
+            <Link to='/Alltenta' smooth={true} duration={500} offset={-70}>
               <NavSpan>Про Altenta</NavSpan>
             </Link>
           </NavItem>

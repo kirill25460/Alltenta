@@ -1,22 +1,18 @@
-import { AboutUs } from './AboutUs/AboutUs';
-import { CompanyPerformance } from './CompanyPerformance/CompanyPerformance';
-import { ContactUs } from './ContactUs/ContactUs';
-import { FaqSection } from './FaqSection/FaqSection';
+import { HomePage } from 'page/HomePage';
 import { Footer } from './Footer/Footer';
-import { Gallery } from './Gallery/Gallery';
 import Header from './Header/Header';
-import { Hero } from './Hero/Hero';
+import { Route, Routes } from 'react-router-dom';
+import { AboutAlltenta } from 'page/AboutAlltenta';
 
 export const App = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <AboutUs/>
-      <CompanyPerformance />
-      <Gallery />
-      <FaqSection/>
-      <ContactUs />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Alltenta" element={<AboutAlltenta />} />
+      </Routes>
       <Footer />
     </>
   );

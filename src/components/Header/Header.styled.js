@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
@@ -86,7 +87,7 @@ export const ImgLogo = styled.img`
   }
 `;
 
-export const LogoLink = styled.a`
+export const LogoLink = styled(NavLink)`
   width: 82px;
   height: 30px;
 `;
@@ -131,4 +132,9 @@ export const HeaderItem = styled.li`
     background-color: #f0f0f0;
     cursor: pointer;
   }
+`;
+
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  color: #232629;
 `;
