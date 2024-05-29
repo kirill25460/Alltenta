@@ -66,7 +66,7 @@ const Header = () => {
             </MenuConteiner>
           </NavItem>
           <NavItem>
-            <Link smooth={true} duration={500} offset={-70}>
+            <Link to='/Contact' smooth={true} duration={500} offset={-70}>
               <NavSpan>Контакти</NavSpan>
             </Link>
           </NavItem>
