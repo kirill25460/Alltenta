@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { CiSquarePlus } from 'react-icons/ci';
 import { CiSquareMinus } from 'react-icons/ci';
 
-export const FaqSectionConteiner = styled.div``;
+export const FaqSectionConteiner = styled.div`
+  margin-bottom: 150px;
+`;
 
 export const MainTextFaqSection = styled.h2`
   font-family: 'Montserrat';
