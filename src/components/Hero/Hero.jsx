@@ -13,6 +13,7 @@ import {
   HeroContainer,
   HeroImg,
   LeftHeroConatiner,
+  NavLinkHero,
   RightHeroContainer,
   SmallArrow,
 } from './Hero.styled';
@@ -106,10 +107,12 @@ export const Hero = () => {
         />
         {isHovered ? (
           <ButtonBlock>
-            <SmallArrow
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            />
+            <NavLinkHero to="/Product">
+              <SmallArrow
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+            </NavLinkHero>
           </ButtonBlock>
         ) : (
           <></>

@@ -30,14 +30,14 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LeftConatiner>
-        <LogoLink to='/'>
+        <LogoLink to="/">
           <ImgLogo src={logo} />
         </LogoLink>
       </LeftConatiner>
       <RightContainer>
         <Navigation>
           <NavItem>
-            <Link to='/Alltenta' smooth={true} duration={500} offset={-70}>
+            <Link to="/Alltenta" smooth={true} duration={500} offset={-70}>
               <NavSpan>Про Altenta</NavSpan>
             </Link>
           </NavItem>
@@ -53,11 +53,21 @@ const Header = () => {
               {isMenuVisible ? (
                 <Menu>
                   <HeaderList>
-                    <HeaderItem>Штори для альтанок</HeaderItem>
-                    <HeaderItem>Штори для альтанок</HeaderItem>
-                    <HeaderItem>Штори для альтанок</HeaderItem>
-                    <HeaderItem>Штори для альтанок</HeaderItem>
-                    <HeaderItem>Штори для альтанок</HeaderItem>
+                    <HeaderItem>
+                      <Link to="/Product">Штори для альтанок</Link>
+                    </HeaderItem>
+                    <HeaderItem>
+                      <Link to="/Product">Штори для альтанок</Link>
+                    </HeaderItem>
+                    <HeaderItem>
+                      <Link to="/Product">Штори для альтанок</Link>
+                    </HeaderItem>
+                    <HeaderItem>
+                      <Link to="/Product">Штори для альтанок</Link>
+                    </HeaderItem>
+                    <HeaderItem>
+                      <Link to="/Product">Штори для альтанок</Link>
+                    </HeaderItem>
                   </HeaderList>
                 </Menu>
               ) : (
@@ -66,7 +76,7 @@ const Header = () => {
             </MenuConteiner>
           </NavItem>
           <NavItem>
-            <Link to='/Contact' smooth={true} duration={500} offset={-70}>
+            <Link to="/Contact" smooth={true} duration={500} offset={-70}>
               <NavSpan>Контакти</NavSpan>
             </Link>
           </NavItem>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { IoIosArrowRoundBack } from 'react-icons/io';
 import { IoIosArrowRoundForward } from 'react-icons/io';
+import { NavLink } from 'react-router-dom';
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -231,3 +232,5 @@ export const SmallArrow = styled(IoIosArrowRoundForward)`
   width: 32px;
   height: 24px;
 `;
+
+export const NavLinkHero = styled(NavLink)``;
