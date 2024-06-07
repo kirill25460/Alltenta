@@ -21,6 +21,7 @@ import {
   WorkingProcessText,
 } from './CompanyProfileSection .styled';
 import img from '../../Images/img6.png';
+import imgTab from '../../Images/img6_tab(1).jpeg';
 
 export const CompanyProfile = () => {
   return (
@@ -37,7 +38,14 @@ export const CompanyProfile = () => {
         </ExperienceText>
       </ExperienceBlock>
       <ProductionAndStaffBlock>
-        <ProductionAndStaffImg src={img} />
+        <picture>
+          <source media="(max-width: 767px)" srcSet={imgTab} />
+          <source
+            media="(min-width: 768px) and (max-width: 1199px)"
+            srcSet={imgTab}
+          />
+          <ProductionAndStaffImg src={img} />
+        </picture>
         <ProductionAndStaffSection>
           <ProductionAndStaffMainText>
             Виробничі потужності та персонал

@@ -9,6 +9,8 @@ import {
   GalleryBlockConteiner,
   GalleryConteiner,
   GalleryItemImage,
+  GalleryText,
+  GalleryTextItem,
   MainGalleryText,
   SliderConteiner,
   TextHover,
@@ -88,14 +90,20 @@ export const Gallery = () => {
                 onMouseEnter={() => mouseEnter(index)}
                 onMouseLeave={mouseLeave}
               />
+              {hoveredIndex !== index ? (
+                <GalleryTextItem>Лоджія 23м</GalleryTextItem>
+              ) : (
+                <></>
+              )}
               {hoveredIndex === index && (
                 <>
                   <TextHover
                     onMouseEnter={() => mouseEnter(index)}
                     onMouseLeave={mouseLeave}
                   >
-                    Лоджія 23м <br/>ПВХ/Шось там
-                  </TextHover> 
+                    Лоджія 23м <br />
+                    ПВХ/Шось там
+                  </TextHover>
                   <Link to="order" smooth={true} duration={500} offset={-70}>
                     <ButtonSlider
                       onMouseEnter={() => mouseEnter(index)}

@@ -3,9 +3,15 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   display: flex;
-  justify-content: center;
-  height: 100px;
-  align-items: center;
+  flex-direction: column;
+  height: 214px;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: unset;
+    height: 100px;
+  }
 `;
 
 export const LeftConatiner = styled.div`
@@ -15,7 +21,6 @@ export const LeftConatiner = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  display: none;
   margin: 0;
   @media (min-width: 768px) {
     display: flex;
@@ -33,22 +38,43 @@ export const RightContainer = styled.div`
 
 export const Navigation = styled.ul`
   display: flex;
-  justify-content: space-between;
+
+  flex-direction: column;
+  align-items: center;
   padding: 0;
   margin: 0;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    flex-direction: unset;
+  }
 `;
 
 export const NavItem = styled.li`
   list-style-type: none;
   cursor: pointer;
-  margin-right: 130px;
 
-  &:last-child {
-    margin-right: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 66px;
+
+  color: #232629;
+
+  @media (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 66px;
+
+    color: #232629;
+    margin-right: 50px;
   }
 
-  @media (width <= 1200px) {
-    margin-right: 50px;
+  @media (min-width: 1400px) {
+    margin-right: 130px;
   }
 `;
 
