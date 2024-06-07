@@ -6,72 +6,130 @@ export const CompanyProfileConteiner = styled.div`
 `;
 
 export const ExperienceBlock = styled.div`
-  width: 982px;
+  width: 300px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 544px;
+  }
+
+  @media (min-width: 1400px) {
+    width: 982px;
+  }
 `;
 
 export const ExperienceMainText = styled.h2`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 29px;
   text-align: center;
 
   color: #001d3d;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 `;
 
 export const ExperienceText = styled.p`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 13px;
+  line-height: 16px;
   text-align: center;
 
   color: #767676;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
 `;
 
 export const ProductionAndStaffBlock = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 
   margin-top: 100px;
+  @media (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: unset;
+  }
 `;
 
 export const ProductionAndStaffImg = styled.img`
-  width: 695px;
-  height: 500px;
+  width: 300px;
+  height: 215px;
+
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 406px;
+    height: 260px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 695px;
+    height: 500px;
+  }
 `;
 
 export const ProductionAndStaffSection = styled.div`
-  width: 395px;
+  width: 228px;
+  margin-left: 30px;
 
-  margin-left: 50px;
+  @media (min-width: 768px) {
+    width: 395px;
+    margin-left: 30px;
+  }
+  @media (min-width: 1400px) {
+    margin-left: 50px;
+  }
 `;
 
 export const ProductionAndStaffMainText = styled.h2`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  display: flex;
-  align-items: center;
+  font-size: 22px;
+  line-height: 27px;
 
   color: #001d3d;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 `;
 
 export const ProductionAndStaffText = styled.p`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 13px;
+  line-height: 16px;
 
   color: #767676;
-`;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  @media (min-width: 1400px) {
+    font-size: 22px;
+    line-height: 27px;
+  }
+`;  
 
 export const WorkingProcessBlock = styled.div`
   width: 1030px;

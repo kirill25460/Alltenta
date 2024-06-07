@@ -161,7 +161,7 @@ export const TextHover = styled.h4`
     font-size: 18px;
   }
   @media (min-width: 1440px) {
-    bottom: 100px;    
+    bottom: 100px;
     font-size: 20px;
   }
   @media (min-width: 1800px) {
@@ -169,4 +169,16 @@ export const TextHover = styled.h4`
     font-size: 18px;
     bottom: 240px;
   }
+`;
+
+export const GalleryTextItem = styled.p`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  bottom: 0;
+  left: 20px;
+  color: #ffffff;
+  position: absolute;
 `;
