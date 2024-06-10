@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import backgroundImage from '../../Images/img7.png';
+import { FiPhone } from 'react-icons/fi';
+import { CiMail } from 'react-icons/ci';
 
 export const ContactFormConteiner = styled.div`
   width: 100%;
@@ -15,8 +17,13 @@ export const ContactFormConteiner = styled.div`
   margin-bottom: 150px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+    flex-direction: unset;
+  }
 `;
 
 export const ContactFormBlock = styled.div``;
@@ -24,16 +31,31 @@ export const ContactFormBlock = styled.div``;
 export const ContactFormMainText = styled.h2`
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 49px;
-  display: flex;
-  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
 
-  margin-bottom: 20px;
-  width: 681px;
+  margin-top: 30px;
+  width: 300px;
+  padding-top: 50px;
 
   color: #ffffff;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+    width: 357px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 49px;
+
+    width: 681px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ContactFormText = styled.p`
@@ -44,19 +66,29 @@ export const ContactFormText = styled.p`
   line-height: 24px;
 
   margin-top: 0;
+
   width: 534px;
 
   color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: 19px;
+    line-height: 23px;
+    width: 357px;
+  }
 `;
 
 export const ContainerForm = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 30px;
+
+
+  position: relative;
 
   justify-content: center;
   align-items: center;
   @media (min-width: 768px) {
+    margin-top: 60px;
     position: relative;
     margin-top: 75px;
   }
@@ -89,7 +121,7 @@ export const StyledInput = styled.input`
   background: transparent;
 
   @media (min-width: 768px) {
-    width: 293px;
+    width: 287px;
     height: 45px;
     margin-bottom: 15px;
   }
@@ -119,9 +151,10 @@ export const StyledInputEmail = styled.input`
   background: transparent;
 
   @media (min-width: 768px) {
-    width: 293px;
+    width: 205px;
     height: 45px;
     margin-bottom: 15px;
+    margin-left: -80px;
   }
   @media (min-width: 1024px) {
     width: 308px;
@@ -134,42 +167,41 @@ export const StyledInputEmail = styled.input`
 `;
 
 export const ButtonForm = styled.button`
-  margin-top: 10px;
-  width: 300px;
-  height: 30px;
+  width: 90px;
+  height: 45px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: #232529;
   background: #ffffff;
   border: 1px solid #232529;
   cursor: pointer;
 
+  color: #232529;
+
+  position: absolute;
+  left: 321px;
+  top: 144px;
+  left: 211px;
+
   @media (min-width: 768px) {
-    margin-top: 0px;
-    position: absolute;
-    left: 0px;
-    bottom: -40px;
-    width: 294px;
+    width: 62px;
+    height: 46px;
+    left: 227px;
+    top: 60px;
+
+    font-size: 7px;
+    line-height: 30px;
   }
   @media (min-width: 1024px) {
     width: 90px;
-    margin-top: 0px;
-    position: absolute;
-    left: 341px;
-    bottom: 31px;
-    width: 100px;
+    left: 350px;
+    top: 80px;
     height: 50px;
   }
   @media (min-width: 1440px) {
     margin-top: 0px;
-    position: absolute;
     left: 341px;
     bottom: 31px;
     width: 100px;
@@ -182,3 +214,54 @@ export const ButtonForm = styled.button`
     border: 1px solid #a2b9d0;
   }
 `;
+
+// export const ContactWrap = styled.div`
+//   display: flex;
+//   margin-top: 30px;
+
+//   @media (min-width: 768px) {
+//     margin-top: 20px;
+//     margin-left: 50px;
+//   }
+// `;
+
+// export const StyledLink = styled.a`
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 10px;
+//   line-height: 30px;
+//   display: flex;
+//   align-items: center;
+
+//   color: #ffffff;
+
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+
+//   @media (min-width: 768px) {
+//     font-size: 13px;
+//     &:not(:last-child) {
+//       margin-right: 40px;
+//     }
+//   }
+//   @media (min-width: 1024px) {
+//     font-size: 15px;
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+// `;
+
+// export const MailIcon = styled(CiMail)`
+//   width: 12px;
+//   height: 12px;
+//   margin-right: 10px;
+// `;
+
+// export const PhonIcon = styled(FiPhone)`
+//   width: 12px;
+//   height: 12px;
+//   margin-right: 10px;
+// `;
