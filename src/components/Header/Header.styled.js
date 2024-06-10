@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   height: 214px;
-
+margin-top: 40px;
   @media (min-width: 768px) {
     justify-content: center;
     align-items: center;
