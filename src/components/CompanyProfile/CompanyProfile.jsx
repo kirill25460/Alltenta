@@ -22,8 +22,27 @@ import {
 } from './CompanyProfileSection .styled';
 import img from '../../Images/img6.png';
 import imgTab from '../../Images/img6_tab(1).jpeg';
+import { useEffect, useState } from 'react';
 
 export const CompanyProfile = () => {
+  const [screenWidth, setScreenWidth] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 768) {
+        return setScreenWidth(true);
+      } else {
+        return setScreenWidth(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <CompanyProfileConteiner>
       <ExperienceBlock>
@@ -38,6 +57,13 @@ export const CompanyProfile = () => {
         </ExperienceText>
       </ExperienceBlock>
       <ProductionAndStaffBlock>
+        {screenWidth ? (
+          <ProductionAndStaffMainText>
+            Виробничі потужності та персонал
+          </ProductionAndStaffMainText>
+        ) : (
+          <></>
+        )}
         <picture>
           <source media="(max-width: 767px)" srcSet={imgTab} />
           <source
@@ -47,9 +73,13 @@ export const CompanyProfile = () => {
           <ProductionAndStaffImg src={img} />
         </picture>
         <ProductionAndStaffSection>
-          <ProductionAndStaffMainText>
-            Виробничі потужності та персонал
-          </ProductionAndStaffMainText>
+          {screenWidth ? (
+            <></>
+          ) : (
+            <ProductionAndStaffMainText>
+              Виробничі потужності та персонал
+            </ProductionAndStaffMainText>
+          )}
           <ProductionAndStaffText>
             Наша компанія пишається власними виробничими потужностями, які
             дозволяють нам виконувати всі замовлення швидко та якісно. Ми маємо
@@ -77,6 +107,18 @@ export const CompanyProfile = () => {
           <EquipmentAndValuesMainText>
             Професійне обладнання та цінності нашої компанії
           </EquipmentAndValuesMainText>
+          {screenWidth ? (
+            <picture>
+              <source media="(max-width: 767px)" srcSet={imgTab} />
+              <source
+                media="(min-width: 768px) and (max-width: 1199px)"
+                srcSet={imgTab}
+              />
+              <EquipmentAndValuesImg src={img} />
+            </picture>
+          ) : (
+            <></>
+          )}
           <EquipmentAndValuesText>
             Всі роботи з пайки ПВХ ми виконуємо на професійному обладнанні
             швейцарської компанії Leister. Це дозволяє нам досягати максимальної
@@ -87,7 +129,18 @@ export const CompanyProfile = () => {
             якість та відповідність всім їхнім потребам.
           </EquipmentAndValuesText>
         </EquipmentAndValuesSection>
-        <EquipmentAndValuesImg src={img} />
+        {screenWidth ? (
+          <></>
+        ) : (
+          <picture>
+            <source media="(max-width: 767px)" srcSet={imgTab} />
+            <source
+              media="(min-width: 768px) and (max-width: 1199px)"
+              srcSet={imgTab}
+            />
+            <EquipmentAndValuesImg src={img} />
+          </picture>
+        )}
       </EquipmentAndValuesBlock>
       <WorkingPrinciplesBlock>
         <WorkingPrinciplesMainText>
