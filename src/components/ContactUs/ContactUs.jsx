@@ -69,10 +69,10 @@ export const ContactUs = () => {
               <PhonIcon />
               +097 033-29-29
             </StyledLink>
-            <StyledLink href="mailto:manager@alltenta.com">
+            {/* <StyledLink href="mailto:manager@alltenta.com">
               <MailIcon />
               manager@alltenta.com
-            </StyledLink>
+            </StyledLink> */}
           </ContactWrap>
           <ContactWrap>
             {' '}
