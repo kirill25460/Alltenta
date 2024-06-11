@@ -1,4 +1,4 @@
-import { ContactUs } from 'components/ContactUs/ContactUs';
+import { ContactUsD } from 'components/ContactUsDescription/ContactUsD';
 import { ProductDescription } from 'components/ProductDescription/ProductDescription';
 import { WhyChooseUs } from 'components/WhyChooseUs/WhyChooseUs';
 
@@ -7,7 +7,7 @@ export const ProductPage = () => {
     <>
       <ProductDescription />
       <WhyChooseUs/>
-      <ContactUs />
+      <ContactUsD />
     </>
   );
 };

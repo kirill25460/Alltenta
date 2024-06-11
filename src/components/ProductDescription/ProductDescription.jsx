@@ -12,6 +12,8 @@ import {
   TextDetailItem,
   TextInformation,
   TextProductDescription,
+  ProductDescriptionListTab,
+  ProductWrap,
 } from './ProductDescription.styled';
 import img from '../../Images/img6.png';
 import img1 from '../../Images/img6.png';
@@ -22,7 +24,32 @@ export const ProductDescription = () => {
   return (
     <ProductDescriptionConteiner>
       <ProductDescriptionBlock>
+        <ProductWrap>
         <MainTextProductDescription>Тераса</MainTextProductDescription>
+        <ProductDescriptionListTab>
+          <ProductDescriptionItem>
+            <ImgDetailItem src={ProductPageSvg} />
+            <DetailItem>
+              <TextDetailItem>Монтаж</TextDetailItem>
+              <TextInformation>2 день</TextInformation>
+            </DetailItem>
+          </ProductDescriptionItem>
+          <ProductDescriptionItem>
+            <ImgDetailItem src={ProductPageSvg} />
+            <DetailItem>
+              <TextDetailItem>Вартість</TextDetailItem>
+              <TextInformation>26 730 грн</TextInformation>
+            </DetailItem>
+          </ProductDescriptionItem>
+          <ProductDescriptionItem>
+            <ImgDetailItem src={ProductPageSvg} />
+            <DetailItem>
+              <TextDetailItem>Площа</TextDetailItem>
+              <TextInformation>29,7 м2</TextInformation>
+            </DetailItem>
+          </ProductDescriptionItem>
+        </ProductDescriptionListTab>
+        </ProductWrap>
         <TextProductDescription>
           Плівка Achilles (Японія), товщина 500 мкм, окантовка тканини ПВХ,
           комплект кріплень через кожні 30-40 см
@@ -32,25 +59,25 @@ export const ProductDescription = () => {
       <ProductDescriptionBlock>
         <ProductDescriptionList>
           <ProductDescriptionItem>
+            <ImgDetailItem src={ProductPageSvg} />
             <DetailItem>
-              <ImgDetailItem src={ProductPageSvg} />
-              <TextDetailItem>Площа</TextDetailItem>
-            </DetailItem>
-            <TextInformation>29,7 м2</TextInformation>
-          </ProductDescriptionItem>
-          <ProductDescriptionItem>
-            <DetailItem>
-              <ImgDetailItem src={ProductPageSvg} />
               <TextDetailItem>Монтаж</TextDetailItem>
+              <TextInformation>2 день</TextInformation>
             </DetailItem>
-            <TextInformation>2 день</TextInformation>
           </ProductDescriptionItem>
           <ProductDescriptionItem>
+            <ImgDetailItem src={ProductPageSvg} />
             <DetailItem>
-              <ImgDetailItem src={ProductPageSvg} />
               <TextDetailItem>Вартість</TextDetailItem>
+              <TextInformation>26 730 грн</TextInformation>
             </DetailItem>
-            <TextInformation>26 730 грн</TextInformation>
+          </ProductDescriptionItem>
+          <ProductDescriptionItem>
+            <ImgDetailItem src={ProductPageSvg} />
+            <DetailItem>
+              <TextDetailItem>Площа</TextDetailItem>
+              <TextInformation>29,7 м2</TextInformation>
+            </DetailItem>
           </ProductDescriptionItem>
         </ProductDescriptionList>
         <ImgBlock>

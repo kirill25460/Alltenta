@@ -36,7 +36,7 @@ export const Footer = () => {
         <FooterText>Контакти</FooterText>
         <StyledLink href="tel:+38097 033 29 29"><PhonIcon/>+097 033-29-29</StyledLink>
         <StyledLink href="tel:+38093 033 29 29"><PhonIcon/>+093 033-29-29</StyledLink>
-        <StyledLink href="mailto:manager@alltenta.com"><MailIcon/>manager@alltenta.com</StyledLink>
+        <StyledLink href="mailto:manager@alltenta.info"><MailIcon/>manager@alltenta.info</StyledLink>
       </ContactWrap>
       <div>
         <FooterSocText>Соціальні мережі</FooterSocText>

@@ -17,10 +17,12 @@ import {
   InfoWrap,
   ContactFormConteiner,
   StyledInputEmail,
-} from './ContactUs.styled';
+  TextMob,
+  FormWrap,
+} from './ContactUsD.styled';
 // import { useState } from 'react';
 
-export const ContactUs = () => {
+export const ContactUsD = () => {
   // const [formData, setFormData] = useState({
   //   name: '',
   //   contact: '',
@@ -33,6 +35,7 @@ export const ContactUs = () => {
 
   return (
     <Container id="order">
+        <TextMob>Готові до створення замовлення або залишились запитання?</TextMob>
       <InfoWrap>
         <picture>
           <source media="(max-width:768px)" srcSet={ContactUs360} />
@@ -44,7 +47,7 @@ export const ContactUs = () => {
         </picture>
       </InfoWrap>
       <ContactFormConteiner>
-        <Text>Ми розрахуємо вартість вашого замовлення безкоштовно!</Text>
+        <Text>Готові до створення замовлення або залишились запитання?</Text>
         <ContainerForm>
           <StyledInput
             type="text"
@@ -53,6 +56,7 @@ export const ContactUs = () => {
             // value={formData.name}
             // onChange={handleChange}
           />
+          <FormWrap>
           <StyledInputEmail
             type="text"
             name="contact"
@@ -61,6 +65,7 @@ export const ContactUs = () => {
             // onChange={handleChange}
           />
           <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
+          </FormWrap>
         </ContainerForm>
         <div>
           <ContactWrap>
