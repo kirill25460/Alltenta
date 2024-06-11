@@ -18,6 +18,7 @@ import {
   ContactFormConteiner,
   StyledInputEmail,
   TextMob,
+  FormWrap,
 } from './ContactUsD.styled';
 // import { useState } from 'react';
 
@@ -55,6 +56,7 @@ export const ContactUsD = () => {
             // value={formData.name}
             // onChange={handleChange}
           />
+          <FormWrap>
           <StyledInputEmail
             type="text"
             name="contact"
@@ -63,6 +65,7 @@ export const ContactUsD = () => {
             // onChange={handleChange}
           />
           <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
+          </FormWrap>
         </ContainerForm>
         <div>
           <ContactWrap>

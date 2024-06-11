@@ -13,6 +13,7 @@ import {
   TextInformation,
   TextProductDescription,
   ProductDescriptionListTab,
+  ProductWrap,
 } from './ProductDescription.styled';
 import img from '../../Images/img6.png';
 import img1 from '../../Images/img6.png';
@@ -23,6 +24,7 @@ export const ProductDescription = () => {
   return (
     <ProductDescriptionConteiner>
       <ProductDescriptionBlock>
+        <ProductWrap>
         <MainTextProductDescription>Тераса</MainTextProductDescription>
         <ProductDescriptionListTab>
           <ProductDescriptionItem>
@@ -47,6 +49,7 @@ export const ProductDescription = () => {
             </DetailItem>
           </ProductDescriptionItem>
         </ProductDescriptionListTab>
+        </ProductWrap>
         <TextProductDescription>
           Плівка Achilles (Японія), товщина 500 мкм, окантовка тканини ПВХ,
           комплект кріплень через кожні 30-40 см

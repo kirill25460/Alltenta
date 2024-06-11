@@ -37,8 +37,8 @@ export const StyledInput = styled.input`
   color: #767676;
 
   @media (min-width: 768px) {
-    width: 293px;
-    height: 45px;
+    width: 276px;
+    height: 40px;
     margin-bottom: 15px;
   }
   @media (min-width: 1024px) {
@@ -66,9 +66,11 @@ export const StyledInputEmail = styled.input`
   color: #767676;
 
   @media (min-width: 768px) {
-    width: 293px;
-    height: 45px;
-    margin-bottom: 15px;
+margin-bottom: 0px;
+width: 168px;
+height: 40px;
+font-size: 12px;
+line-height: 30px;
   }
   @media (min-width: 1024px) {
     width: 308px;
@@ -89,16 +91,17 @@ export const ContainerForm = styled.form`
   align-items: center;
   @media (min-width: 768px) {
     position: relative;
-    margin-top: 75px;
+    margin-top: 20px;
+    align-items: normal;
   }
   @media (min-width: 1024px) {
     margin-top: 30px;
-    margin-left: 50px;
+    
     justify-content: normal;
     align-items: baseline;
   }
   @media (min-width: 1440px) {
-    margin-left: 50px;
+    
     justify-content: normal;
     align-items: baseline;
   }
@@ -130,6 +133,12 @@ export const StyledMessage = styled.textarea`
     width: 293px;
   } */
 `;
+export const FormWrap = styled.div`
+ @media (min-width: 768px) {
+    display: flex;
+  }
+
+`;
 
 export const ButtonForm = styled.button`
   margin-top: 10px;
@@ -151,27 +160,23 @@ export const ButtonForm = styled.button`
 
   @media (min-width: 768px) {
     margin-top: 0px;
-    position: absolute;
-    left: 0px;
-    bottom: -40px;
-    width: 294px;
+    margin-left: 20px;
+width: 88px;
+height: 40px;
+
+
   }
   @media (min-width: 1024px) {
-    width: 90px;
+    margin-left: 32px;
     margin-top: 0px;
-    position: absolute;
-    left: 341px;
-    bottom: 31px;
     width: 100px;
     height: 50px;
   }
   @media (min-width: 1440px) {
     margin-top: 0px;
-    position: absolute;
-    left: 341px;
-    bottom: 31px;
-    width: 100px;
+    width: 110px;
     height: 50px;
+    margin-left: 24px;
   }
 
   &:hover {
@@ -183,9 +188,6 @@ export const ButtonForm = styled.button`
 
 export const Text = styled.h3`
  display: none;
-
- 
-    
     font-size: 25px;
     line-height: 30px;
     width: 345px;
@@ -193,18 +195,26 @@ export const Text = styled.h3`
   font-style: normal;
 
   color: #232529;
+  @media (min-width: 768px) {
+    display:block;
+width: 243px;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #232529;
+margin: 0px;
 
-  
-
+   
+  }
   @media (min-width: 1024px) {
-    display: inline-block;
-    width: 500px;
+    width: 440px;
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
-    margin-left: 50px;
+    margin-top: 0px;;
   }
   @media (min-width: 1440px) {
+    width: 500px;
   }
 `;
 
@@ -224,22 +234,22 @@ text-align: center;
 color: #232529;
 
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
   display: none;
   }
 
   
 `;
 
-/* Ми розрахуємо вартість вашого замовлення безкоштовно! */
+
 
 export const ContactUsImg = styled.img`
   height: 373px;
   width: 300px;
 
   @media (min-width: 768px) {
-    width: 343px;
-    height: 339px;
+width: 338px;
+height: 250px;
   }
 
   @media (min-width: 1024px) {
@@ -265,8 +275,10 @@ export const StyledLink = styled.a`
 
   @media (min-width: 768px) {
     font-size: 13px;
+font-size: 10px;
+line-height: 30px;
     &:not(:last-child) {
-      margin-right: 40px;
+      margin-right: 35px;
     }
   }
   @media (min-width: 1024px) {
@@ -294,8 +306,8 @@ export const ContactWrap = styled.div`
   margin-top: 30px;
 
   @media (min-width: 768px) {
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 10px;
+    
   }
 `;
 
@@ -308,4 +320,8 @@ export const InfoWrap = styled.div`
   }
 `;
 
-export const ContactFormConteiner = styled.div``;
+export const ContactFormConteiner = styled.div`
+margin-left: 50px;
+`;
+
+

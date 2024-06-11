@@ -41,12 +41,22 @@ color: #767676;
 width: 250px;
 
   @media (min-width: 768px) {
-   
+width: 640px;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
   }
 
   @media (min-width: 1024px) {
     font-size: 25px;
     line-height: 30px;
+  }
+  @media (min-width: 1440px) {
+width: 860px;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
   }
 `;
 
@@ -64,12 +74,22 @@ width: 250px;
 
 
   @media (min-width: 768px) {
-   
+    width: 640px;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
   }
 
   @media (min-width: 1024px) {
     font-size: 30px;
   line-height: 37px;
+  }
+  @media (min-width: 1440px) {
+width: 860px;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
   }
 `;
 

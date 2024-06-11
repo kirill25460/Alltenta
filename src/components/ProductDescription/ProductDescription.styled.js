@@ -21,6 +21,16 @@ export const ProductDescriptionConteiner = styled.div`
 
 export const ProductDescriptionBlock = styled.div``;
 
+export const ProductWrap = styled.div`
+
+@media (min-width: 768px) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+`;
+
+
 export const MainTextProductDescription = styled.h2`
   font-family: 'Montserrat';
   font-style: normal;
@@ -94,12 +104,20 @@ export const ProductDescriptionList = styled.ul`
   align-items: center;
   margin-top: 30px;
   @media (min-width: 768px) {
-   
+   display: none;
   }
 
   @media (min-width: 1024px) {
+    display: flex;
     margin-left: 50px;
-  margin-top: 90px;
+  margin-top: 38px;
+  margin-bottom: 30px;
+
+  }
+  @media (min-width: 1440px) {
+    display: flex;
+    margin-left: 50px;
+  margin-top: 55px;
   margin-bottom: 30px;
 
   }
