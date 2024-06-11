@@ -321,7 +321,10 @@ export const InfoWrap = styled.div`
 `;
 
 export const ContactFormConteiner = styled.div`
-margin-left: 50px;
+
+@media (min-width: 768px) {
+  margin-left: 50px;
+  }
 `;
 
 
