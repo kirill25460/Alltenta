@@ -1,6 +1,7 @@
 import {
     ListConteiner,
   MainTextWhyChooseUs,
+  Pig,
   SvgItem,
   TextBlock,
   TextWhyChooseUs,
@@ -26,7 +27,8 @@ export const WhyChooseUs = () => {
       <ListConteiner>
         <WhyChooseUsList>
           <WhyChooseUsItem>
-            <SvgItem src={ProductPageSvg} />
+            {/* <SvgItem src={ProductPageSvg} /> */}
+            <Pig/>
             Мы производитель, покупая у нас, Вы не переплачиваете посредникам
           </WhyChooseUsItem>
           <WhyChooseUsItem>

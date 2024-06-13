@@ -12,12 +12,22 @@ export const ContactConteiner = styled.div`
 
   box-shadow: inset 0px -100px 32.4px rgba(0, 0, 0, 0.43);
 
-  padding-left: 150px;
   padding-bottom: 73px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    align-items: unset;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 150px;
+  }
 `;
 
 export const ContactBlock = styled.div``;
@@ -25,29 +35,31 @@ export const ContactBlock = styled.div``;
 export const ContactMainText = styled.h2`
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 49px;
-  display: flex;
-  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
 
   margin-bottom: 20px;
-  width: 980px;
+
+  width: 300px;
 
   color: #ffffff;
-`;
 
-export const ContactText = styled.p`
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  @media (min-width: 768px) {
+    font-size: 49px;
+    line-height: 60px;
 
-  margin-top: 0;
-  width: 534px;
+    width: 771px;
+  }
 
-  color: #ffffff;
+  @media (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    width: 980px;
+  }
 `;
 
 export const ContainerFormItem = styled.form`
@@ -56,41 +68,38 @@ export const ContainerFormItem = styled.form`
   margin: 0;
 
   justify-content: center;
-  align-items: center;
   @media (min-width: 768px) {
     position: relative;
-    margin-top: 75px;
+    margin-top: 30px;
   }
   @media (min-width: 1024px) {
     margin-top: 30px;
-    margin-left: -45px;
     justify-content: normal;
     align-items: baseline;
   }
   @media (min-width: 1440px) {
-    margin-left: -45px;
     justify-content: normal;
     align-items: baseline;
   }
 `;
 
 export const StyledInput = styled.input`
-  height: 50px;
+  height: 31px;
   width: 300px;
   border: 1px solid #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-left: 15px;
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 30px;
   color: #ffffff;
   background: transparent;
 
   @media (min-width: 768px) {
-    width: 293px;
+    width: 431px;
     height: 45px;
     margin-bottom: 15px;
   }
@@ -105,22 +114,22 @@ export const StyledInput = styled.input`
 `;
 
 export const StyledInputEmail = styled.input`
-  height: 50px;
+  height: 31px;
   width: 300px;
   border: 1px solid #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-left: 15px;
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 30px;
   color: #ffffff;
   background: transparent;
 
   @media (min-width: 768px) {
-    width: 293px;
+    width: 309px;
     height: 45px;
     margin-bottom: 15px;
   }
@@ -155,15 +164,16 @@ export const ButtonForm = styled.button`
   @media (min-width: 768px) {
     margin-top: 0px;
     position: absolute;
-    left: 0px;
-    bottom: -40px;
-    width: 294px;
+    left: 340px;
+    bottom: 115px;
+    width: 92px;
+    height: 42px;
   }
   @media (min-width: 1024px) {
     width: 90px;
     margin-top: 0px;
     position: absolute;
-    left: 390px;
+    left: 340px;
     bottom: 130px;
     width: 100px;
     height: 50px;
@@ -171,7 +181,7 @@ export const ButtonForm = styled.button`
   @media (min-width: 1440px) {
     margin-top: 0px;
     position: absolute;
-    left: 390px;
+    left: 340px;
     bottom: 130px;
     width: 100px;
     height: 50px;
@@ -187,11 +197,9 @@ export const ButtonForm = styled.button`
 export const ContactWrap = styled.div`
   display: flex;
   margin-top: 30px;
-  
 
   @media (min-width: 768px) {
     margin-top: 20px;
-    margin-left: 50px;
   }
 `;
 

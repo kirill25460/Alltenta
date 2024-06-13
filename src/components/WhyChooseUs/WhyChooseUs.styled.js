@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { GiReceiveMoney } from "react-icons/gi";
 
 export const WhyChooseUsConteiner = styled.div`
   
@@ -162,4 +163,11 @@ export const ListConteiner = styled.div`
   @media (min-width: 1024px) {
     margin-top: 52px;
   }
+`;
+
+export const Pig = styled(GiReceiveMoney)`
+  width: 90px;
+  height: 54px;
+
+  margin-right: 15px;
 `;

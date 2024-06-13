@@ -10,25 +10,39 @@ export const MainTextFaqSection = styled.h2`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
-  line-height: 66px;
+  font-size: 40px;
+  line-height: 40px;
+
+  color: #001d3d;
+
   text-align: center;
   margin-top: 150px;
   margin-bottom: 0;
 
-  color: #001d3d;
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 66px;
+  }
 `;
 
 export const TextFaqSection = styled.p`
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
   text-align: center;
-  margin-top: 15px;
+
+  margin-top: 10px;
 
   color: #767676;
+
+  @media (min-width: 768px) {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
 `;
 
 export const FaqSectionList = styled.ul`
@@ -54,27 +68,62 @@ export const ItemText = styled.h3`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  padding-left: 15px;
 
   color: #232529;
 
-  margin-right: 219px;
+  @media (min-width: 512px) {
+    font-size: 22px;
+    line-height: 27px;
+
+    margin-right: 135px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 29px;
+
+    margin-right: 219px;
+  }
 `;
 
 export const TextHoverFaqSection = styled.p`
-  font-family: 'Geologica';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-
-  color: #767676;
-  width: 833px;
-
   padding-left: 23px;
 
   margin-bottom: 28px;
+
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #767676;
+
+  width: 300px;
+
+  @media (min-width: 512px) {
+    font-size: 14px;
+    line-height: 18px;
+
+    width: 460px;
+  }
+
+  @media (min-width: 768px) {
+    width: 740px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 15px;
+    line-height: 19px;
+
+    width: 833px;
+  }
 `;
 
 export const Plus = styled(CiSquarePlus)`
@@ -82,6 +131,16 @@ export const Plus = styled(CiSquarePlus)`
   height: 19px;
 
   padding-right: 30px;
+
+  @media (min-width: 512px) {
+    padding-right: 18px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 21px;
+  }
 
   cursor: pointer;
 `;
@@ -91,6 +150,14 @@ export const Minus = styled(CiSquareMinus)`
   height: 19px;
 
   padding-right: 30px;
+
+  @media (min-width: 512px) {
+    padding-right: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 21px;
+  }
 
   cursor: pointer;
 `;
