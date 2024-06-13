@@ -10,11 +10,14 @@ import {
   ImgAdditionalInformationItem,
   ImgSection,
   ImgSmall,
+  ImgSmallItem,
   SecondAdditionalInformationBlock,
   TextAdditionalInformationBlock,
 } from './AdditionalInformation.styled';
-import img1 from '../../Images/img7.png';
+import img1 from '../../Images/img5.png';
+import Tab1 from '../../Images/img5_tab.png';
 import img2 from '../../Images/img6.png';
+import Tab2 from '../../Images/img6_tab(1).jpeg';
 
 export const AdditionalInformation = () => {
   return (
@@ -28,14 +31,49 @@ export const AdditionalInformation = () => {
         </AdditionalInformationText>
       </TextAdditionalInformationBlock>
       <FirstAdditionalInformationBlock>
-        <ImgAdditionalInformationItem src={img1} />
-        <ImgAdditionalInformation src={img2} />
+        <picture>
+          <source media="(max-width: 767px)" srcSet={Tab1} />
+          <source
+            media="(min-width: 768px) and (max-width: 1199px)"
+            srcSet={Tab1}
+          />
+          <ImgAdditionalInformationItem src={img1} />
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcSet={Tab2} />
+          <source
+            media="(min-width: 768px) and (max-width: 1199px)"
+            srcSet={Tab2}
+          />
+          <ImgAdditionalInformation src={img2} />
+        </picture>
       </FirstAdditionalInformationBlock>
       <SecondAdditionalInformationBlock>
-        <ImgAdditionalInformation src={img2} />
+        <picture>
+          <source media="(max-width: 767px)" srcSet={Tab2} />
+          <source
+            media="(min-width: 768px) and (max-width: 1199px)"
+            srcSet={Tab2}
+          />
+          <ImgAdditionalInformation src={img2} />
+        </picture>
         <ImgSection>
-          <ImgSmall src={img2} />
-          <ImgSmall src={img2} />
+          <picture>
+            <source media="(max-width: 767px)" srcSet={Tab2} />
+            <source
+              media="(min-width: 768px) and (max-width: 1199px)"
+              srcSet={Tab2}
+            />
+            <ImgSmall src={img2} />
+          </picture>
+          <picture>
+            <source media="(max-width: 767px)" srcSet={Tab2} />
+            <source
+              media="(min-width: 768px) and (max-width: 1199px)"
+              srcSet={Tab2}
+            />
+            <ImgSmallItem src={img2} />
+          </picture>
         </ImgSection>
       </SecondAdditionalInformationBlock>
       <AdviceBlock>

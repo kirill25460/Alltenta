@@ -3,7 +3,6 @@ import {
   ContactBlock,
   ContactConteiner,
   ContactMainText,
-  ContactText,
   ContactWrap,
   ContainerFormItem,
   MailIcon,
