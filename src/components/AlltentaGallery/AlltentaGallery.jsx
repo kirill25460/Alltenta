@@ -5,6 +5,7 @@ import {
   ImgGalleryItem,
   ImgSection,
   ImgSmall,
+  ImgSmallItem,
   MainGalleryText,
   SecondGalleryBlock,
 } from './AlltentaGallery.styled';
@@ -59,7 +60,7 @@ export const AlltentaGallery = () => {
               media="(min-width: 768px) and (max-width: 1199px)"
               srcSet={Tab2}
             />
-            <ImgSmall src={img2} />
+            <ImgSmallItem src={img2} />
           </picture>
         </ImgSection>
       </SecondGalleryBlock>

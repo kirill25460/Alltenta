@@ -23,8 +23,6 @@ export const SecondGalleryBlock = styled.div`
   @media (min-width: 1200px) {
     margin-top: 50px;
   }
-
-
 `;
 
 export const MainGalleryText = styled.h2`
@@ -47,18 +45,18 @@ export const ImgGalleryItem = styled.img`
   width: 104px;
   height: 132px;
 
-  margin-right: 50px;
+  margin-right: 13px;
 
   @media (min-width: 768px) {
     width: 230px;
     height: 290px;
-    margin-right: 29px;
+    margin-right: 41px;
   }
 
   @media (min-width: 1200px) {
     width: 395px;
     height: 500px;
-    margin-right: 13px;
+    margin-right: 50px;
   }
 `;
 
@@ -79,6 +77,24 @@ export const ImgGallery = styled.img`
 export const ImgSmall = styled.img`
   width: 104px;
   height: 59px;
+  margin-bottom: 13px;
+
+  @media (min-width: 768px) {
+    width: 230px;
+    height: 133px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 395px;
+    height: 225px;
+    margin-bottom: 50px;
+  }
+`;
+
+export const ImgSmallItem = styled.img`
+  width: 104px;
+  height: 59px;
 
   @media (min-width: 768px) {
     width: 230px;
@@ -89,15 +105,19 @@ export const ImgSmall = styled.img`
     width: 395px;
     height: 225px;
   }
-
-  &:not(:last-child) {
-    margin-bottom: 50px;
-  }
 `;
 
 export const ImgSection = styled.div`
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 
+margin-left: 13px;
+
+@media (min-width: 768px) {
+  margin-left: 41px;
+}
+
+@media (min-width: 1200px) {
   margin-left: 50px;
+}
 `;

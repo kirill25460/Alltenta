@@ -40,6 +40,9 @@ export const FooterText = styled.h3`
   @media (min-width: 768px) {
     margin-top: 0px;
   }
+  @media (min-width: 1200px) {
+    font-size: 25px;
+  }
 `;
 
 export const FooterSocText = styled.h3`
@@ -55,6 +58,10 @@ export const FooterSocText = styled.h3`
     margin: 0;
     margin-bottom: 28px;
   }
+
+  @media (min-width: 1200px) {
+    font-size: 25px;
+  }
 `;
 
 export const FooterLink = styled.h4`
@@ -64,9 +71,9 @@ export const FooterLink = styled.h4`
   font-size: 10px;
   line-height: 12px;
   color: #ffffff;
-  cursor:pointer;
+  cursor: pointer;
   position: relative;
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -76,6 +83,10 @@ export const FooterLink = styled.h4`
     height: 2px; /* Высота подчеркивания */
     background-color: transparent; /* Прозрачный цвет подчеркивания */
     transition: background-color 0.3s ease; /* Плавный переход цвета */
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 15px;
   }
 
   &:hover::after {
@@ -90,10 +101,15 @@ export const InstIcon = styled(RxInstagramLogo)`
   margin-right: 15px;
   transition: color 0.3s;
   &:hover {
-    color: #ffc300; 
+    color: #ffc300;
   }
   @media (min-width: 768px) {
     margin-right: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
   }
 `;
 
@@ -106,11 +122,16 @@ export const FaceBIcon = styled(RiFacebookLine)`
   border: 1px solid #fff;
   transition: color 0.3s;
   &:hover {
-    color: #ffc300; 
+    color: #ffc300;
     border: 1px solid #ffc300;
   }
   @media (min-width: 768px) {
     margin-right: 0px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
   }
 `;
 
@@ -121,11 +142,15 @@ export const TelegramIcon = styled(LiaTelegramPlane)`
   margin-right: 15px;
   transition: color 0.3s;
   &:hover {
-    color: #ffc300; 
+    color: #ffc300;
   }
   @media (min-width: 768px) {
     margin-right: 30px;
     margin-top: 20px;
+  }
+  @media (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
   }
 `;
 
@@ -137,12 +162,16 @@ export const PhoneIcon = styled(LiaPhoneVolumeSolid)`
   border: 1px solid #fff;
   transition: color 0.3s;
   &:hover {
-    color: #ffc300; 
+    color: #ffc300;
     border: 1px solid #ffc300;
   }
   @media (min-width: 768px) {
     margin-right: 0px;
     margin-top: 20px;
+  }
+  @media (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
   }
 `;
 
@@ -152,7 +181,7 @@ export const WrapIcons = styled.div`
   margin-top: 30px;
   @media (min-width: 768px) {
     flex-wrap: wrap;
-    width: 90px;
+    width: 95px;
     margin-top: 0px;
   }
 `;
@@ -168,13 +197,21 @@ export const StyledLink = styled.a`
   font-size: 10px;
   line-height: 300%;
   text-align: center;
-  
+
+  @media (min-width: 1200px) {
+    font-size: 15px;
+  }
 `;
 
 export const PhonIcon = styled(FiPhone)`
   margin-right: 10px;
   width: 12px;
   height: 12px;
+
+  @media (min-width: 1200px) {
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 export const ContactWrap = styled.div`
@@ -190,6 +227,11 @@ export const MailIcon = styled(CiMail)`
   margin-right: 10px;
   width: 12px;
   height: 12px;
+
+  @media (min-width: 1200px) {
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 export const InfoWrap = styled.div`

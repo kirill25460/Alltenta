@@ -5,7 +5,10 @@ export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   height: 214px;
-margin-top: 40px;
+  margin-top: 40px;
+
+  padding-left: 15px;
+  padding-right: 15px;
   @media (min-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -74,7 +77,8 @@ export const NavItem = styled.li`
   }
 
   @media (min-width: 1400px) {
-    margin-right: 130px;
+    margin-right: 80px;
+    font-size: 25px;
   }
 `;
 
@@ -130,9 +134,20 @@ export const Menu = styled.div`
   width: 153px;
 
   z-index: 2;
+  @media (min-width: 768px) {
+    left: -20px;
+    top: 50px;
+  }
+  @media (min-width: 1200px) {
+    left: -18px;
+    top: 50px;
+  }
+  @media (min-width: 1400px) {
+    left: 25px;
+    top: 55px;
+  }
 
-  left: -18px;
-  top: 22px;
+
 `;
 
 export const HeaderList = styled.ul`

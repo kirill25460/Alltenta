@@ -26,7 +26,7 @@ export const StyledInput = styled.input`
   height: 50px;
   width: 300px;
   border: 1px solid #232529;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding-left: 15px;
   box-sizing: border-box;
   font-family: 'Montserrat';
@@ -37,8 +37,8 @@ export const StyledInput = styled.input`
   color: #767676;
 
   @media (min-width: 768px) {
-    width: 293px;
-    height: 45px;
+    width: 370px;
+    height: 56px;
     margin-bottom: 15px;
   }
   @media (min-width: 1024px) {
@@ -55,7 +55,6 @@ export const StyledInputEmail = styled.input`
   height: 50px;
   width: 300px;
   border: 1px solid #232529;
-  margin-bottom: 30px;
   padding-left: 15px;
   box-sizing: border-box;
   font-family: 'Montserrat';
@@ -67,7 +66,7 @@ export const StyledInputEmail = styled.input`
 
   @media (min-width: 768px) {
     width: 293px;
-    height: 45px;
+    height: 58px;
     margin-bottom: 15px;
   }
   @media (min-width: 1024px) {
@@ -83,22 +82,21 @@ export const StyledInputEmail = styled.input`
 export const ContainerForm = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 30px;
 
   justify-content: center;
   align-items: center;
   @media (min-width: 768px) {
     position: relative;
-    margin-top: 75px;
+    margin-top: 30px;
+    align-items: unset;
   }
   @media (min-width: 1024px) {
     margin-top: 30px;
-    margin-left: 50px;
     justify-content: normal;
     align-items: baseline;
   }
   @media (min-width: 1440px) {
-    margin-left: 50px;
     justify-content: normal;
     align-items: baseline;
   }
@@ -138,7 +136,7 @@ export const ButtonForm = styled.button`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 8px;
   line-height: 30px;
   display: flex;
   align-items: center;
@@ -150,11 +148,12 @@ export const ButtonForm = styled.button`
   cursor: pointer;
 
   @media (min-width: 768px) {
+    width: 70px;
+    height: 58px;
     margin-top: 0px;
     position: absolute;
-    left: 0px;
-    bottom: -40px;
-    width: 294px;
+    left: 300px;
+    bottom: 15px;
   }
   @media (min-width: 1024px) {
     width: 90px;
@@ -184,6 +183,10 @@ export const ButtonForm = styled.button`
 export const Text = styled.h3`
   font-family: 'Montserrat';
   font-style: normal;
+  font-size: 20px;
+  text-align: center;
+
+  margin-top: 0;
 
   color: #232529;
 
@@ -194,11 +197,10 @@ export const Text = styled.h3`
   }
 
   @media (min-width: 1024px) {
-    width: 500px;
+    width: 430px;
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
-    margin-left: 50px;
   }
   @media (min-width: 1440px) {
   }
@@ -267,8 +269,7 @@ export const ContactWrap = styled.div`
   margin-top: 30px;
 
   @media (min-width: 768px) {
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 10px;
   }
 `;
 
@@ -281,4 +282,16 @@ export const InfoWrap = styled.div`
   }
 `;
 
-export const ContactFormConteiner = styled.div``;
+export const ContactFormConteiner = styled.div`
+  padding-left: 10px;
+
+  @media (min-width: 1024px) {
+    padding-left: 50px;
+  }
+`;
+
+export const ContactWrapConteiner = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
