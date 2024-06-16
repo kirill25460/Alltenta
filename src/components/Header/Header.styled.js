@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { FiAlignJustify } from 'react-icons/fi';
+import { IoMdClose } from 'react-icons/io';
 
 export const HeaderContainer = styled.header`
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   height: 214px;
   margin-top: 40px;
 
@@ -11,8 +14,6 @@ export const HeaderContainer = styled.header`
   padding-right: 15px;
   @media (min-width: 768px) {
     justify-content: center;
-    align-items: center;
-    flex-direction: unset;
     height: 100px;
   }
 `;
@@ -25,6 +26,7 @@ export const LeftConatiner = styled.div`
 
 export const RightContainer = styled.div`
   margin: 0;
+  display: none;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -132,6 +134,8 @@ export const Menu = styled.div`
   box-shadow: 0px 4px 12.3px rgba(0, 0, 0, 0.16);
 
   width: 153px;
+  left: -27px;
+  top: 50px;
 
   z-index: 2;
   @media (min-width: 768px) {
@@ -146,8 +150,6 @@ export const Menu = styled.div`
     left: 25px;
     top: 55px;
   }
-
-
 `;
 
 export const HeaderList = styled.ul`
@@ -178,4 +180,28 @@ export const HeaderItem = styled.li`
 export const Link = styled(NavLink)`
   text-decoration: none;
   color: #232629;
+`;
+
+export const MenuIcon = styled(FiAlignJustify)`
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+`;
+
+export const CloseIcon = styled(IoMdClose)`
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+`;
+
+export const MobileMenu = styled.div`
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Еще большая тень */
 `;
