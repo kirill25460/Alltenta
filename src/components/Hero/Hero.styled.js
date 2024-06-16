@@ -16,7 +16,7 @@ export const HeroContainer = styled.div`
     margin-bottom: 90px;
   }
   @media (min-width: 1024px) {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 150px;
   }
 `;

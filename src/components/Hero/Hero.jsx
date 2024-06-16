@@ -105,7 +105,7 @@ export const Hero = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         />
-        {isHovered ? (
+        {/* {isHovered ? (
           <ButtonBlock>
             <NavLinkHero to="/Product">
               <SmallArrow
@@ -116,7 +116,7 @@ export const Hero = () => {
           </ButtonBlock>
         ) : (
           <></>
-        )}
+        )} */}
       </RightHeroContainer>
       {/* <ArrowHeroContainerMobile>
         <ArrowBox onClick={handleLeftArrowClick}>

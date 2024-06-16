@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import ContactUsPhoto from '../../Images/img5.png';
 import ContactUs360 from '../../Images/img5_mob(1).jpeg';
 // import ContactUs360 from '../../Images/img5_mob.png';
@@ -17,6 +18,7 @@ import {
   InfoWrap,
   ContactFormConteiner,
   StyledInputEmail,
+  ContactWrapConteiner,
 } from './ContactUs.styled';
 // import { useState } from 'react';
 
@@ -31,8 +33,32 @@ export const ContactUs = () => {
   //   setFormData({ ...formData, [name]: value });
   // };
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Set initial state
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <Container id="order">
+      {isMobile ? (
+        <Text>Ми розрахуємо вартість вашого замовлення безкоштовно!</Text>
+      ) : (
+        <></>
+      )}
       <InfoWrap>
         <picture>
           <source media="(max-width:768px)" srcSet={ContactUs360} />
@@ -44,7 +70,11 @@ export const ContactUs = () => {
         </picture>
       </InfoWrap>
       <ContactFormConteiner>
-        <Text>Ми розрахуємо вартість вашого замовлення безкоштовно!</Text>
+        {isMobile ? (
+          <></>
+        ) : (
+          <Text>Ми розрахуємо вартість вашого замовлення безкоштовно!</Text>
+        )}
         <ContainerForm>
           <StyledInput
             type="text"
@@ -62,9 +92,8 @@ export const ContactUs = () => {
           />
           <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
         </ContainerForm>
-        <div>
+        <ContactWrapConteiner>
           <ContactWrap>
-            {' '}
             <StyledLink href="tel:+38097 033 29 29">
               <PhonIcon />
               +097 033-29-29
@@ -85,7 +114,7 @@ export const ContactUs = () => {
               manager@alltenta.info
             </StyledLink>
           </ContactWrap>
-        </div>
+        </ContactWrapConteiner>
       </ContactFormConteiner>
     </Container>
   );

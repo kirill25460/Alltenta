@@ -51,7 +51,7 @@ export const ContactMainText = styled.h2`
     font-size: 49px;
     line-height: 60px;
 
-    width: 771px;
+    width: 661px;
   }
 
   @media (min-width: 1200px) {
