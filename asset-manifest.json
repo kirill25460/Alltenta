@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a74e1f03.css",
-    "main.js": "/static/js/main.7d7fd62e.js",
+    "main.js": "/static/js/main.c0955e52.js",
     "static/media/img10.png": "/static/media/img10.d5be6e1e3b24b802fe3a.png",
     "static/media/img9.png": "/static/media/img9.b85c18de60b3d7e4aee5.png",
     "static/media/img12.png": "/static/media/img12.3d44bcd01ec2393d4ad9.png",
@@ -9,6 +9,7 @@
     "static/media/img13.png": "/static/media/img13.ae7df279e53bb081a5fa.png",
     "static/media/img5.png": "/static/media/img5.8cdc1d3dd7fbc288e56e.png",
     "static/media/img2.png": "/static/media/img2.7794e675a7d2ad65a729.png",
+    "static/media/SHTORIPVH2.jpg": "/static/media/SHTORIPVH2.c952afe388544848e483.jpg",
     "static/media/img7.png": "/static/media/img7.4dcd4d0cc6e8f89d281d.png",
     "static/media/img1.png": "/static/media/img1.f326b2eed41aea84befa.png",
     "static/media/img11.png": "/static/media/img11.c7457329f01ee4d89499.png",
@@ -16,10 +17,20 @@
     "static/media/img6.png": "/static/media/img6.d75ad1de949b4d9c3778.png",
     "static/media/img5_tab(1).jpeg": "/static/media/img5_tab(1).3084ecb727a3b12f6b91.jpeg",
     "static/media/img5_mob(1).jpeg": "/static/media/img5_mob(1).f6fe1b28e6426a5a5149.jpeg",
+    "static/media/img5_tab.png": "/static/media/img5_tab.3198a826cc7ced919b41.png",
+    "static/media/SHTORIPVH1.jpg": "/static/media/SHTORIPVH1.e9db90b3425292645903.jpg",
     "static/media/img6_tab(1).jpeg": "/static/media/img6_tab(1).83317801fe9b181a37da.jpeg",
     "static/media/img7_tab.png": "/static/media/img7_tab.442625d203db7ca7ffd1.png",
+    "static/media/TENTPESOK3.jpg": "/static/media/TENTPESOK3.cefd1eee7a58357db5e3.jpg",
+    "static/media/TENTPESOK2.jpg": "/static/media/TENTPESOK2.858f956d30159d936d25.jpg",
+    "static/media/SHTORIPVH3.jpg": "/static/media/SHTORIPVH3.8806b0fbd221f527c47d.jpg",
+    "static/media/TENTCAR1.jpeg": "/static/media/TENTCAR1.d7dc236cf6a4e52d837c.jpeg",
     "static/media/img6_mob(1).jpeg": "/static/media/img6_mob(1).7e3cfad348f07ec95a98.jpeg",
     "static/media/img7_mob(1).jpeg": "/static/media/img7_mob(1).4729a602dafa98848959.jpeg",
+    "static/media/TENTCAR2.jpg": "/static/media/TENTCAR2.cadead285a5a7d42c15a.jpg",
+    "static/media/TENTPESOK1.jpg": "/static/media/TENTPESOK1.637b389f0d972c4df1e8.jpg",
+    "static/media/TENTCAR3.jpg": "/static/media/TENTCAR3.6f28b8b8c5865c95f2d0.jpg",
+    "static/media/ContactInformationImg.png": "/static/media/ContactInformationImg.3b01490947daaa66dd9f.png",
     "static/media/experience.svg": "/static/media/experience.851419502bed7895e813dc23665b4fbc.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -30,11 +41,12 @@
     "static/media/Loyalty1.svg": "/static/media/Loyalty1.5b496f70febf63eae03ba27d509fb571.svg",
     "static/media/Reliability2.svg": "/static/media/Reliability2.c8bd64df650046b2f603fbfe872371d4.svg",
     "static/media/Reliability.svg": "/static/media/Reliability.1f6b641632ca64cefa50cd76efce6baa.svg",
+    "static/media/ProductPageSvg.svg": "/static/media/ProductPageSvg.32e97a522fabd081fe6afad48c4fae87.svg",
     "main.a74e1f03.css.map": "/static/css/main.a74e1f03.css.map",
-    "main.7d7fd62e.js.map": "/static/js/main.7d7fd62e.js.map"
+    "main.c0955e52.js.map": "/static/js/main.c0955e52.js.map"
   },
   "entrypoints": [
     "static/css/main.a74e1f03.css",
-    "static/js/main.7d7fd62e.js"
+    "static/js/main.c0955e52.js"
   ]
 }
