@@ -171,6 +171,7 @@ export const HeaderItem = styled.li`
   display: flex;
   align-items: center;
 
+
   &:hover {
     background-color: #f0f0f0;
     cursor: pointer;
