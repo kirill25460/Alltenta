@@ -13,8 +13,6 @@ export const TextDescription = () => {
     item => item.id === parseInt(id)
   );
 
-  console.log(id);
-
   return (
     <ProductDescriptionTextContainer>
       <ProductDescriptionText

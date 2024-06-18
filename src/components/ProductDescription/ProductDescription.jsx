@@ -14,8 +14,6 @@ import {
   TextProductDescription,
   ProductDescriptionListTab,
   ProductWrap,
-  ProductDescriptionTextConteiner,
-  ProductDescriptionText,
 } from './ProductDescription.styled';
 import ProductPageSvg from '../../Images/ProductPageSvg.svg';
 import { useParams } from 'react-router-dom';
