@@ -13,9 +13,9 @@ import {
   HeroContainer,
   HeroImg,
   LeftHeroConatiner,
-  NavLinkHero,
+  // NavLinkHero,
   RightHeroContainer,
-  SmallArrow,
+  // SmallArrow,
 } from './Hero.styled';
 import hero_img from '../../Images/img2.png';
 import hero_img2 from '../../Images/img3.png';

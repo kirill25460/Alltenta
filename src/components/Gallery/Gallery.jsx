@@ -9,7 +9,6 @@ import {
   GalleryBlockConteiner,
   GalleryConteiner,
   GalleryItemImage,
-  GalleryText,
   GalleryTextItem,
   MainGalleryText,
   SliderConteiner,

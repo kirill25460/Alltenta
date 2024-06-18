@@ -25,7 +25,7 @@ export const FaqSection = () => {
     } else {
       setValueItem(false);
     }
-  }, []);
+  }, [a.pathname]);
 
   const toggleFaqList = item => {
     setIsFaqOpen(item);

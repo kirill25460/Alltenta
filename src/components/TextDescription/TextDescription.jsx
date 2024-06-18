@@ -1,5 +1,4 @@
-import { ContactUsD } from 'components/ContactUsDescription/ContactUsD';
-import { ProductDescription } from 'components/ProductDescription/ProductDescription';
+
 import {
   ProductDescriptionText,
   ProductDescriptionTextContainer,
