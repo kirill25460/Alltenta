@@ -195,7 +195,7 @@ export const AboutUsText = styled.p`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  text-align: justify;
+  text-align: center;
   font-size: 10px;
   line-height: 10px;
   width: 150px;

@@ -53,15 +53,24 @@ export const FaqSectionList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 100%;
 `;
 
 export const FaqSectionItem = styled.li`
   border-top: 2px solid #c6c6c6;
+  width: 100%;
+  max-width: 900px;
 `;
 
 export const ItemBlock = styled.div`
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
 `;
 
 export const ItemText = styled.h3`
@@ -70,25 +79,18 @@ export const ItemText = styled.h3`
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-
   padding-left: 15px;
-
   color: #232529;
+  flex: 1; /* Растягивается, чтобы занимать доступное пространство */
 
   @media (min-width: 512px) {
     font-size: 22px;
     line-height: 27px;
-
-    margin-right: 135px;
   }
 
   @media (min-width: 1200px) {
     font-size: 24px;
     line-height: 29px;
-
-    margin-right: 219px;
   }
 `;
 
@@ -112,10 +114,6 @@ export const TextHoverFaqSection = styled.p`
     line-height: 18px;
 
     width: 460px;
-  }
-
-  @media (min-width: 768px) {
-    width: 740px;
   }
 
   @media (min-width: 1200px) {

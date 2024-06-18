@@ -15,42 +15,41 @@ export const ProductDescriptionConteiner = styled.div`
   @media (min-width: 1024px) {
     flex-direction: row;
   }
-
-
 `;
 
 export const ProductDescriptionBlock = styled.div``;
 
 export const ProductWrap = styled.div`
-
-@media (min-width: 768px) {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 `;
-
 
 export const MainTextProductDescription = styled.h2`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-font-size: 27px;
-line-height: 33px;
-text-align: center;
-color: #001D3D;
-margin:0;
-  @media (min-width: 768px) {
-font-size: 40px;
-line-height: 49px;
-text-align: left;
-color: #001D3D;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  color: #001d3d;
+  margin: 0;
+  width: 296px;
 
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: left;
+    color: #001d3d;
+    width: 664px;
   }
 
   @media (min-width: 1024px) {
     font-size: 40px;
     line-height: 49px;
+    width: 695px;
   }
 `;
 
@@ -59,16 +58,16 @@ export const TextProductDescription = styled.p`
   font-style: normal;
   font-weight: 400;
   color: #767676;
-width: 296px;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
+  width: 296px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 
   @media (min-width: 768px) {
-width: 664px;
-font-size: 20px;
-line-height: 24px;
-text-align: left;
+    width: 664px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
   }
 
   @media (min-width: 1024px) {
@@ -79,15 +78,12 @@ text-align: left;
 `;
 
 export const ImgProductDescription = styled.img`
- 
-width: 300px;
-height: 348px;
-
+  width: 300px;
+  height: 348px;
 
   @media (min-width: 768px) {
-width: 664px;
-height: 500px;
-
+    width: 664px;
+    height: 500px;
   }
 
   @media (min-width: 1024px) {
@@ -104,52 +100,49 @@ export const ProductDescriptionList = styled.ul`
   align-items: center;
   margin-top: 30px;
   @media (min-width: 768px) {
-   display: none;
+    display: none;
   }
 
   @media (min-width: 1024px) {
     display: flex;
     margin-left: 50px;
-  margin-top: 38px;
-  margin-bottom: 30px;
-
+    margin-top: 38px;
+    margin-bottom: 30px;
   }
   @media (min-width: 1440px) {
     display: flex;
     margin-left: 50px;
-  margin-top: 55px;
-  margin-bottom: 30px;
-
+    margin-top: 55px;
+    margin-bottom: 30px;
   }
 `;
 
 export const ProductDescriptionListTab = styled.ul`
-display: none;
+  display: none;
   @media (min-width: 768px) {
     list-style: none;
-display: inline-block;
-padding: 0;
-display: flex;
-align-items: center;
-margin-top: 30px;
+    display: inline-block;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
   }
 
   @media (min-width: 1024px) {
-  display:none;
+    display: none;
   }
 `;
 
 export const ProductDescriptionItem = styled.li`
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
   @media (min-width: 768px) {
-   
   }
 
   @media (min-width: 1024px) {
     &:not(:last-child) {
-    margin-right: 40px;
-  }
+      margin-right: 40px;
+    }
   }
 `;
 
@@ -160,11 +153,9 @@ export const DetailItem = styled.div`
   margin-left: 8px;
   margin-right: 7px;
   @media (min-width: 768px) {
-   
   }
 
   @media (min-width: 1024px) {
-  
   }
 `;
 
@@ -172,11 +163,9 @@ export const ImgDetailItem = styled.img`
   width: 32px;
   height: 32px;
   @media (min-width: 768px) {
-   
   }
 
   @media (min-width: 1024px) {
-  
   }
 `;
 
@@ -185,13 +174,12 @@ export const TextDetailItem = styled.p`
   font-style: normal;
   font-weight: 500;
   margin: 0;
-  
+
   color: #767676;
-font-size: 12px;
-line-height: 15px;
+  font-size: 12px;
+  line-height: 15px;
 
   @media (min-width: 768px) {
-   
   }
 
   @media (min-width: 1024px) {
@@ -206,12 +194,11 @@ export const TextInformation = styled.p`
   font-weight: 500;
   margin-top: 5px;
   margin-bottom: 0;
-font-size: 12px;
-line-height: 15px;
-color: #001D3D;
+  font-size: 12px;
+  line-height: 15px;
+  color: #001d3d;
 
   @media (min-width: 768px) {
-   
   }
 
   @media (min-width: 1024px) {
@@ -229,24 +216,27 @@ export const ProductImg = styled.img`
     margin-bottom: 50px;
   }
   @media (min-width: 768px) {
-   
   }
 
   @media (min-width: 1024px) {
-  
   }
 `;
 
 export const ImgBlock = styled.div`
-display:none;
+  display: none;
   @media (min-width: 768px) {
-   
   }
 
   @media (min-width: 1024px) {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
 
-  margin-left: 50px;
+    margin-left: 50px;
   }
+`;
+
+export const ProductDescriptionTextConteiner = styled.div``;
+
+export const ProductDescriptionText = styled.p`
+  width: 500px;
 `;

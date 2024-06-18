@@ -95,20 +95,20 @@ const Header = () => {
                 <Menu>
                   <HeaderList>
                     <HeaderItem>
-                      <Link to="/Product">Штори для альтанок</Link>
+                      <Link to="/Product/1">Штори ПВХ</Link>
                     </HeaderItem>
                     <HeaderItem>
-                      <Link to="/Product">Штори для альтанок</Link>
+                      <Link to="/Product/2">Тенти на пісочниці</Link>
                     </HeaderItem>
                     <HeaderItem>
-                      <Link to="/Product">Штори для альтанок</Link>
+                      <Link to="/Product/3">Тенти для Автомобілів</Link>
                     </HeaderItem>
-                    <HeaderItem>
+                    {/* <HeaderItem>
+                      <Link to="/Product/4">Штори для альтанок</Link>
+                    </HeaderItem> */}
+                    {/* <HeaderItem>
                       <Link to="/Product">Штори для альтанок</Link>
-                    </HeaderItem>
-                    <HeaderItem>
-                      <Link to="/Product">Штори для альтанок</Link>
-                    </HeaderItem>
+                    </HeaderItem> */}
                   </HeaderList>
                 </Menu>
               ) : (
@@ -155,6 +155,21 @@ const Header = () => {
                   <Menu>
                     <HeaderList>
                       <HeaderItem>
+                        <Link to="/Product/1" onClick={handleMenuLinkClick}>
+                          Штори ПВХ
+                        </Link>
+                      </HeaderItem>
+                      <HeaderItem>
+                        <Link to="/Product/2" onClick={handleMenuLinkClick}>
+                          Тенти на пісочниці
+                        </Link>
+                      </HeaderItem>
+                      <HeaderItem>
+                        <Link to="/Product/3" onClick={handleMenuLinkClick}>
+                          Тенти для Автомобілів
+                        </Link>
+                      </HeaderItem>
+                      {/* <HeaderItem>
                         <Link to="/Product" onClick={handleMenuLinkClick}>
                           Штори для альтанок
                         </Link>
@@ -163,22 +178,7 @@ const Header = () => {
                         <Link to="/Product" onClick={handleMenuLinkClick}>
                           Штори для альтанок
                         </Link>
-                      </HeaderItem>
-                      <HeaderItem>
-                        <Link to="/Product" onClick={handleMenuLinkClick}>
-                          Штори для альтанок
-                        </Link>
-                      </HeaderItem>
-                      <HeaderItem>
-                        <Link to="/Product" onClick={handleMenuLinkClick}>
-                          Штори для альтанок
-                        </Link>
-                      </HeaderItem>
-                      <HeaderItem>
-                        <Link to="/Product" onClick={handleMenuLinkClick}>
-                          Штори для альтанок
-                        </Link>
-                      </HeaderItem>
+                      </HeaderItem> */}
                     </HeaderList>
                   </Menu>
                 ) : (

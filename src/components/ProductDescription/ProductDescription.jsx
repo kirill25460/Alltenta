@@ -14,47 +14,54 @@ import {
   TextProductDescription,
   ProductDescriptionListTab,
   ProductWrap,
+  ProductDescriptionTextConteiner,
+  ProductDescriptionText,
 } from './ProductDescription.styled';
-import img from '../../Images/img6.png';
-import img1 from '../../Images/img6.png';
-import img2 from '../../Images/img6.png';
 import ProductPageSvg from '../../Images/ProductPageSvg.svg';
+import { useParams } from 'react-router-dom';
+import { configProductDescription } from './configProductDescription';
 
 export const ProductDescription = () => {
+  const { id } = useParams();
+  const product = configProductDescription.find(
+    item => item.id === parseInt(id)
+  );
+
+  console.log(product.images[0]);
+
   return (
     <ProductDescriptionConteiner>
       <ProductDescriptionBlock>
         <ProductWrap>
-        <MainTextProductDescription>Тераса</MainTextProductDescription>
-        <ProductDescriptionListTab>
-          <ProductDescriptionItem>
-            <ImgDetailItem src={ProductPageSvg} />
-            <DetailItem>
-              <TextDetailItem>Монтаж</TextDetailItem>
-              <TextInformation>2 день</TextInformation>
-            </DetailItem>
-          </ProductDescriptionItem>
-          <ProductDescriptionItem>
-            <ImgDetailItem src={ProductPageSvg} />
-            <DetailItem>
-              <TextDetailItem>Вартість</TextDetailItem>
-              <TextInformation>26 730 грн</TextInformation>
-            </DetailItem>
-          </ProductDescriptionItem>
-          <ProductDescriptionItem>
-            <ImgDetailItem src={ProductPageSvg} />
-            <DetailItem>
-              <TextDetailItem>Площа</TextDetailItem>
-              <TextInformation>29,7 м2</TextInformation>
-            </DetailItem>
-          </ProductDescriptionItem>
-        </ProductDescriptionListTab>
+          <MainTextProductDescription>
+            {product.title}
+          </MainTextProductDescription>
+          <ProductDescriptionListTab>
+            <ProductDescriptionItem>
+              <ImgDetailItem src={ProductPageSvg} />
+              <DetailItem>
+                <TextDetailItem>Монтаж</TextDetailItem>
+                <TextInformation>2 день</TextInformation>
+              </DetailItem>
+            </ProductDescriptionItem>
+            <ProductDescriptionItem>
+              <ImgDetailItem src={ProductPageSvg} />
+              <DetailItem>
+                <TextDetailItem>Вартість</TextDetailItem>
+                <TextInformation>26 730 грн</TextInformation>
+              </DetailItem>
+            </ProductDescriptionItem>
+            <ProductDescriptionItem>
+              <ImgDetailItem src={ProductPageSvg} />
+              <DetailItem>
+                <TextDetailItem>Площа</TextDetailItem>
+                <TextInformation>29,7 м2</TextInformation>
+              </DetailItem>
+            </ProductDescriptionItem>
+          </ProductDescriptionListTab>
         </ProductWrap>
-        <TextProductDescription>
-          Плівка Achilles (Японія), товщина 500 мкм, окантовка тканини ПВХ,
-          комплект кріплень через кожні 30-40 см
-        </TextProductDescription>
-        <ImgProductDescription src={img} />
+        <TextProductDescription>{product.mainText}</TextProductDescription>
+        <ImgProductDescription src={product.images[2]} />
       </ProductDescriptionBlock>
       <ProductDescriptionBlock>
         <ProductDescriptionList>
@@ -62,27 +69,27 @@ export const ProductDescription = () => {
             <ImgDetailItem src={ProductPageSvg} />
             <DetailItem>
               <TextDetailItem>Монтаж</TextDetailItem>
-              <TextInformation>2 день</TextInformation>
+              <TextInformation>{product.installation}</TextInformation>
             </DetailItem>
           </ProductDescriptionItem>
           <ProductDescriptionItem>
             <ImgDetailItem src={ProductPageSvg} />
             <DetailItem>
               <TextDetailItem>Вартість</TextDetailItem>
-              <TextInformation>26 730 грн</TextInformation>
+              <TextInformation>{product.coast}</TextInformation>
             </DetailItem>
           </ProductDescriptionItem>
           <ProductDescriptionItem>
             <ImgDetailItem src={ProductPageSvg} />
             <DetailItem>
               <TextDetailItem>Площа</TextDetailItem>
-              <TextInformation>29,7 м2</TextInformation>
+              <TextInformation>{product.square}</TextInformation>
             </DetailItem>
           </ProductDescriptionItem>
         </ProductDescriptionList>
         <ImgBlock>
-          <ProductImg src={img1} />
-          <ProductImg src={img2} />
+          <ProductImg src={product.images[0]} />
+          <ProductImg src={product.images[1]} />
         </ImgBlock>
       </ProductDescriptionBlock>
     </ProductDescriptionConteiner>

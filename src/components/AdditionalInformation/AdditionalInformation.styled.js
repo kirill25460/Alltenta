@@ -34,7 +34,7 @@ export const TextAdditionalInformationBlock = styled.div`
   width: 300px;
 
   @media (min-width: 768px) {
-    width: 933px;
+    width: 730px;
   }
 
   @media (min-width: 1200px) {
@@ -167,7 +167,7 @@ export const AdviceBlock = styled.div`
   width: 300px;
 
   @media (min-width: 768px) {
-    width: 933px;
+    width: 700px;
   }
 
   @media (min-width: 1200px) {
