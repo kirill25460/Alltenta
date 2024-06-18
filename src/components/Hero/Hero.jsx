@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import {
-  ArrowBox,
-  ArrowHeroContainer,
-  ArrowHeroContainerMobile,
-  ArrowLeft,
-  ArrowRight,
+  // ArrowBox,
+  // ArrowHeroContainer,
+  // ArrowHeroContainerMobile,
+  // ArrowLeft,
+  // ArrowRight,
   BlackSpan,
-  ButtonBlock,
+  // ButtonBlock,
   GreySpan,
   HeroButton,
   HeroButtonMobile,
@@ -26,7 +26,7 @@ import hero_img3 from '../../Images/img1.png';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const images = useMemo(() => [hero_img, hero_img2, hero_img3], []);
   const [imageSrc, setImageSrc] = useState(images[currentImage]);
@@ -53,13 +53,13 @@ export const Hero = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []); // Удаление пустого массива зависимостей
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovered(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovered(false);
+  // };
 
   // const handleLeftArrowClick = () => {
   //   setCurrentImage(prevIndex =>
@@ -102,8 +102,8 @@ export const Hero = () => {
       <RightHeroContainer>
         <HeroImg
           src={imageSrc}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
         />
         {/* {isHovered ? (
           <ButtonBlock>
