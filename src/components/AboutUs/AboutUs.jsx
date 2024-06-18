@@ -1,7 +1,7 @@
 import {
-  AboutUsArrow,
+  // AboutUsArrow,
   AboutUsBlock,
-  AboutUsButton,
+  // AboutUsButton,
   AboutUsConteiner,
   AboutUsConteinerItem,
   AboutUsImageBlock,
@@ -23,7 +23,7 @@ import aboutUsImageSecond768 from '../../Images/img7_tab.png';
 // import aboutUsImageSecond360 from '../../Images/img7_mob.png';
 import aboutUsImageSecond360 from '../../Images/img7_mob(1).jpeg';
 
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 
 export const AboutUs = () => {
   return (

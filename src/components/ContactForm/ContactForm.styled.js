@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import backgroundImage from '../../Images/img7.png';
-import { FiPhone } from 'react-icons/fi';
-import { CiMail } from 'react-icons/ci';
+// import { FiPhone } from 'react-icons/fi';
+// import { CiMail } from 'react-icons/ci';
 
 export const ContactFormConteiner = styled.div`
   width: 100%;

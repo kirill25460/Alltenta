@@ -5,13 +5,13 @@ import {
   ContactFormConteiner,
   ContactFormMainText,
   ContactFormText,
-  ContactWrap,
+  // ContactWrap,
   ContainerForm,
-  MailIcon,
-  PhonIcon,
+  // MailIcon,
+  // PhonIcon,
   StyledInput,
   StyledInputEmail,
-  StyledLink,
+  // StyledLink,
 } from './ContactForm.styled';
 
 export const ContactForm = () => {
