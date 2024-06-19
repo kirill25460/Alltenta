@@ -14,6 +14,7 @@ export const ProductDescriptionConteiner = styled.div`
 
   @media (min-width: 1024px) {
     flex-direction: row;
+    align-items: flex-end;
   }
 `;
 
@@ -39,14 +40,14 @@ export const MainTextProductDescription = styled.h2`
   width: 296px;
 
   @media (min-width: 768px) {
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 30px;
+    line-height: 34px;
     text-align: left;
     color: #001d3d;
-    width: 664px;
+    width: 422px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     font-size: 40px;
     line-height: 49px;
     width: 695px;
@@ -70,7 +71,7 @@ export const TextProductDescription = styled.p`
     text-align: left;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     font-size: 20px;
     line-height: 24px;
     width: 695px;
@@ -84,9 +85,11 @@ export const ImgProductDescription = styled.img`
   @media (min-width: 768px) {
     width: 664px;
     height: 500px;
+    margin: 0 auto;
+    display: block;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     width: 695px;
     height: 500px;
   }
@@ -103,7 +106,7 @@ export const ProductDescriptionList = styled.ul`
     display: none;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     display: flex;
     margin-left: 50px;
     margin-top: 38px;
@@ -128,7 +131,7 @@ export const ProductDescriptionListTab = styled.ul`
     margin-top: 30px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 `;
@@ -139,7 +142,7 @@ export const ProductDescriptionItem = styled.li`
   @media (min-width: 768px) {
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 40px;
     }
@@ -155,7 +158,7 @@ export const DetailItem = styled.div`
   @media (min-width: 768px) {
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
   }
 `;
 
@@ -165,7 +168,7 @@ export const ImgDetailItem = styled.img`
   @media (min-width: 768px) {
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
   }
 `;
 
@@ -182,7 +185,7 @@ export const TextDetailItem = styled.p`
   @media (min-width: 768px) {
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     font-size: 15px;
     line-height: 18px;
   }
@@ -201,7 +204,7 @@ export const TextInformation = styled.p`
   @media (min-width: 768px) {
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     font-size: 15px;
     line-height: 18px;
     margin-top: 12px;
@@ -227,7 +230,7 @@ export const ImgBlock = styled.div`
   @media (min-width: 768px) {
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     display: flex;
     flex-direction: column;
 

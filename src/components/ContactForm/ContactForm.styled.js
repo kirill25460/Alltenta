@@ -82,7 +82,6 @@ export const ContainerForm = styled.form`
   flex-direction: column;
   margin-top: 30px;
 
-
   position: relative;
 
   justify-content: center;
@@ -190,8 +189,8 @@ export const ButtonForm = styled.button`
     height: 46px;
     left: 227px;
     top: 60px;
-
     font-size: 7px;
+
     line-height: 30px;
   }
   @media (min-width: 1024px) {
@@ -199,6 +198,7 @@ export const ButtonForm = styled.button`
     left: 350px;
     top: 80px;
     height: 50px;
+    font-size: 10px;
   }
   @media (min-width: 1440px) {
     margin-top: 0px;

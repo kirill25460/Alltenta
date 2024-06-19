@@ -196,9 +196,9 @@ export const AboutUsText = styled.p`
   font-style: normal;
   font-weight: 400;
   text-align: center;
-  font-size: 10px;
-  line-height: 10px;
-  width: 150px;
+  font-size: 15px;
+  line-height: 15px;
+  width: 200px;
   color: #767676;
   margin: 0;
   padding-bottom: 10px;
@@ -208,18 +208,21 @@ export const AboutUsText = styled.p`
     width: 400px;
     padding-top: 20px;
     padding-bottom: 0px;
+    margin: 0 auto;
   }
   @media (min-width: 1024px) {
     font-size: 14px;
     line-height: 17px;
     padding-top: 20px;
     margin-bottom: 25px;
+    margin: 0 auto;
   }
   @media (min-width: 1440px) {
-    width: 480px;
-    font-size: 15px;
+    width: 530px;
+    font-size: 20px;
     padding-top: 20px;
     margin-bottom: 25px;
+    margin: 0 auto;
   }
 `;
 

@@ -183,7 +183,7 @@ export const AdviceMainText = styled.h2`
   line-height: 30px;
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: #001d3d;
 `;
 
@@ -195,8 +195,7 @@ export const AdviceText = styled.p`
   line-height: 15px;
 
   color: #767676;
-
-  margin: 0;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
     font-size: 24px;

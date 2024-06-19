@@ -102,22 +102,20 @@ export const TextHoverFaqSection = styled.p`
   font-family: 'Geologica';
   font-style: normal;
   font-weight: 300;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 16px;
+  line-height: 16px;
 
   color: #767676;
 
   width: 300px;
 
   @media (min-width: 512px) {
-    font-size: 14px;
     line-height: 18px;
-
+    font-size: 17px;
     width: 460px;
   }
 
   @media (min-width: 1200px) {
-    font-size: 15px;
     line-height: 19px;
 
     width: 833px;

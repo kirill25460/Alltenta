@@ -56,19 +56,19 @@ export const Gallery = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 500,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
           slidesToShow: 4,
         },

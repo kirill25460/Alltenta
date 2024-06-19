@@ -39,21 +39,21 @@ export const ProductDescription = () => {
               <ImgDetailItem src={ProductPageSvg} />
               <DetailItem>
                 <TextDetailItem>Монтаж</TextDetailItem>
-                <TextInformation>2 день</TextInformation>
+                <TextInformation>{product.installation}</TextInformation>
               </DetailItem>
             </ProductDescriptionItem>
             <ProductDescriptionItem>
               <ImgDetailItem src={ProductPageSvg} />
               <DetailItem>
                 <TextDetailItem>Вартість</TextDetailItem>
-                <TextInformation>26 730 грн</TextInformation>
+                <TextInformation>{product.coast}</TextInformation>
               </DetailItem>
             </ProductDescriptionItem>
             <ProductDescriptionItem>
               <ImgDetailItem src={ProductPageSvg} />
               <DetailItem>
                 <TextDetailItem>Площа</TextDetailItem>
-                <TextInformation>29,7 м2</TextInformation>
+                <TextInformation>{product.square}</TextInformation>
               </DetailItem>
             </ProductDescriptionItem>
           </ProductDescriptionListTab>
