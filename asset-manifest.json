@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a74e1f03.css",
-    "main.js": "/static/js/main.c0955e52.js",
+    "main.js": "/static/js/main.3308f130.js",
     "static/media/img10.png": "/static/media/img10.d5be6e1e3b24b802fe3a.png",
     "static/media/img9.png": "/static/media/img9.b85c18de60b3d7e4aee5.png",
     "static/media/img12.png": "/static/media/img12.3d44bcd01ec2393d4ad9.png",
@@ -25,6 +25,8 @@
     "static/media/TENTPESOK2.jpg": "/static/media/TENTPESOK2.858f956d30159d936d25.jpg",
     "static/media/SHTORIPVH3.jpg": "/static/media/SHTORIPVH3.8806b0fbd221f527c47d.jpg",
     "static/media/TENTCAR1.jpeg": "/static/media/TENTCAR1.d7dc236cf6a4e52d837c.jpeg",
+    "static/media/SHTORIPVH4.jpg": "/static/media/SHTORIPVH4.aa85c4d862664d6d98fc.jpg",
+    "static/media/SHTORIPVH5.jpg": "/static/media/SHTORIPVH5.bc4b63173ebabcef10af.jpg",
     "static/media/img6_mob(1).jpeg": "/static/media/img6_mob(1).7e3cfad348f07ec95a98.jpeg",
     "static/media/img7_mob(1).jpeg": "/static/media/img7_mob(1).4729a602dafa98848959.jpeg",
     "static/media/TENTCAR2.jpg": "/static/media/TENTCAR2.cadead285a5a7d42c15a.jpg",
@@ -43,10 +45,10 @@
     "static/media/Reliability.svg": "/static/media/Reliability.1f6b641632ca64cefa50cd76efce6baa.svg",
     "static/media/ProductPageSvg.svg": "/static/media/ProductPageSvg.32e97a522fabd081fe6afad48c4fae87.svg",
     "main.a74e1f03.css.map": "/static/css/main.a74e1f03.css.map",
-    "main.c0955e52.js.map": "/static/js/main.c0955e52.js.map"
+    "main.3308f130.js.map": "/static/js/main.3308f130.js.map"
   },
   "entrypoints": [
     "static/css/main.a74e1f03.css",
-    "static/js/main.c0955e52.js"
+    "static/js/main.3308f130.js"
   ]
 }
