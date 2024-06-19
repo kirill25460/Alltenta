@@ -55,8 +55,8 @@ export const CompanyPerformanceText = styled.p`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 19px;
   text-align: center;
   margin: 0;
   color: #767676;

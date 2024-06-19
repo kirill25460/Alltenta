@@ -138,7 +138,7 @@ export const Menu = styled.div`
   top: 50px;
 
   z-index: 2;
-  @media (min-width: 768px) {
+    @media (min-width: 768px) {
     left: -20px;
     top: 50px;
   }
@@ -164,13 +164,12 @@ export const HeaderItem = styled.li`
   font-size: 12px;
 
   color: #232629;
-  padding-left: 12px;
+  padding-left: 8px;
 
   height: 36px;
 
   display: flex;
   align-items: center;
-
 
   &:hover {
     background-color: #f0f0f0;
@@ -181,6 +180,7 @@ export const HeaderItem = styled.li`
 export const Link = styled(NavLink)`
   text-decoration: none;
   color: #232629;
+  width: 100%;
 `;
 
 export const MenuIcon = styled(FiAlignJustify)`

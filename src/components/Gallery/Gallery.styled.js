@@ -167,7 +167,7 @@ export const TextHover = styled.h4`
   @media (min-width: 1800px) {
     font-weight: 600;
     font-size: 18px;
-    bottom: 240px;
+    bottom: 90px;
   }
 `;
 
