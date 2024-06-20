@@ -39,9 +39,9 @@ export const Hero = () => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth <= 768) {
-        setCurrentImage(1); // Мобильные устройства
+        setCurrentImage(0); // Мобильные устройства
       } else if (screenWidth <= 1200) {
-        setCurrentImage(2); // Планшеты
+        setCurrentImage(0); // Планшеты
       } else {
         setCurrentImage(0); // Десктопы
       }
