@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 import ContactUsPhoto from '../../Images/img5.png';
 import ContactUs360 from '../../Images/img5_mob(1).jpeg';
 // import ContactUs360 from '../../Images/img5_mob.png';
@@ -23,15 +24,35 @@ import {
 // import { useState } from 'react';
 
 export const ContactUs = () => {
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   contact: '',
-  // });
+  const [formData, setFormData] = useState({
+    name: '',
+    contact: ''
+  });
 
-  // const handleChange = e => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  // };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/send', formData);
+      alert('Message sent successfully');
+    } catch (error) {
+      alert('Failed to send message');
+      console.log(error)
+    }
+
+    setFormData({
+      name: '',
+    contact: ''
+    });
+  };
+
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -75,20 +96,20 @@ export const ContactUs = () => {
         ) : (
           <Text>Ми розрахуємо вартість вашого замовлення безкоштовно!</Text>
         )}
-        <ContainerForm>
+        <ContainerForm onSubmit={handleSubmit}>
           <StyledInput
             type="text"
             name="name"
             placeholder="ІМ’Я"
-            // value={formData.name}
-            // onChange={handleChange}
+            value={formData.name}
+            onChange={handleChange}
           />
           <StyledInputEmail
             type="text"
             name="contact"
             placeholder="ТЕЛЕФОН/ЕМЕЙЛ"
-            // value={formData.contact}
-            // onChange={handleChange}
+            value={formData.contact}
+            onChange={handleChange}
           />
           <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
         </ContainerForm>

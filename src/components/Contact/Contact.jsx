@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import axios from 'axios';
 import {
   ButtonForm,
   ContactBlock,
@@ -13,6 +15,37 @@ import {
 } from './Contact.styled';
 
 export const Contact = () => {
+  
+  const [formData, setFormData] = useState({
+    name: '',
+    contact: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:3000/send', formData);
+      alert('Message sent successfully');
+    } catch (error) {
+      alert('Failed to send message');
+    }
+
+    setFormData({
+      name: '',
+    contact: ''
+    });
+  };
+
+
+
   return (
     <ContactConteiner>
       <ContactBlock>
@@ -25,15 +58,15 @@ export const Contact = () => {
           type="text"
           name="name"
           placeholder="ІМ’Я"
-          // value={formData.name}
-          // onChange={handleChange}
+          value={formData.name}
+          onChange={handleChange}
         />
         <StyledInputEmail
           type="text"
           name="contact"
           placeholder="ТЕЛЕФОН/ЕМЕЙЛ"
-          // value={formData.contact}
-          // onChange={handleChange}
+          value={formData.contact}
+          onChange={handleChange}
         />
         <ButtonForm type="submit">ВІДПРАВИТИ</ButtonForm>
         <ContactWrap>
